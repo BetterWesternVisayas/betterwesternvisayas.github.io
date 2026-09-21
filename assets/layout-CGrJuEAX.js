@@ -1,1 +1,0 @@
-import{r as e}from"./rolldown-runtime-hePW80VL.js";import{g as t}from"./vendor-react-BA8xVtf4.js";var n=e(t(),1);function r(){return(0,n.useEffect)(()=>{window.location.href=`/statistics-city.html`},[]),null}export{r as default};

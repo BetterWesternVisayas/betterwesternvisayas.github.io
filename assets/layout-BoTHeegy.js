@@ -1,0 +1,1 @@
+import{t as e}from"./vendor-react-BA8xVtf4.js";var t=e();function n(){return(0,t.jsx)(`iframe`,{src:`/statistics-city.html`,title:`City Statistics — Roxas City, Capiz`,style:{width:`100%`,height:`100vh`,border:`none`,display:`block`}})}export{n as default};
