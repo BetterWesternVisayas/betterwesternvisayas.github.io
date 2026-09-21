@@ -1,0 +1,1 @@
+import{r as e}from"./rolldown-runtime-hePW80VL.js";import{g as t,t as n}from"./vendor-react-BA8xVtf4.js";import{t as r}from"./lguConfig-vQEbKFo2.js";var i=e(t(),1),a=n();function o(){return(0,i.useEffect)(function(){window.location.assign(r.portal.discordUrl)},[]),(0,a.jsxs)(`h1`,{children:[`Redirecting to `,r.portal.name,` Discord Invite Link...`]})}export{o as default};
