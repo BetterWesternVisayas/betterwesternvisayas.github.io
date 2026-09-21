@@ -142,14 +142,26 @@ const Hero: FC = () => {
   ];
 
   return (
-    <div className='py-12 from-kapwa-brand-600 to-kapwa-brand-700 bg-linear-to-r text-kapwa-text-inverse md:py-24'>
-      <div className='container px-4 mx-auto'>
+    <div className='py-12 roxas-hero-bg text-kapwa-text-inverse md:py-24 relative overflow-hidden'>
+      {/* Decorative background glow */}
+      <div className='absolute -top-24 -right-24 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none' />
+      <div className='absolute -bottom-24 -left-24 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl pointer-events-none' />
+
+      <div className='container relative z-10 px-4 mx-auto'>
         <div className='grid grid-cols-1 gap-8 items-center lg:grid-cols-2'>
           <div className='animate-fade-in'>
-            <h1 className='mb-4 text-kapwa-text-inverse kapwa-heading-xl'>
+            {/* Roxas City Cultural Badge */}
+            <div className='inline-flex items-center gap-2 px-3 py-1.5 mb-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs font-semibold tracking-wide text-white'>
+              <span>🦐</span>
+              <span>Seafood Capital of the Philippines</span>
+              <span className='opacity-40'>•</span>
+              <span className='text-amber-300 font-bold'>City of Roxas</span>
+            </div>
+
+            <h1 className='mb-4 text-kapwa-text-inverse kapwa-heading-xl font-black tracking-tight'>
               {t('hero.title')}
             </h1>
-            <p className='mb-8 max-w-lg opacity-80 text-kapwa-text-inverse kapwa-body-md-default'>
+            <p className='mb-8 max-w-lg text-white/90 kapwa-body-md-default leading-relaxed'>
               {t('hero.subtitle')}
             </p>
 

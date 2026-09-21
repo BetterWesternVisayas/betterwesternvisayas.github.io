@@ -1,1119 +1,894 @@
 [
   {
-    "slug": "barangay-anos",
-    "barangay_name": "ANOS",
-    "address": "Barangay Hall, Brgy. Anos, Los Baños, Laguna",
-    "trunkline": ["0917 146 9167"],
-    "website": "https://www.facebook.com/barangayanosofficialbarangay",
+    "slug": "barangay-adlawan",
+    "barangay_name": "ADLAWAN",
+    "address": "Barangay Hall, Brgy. Adlawan, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "BENITO B. ELEC"
+        "name": "Hon. Barangay Captain (Adlawan)"
       },
       {
-        "role": "SB Member",
-        "name": "EDITHA V. LOZANO"
-      },
-      {
-        "role": "SB Member",
-        "name": "ROSALIE P. PANTING"
-      },
-      {
-        "role": "SB Member",
-        "name": "MIGUEL E. SORIANO"
-      },
-      {
-        "role": "SB Member",
-        "name": "EDGARDO R. EVANGELISTA"
-      },
-      {
-        "role": "SB Member",
-        "name": "ANGELITA N. ALVAREZ"
-      },
-      {
-        "role": "SB Member",
-        "name": "NORA S. ROBLES"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "SAMANTHALIN S. BANASIHAN"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "SARAH M. ROBLES"
-      },
-      {
-        "role": "SK Member",
-        "name": "KATRINA B. MENDOZA"
-      },
-      {
-        "role": "SK Member",
-        "name": "REAN ROSALES"
-      },
-      {
-        "role": "SK Member",
-        "name": "ALEXIS ROSALES"
-      },
-      {
-        "role": "SK Member",
-        "name": "ALIYAH AVSONIO ABEDANIA"
-      },
-      {
-        "role": "SK Member",
-        "name": "JANELLE TEYENG"
-      },
-      {
-        "role": "SK Member",
-        "name": "MICAELA C. BANDIAN"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "RYAM JOR G. BARREDA"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-bagong-silang",
-    "barangay_name": "BAGONG SILANG",
-    "address": "Barangay Hall, Brgy. Bagong Silang, Los Baños, Laguna",
-    "trunkline": ["0955 527 9328"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-bago",
+    "barangay_name": "BAGO",
+    "address": "Barangay Hall, Brgy. Bago, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "ROGELIO N. DELOS REYES"
+        "name": "Hon. Barangay Captain (Bago)"
       },
       {
-        "role": "SB Member",
-        "name": "HAROLD L. DELOS REYES"
-      },
-      {
-        "role": "SB Member",
-        "name": "JOEL PANGANI"
-      },
-      {
-        "role": "SB Member",
-        "name": "ALVINO D. QUIATCHON"
-      },
-      {
-        "role": "SB Member",
-        "name": "DELOS REYES QUIATCHON JACINTO"
-      },
-      {
-        "role": "SB Member",
-        "name": "BABY JANE M. CALAO"
-      },
-      {
-        "role": "SB Member",
-        "name": "PRIMITIVO C. NAVAREZ"
-      },
-      {
-        "role": "SB Member",
-        "name": "AMADOR A. DELOS REYES"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "SHENA M. CALAO"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "MYLA L. LAYOG"
-      },
-      {
-        "role": "SK Member",
-        "name": "IVAN D. QUIATCHON"
-      },
-      {
-        "role": "SK Member",
-        "name": "MAXINE Z. QUIATCHON"
-      },
-      {
-        "role": "SK Member",
-        "name": "BHABY AN DELOS REYES MALABANAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "ANTONIO N. DELA CRUZ"
-      },
-      {
-        "role": "SK Member",
-        "name": "CHRISTIA V. QUIATCHON"
-      },
-      {
-        "role": "SK Member",
-        "name": "NATHALIE M. SULLEGUIN"
-      },
-      {
-        "role": "SK Member",
-        "name": "KEYLA D. BADILLO"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "FRANCINE D. MONTEZA"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-bambang",
-    "barangay_name": "BAMBANG",
-    "address": "Barangay Hall, Brgy. Bambang, Los Baños, Laguna",
-    "trunkline": ["0906 725 9232"],
-    "website": "https://www.facebook.com/barangay.bambang.50",
+    "slug": "barangay-balijuagan",
+    "barangay_name": "BALIJUAGAN",
+    "address": "Barangay Hall, Brgy. Balijuagan, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "ARLENE P. DELOS SANTO"
+        "name": "Hon. Barangay Captain (Balijuagan)"
       },
       {
-        "role": "SB Member",
-        "name": "MARIA AILEEN M. APACIONADO"
-      },
-      {
-        "role": "SB Member",
-        "name": "HENRY M. YANGO"
-      },
-      {
-        "role": "SB Member",
-        "name": "GERARD TATAD"
-      },
-      {
-        "role": "SB Member",
-        "name": "TERESA M. MIRANDAN"
-      },
-      {
-        "role": "SB Member",
-        "name": "RODRIGO S. GALANG"
-      },
-      {
-        "role": "SB Member",
-        "name": "JOY B. BAS"
-      },
-      {
-        "role": "SB Member",
-        "name": "CORAZON S. BOSTON"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "GLENDEL F. PACCIAL"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "MA. NENE A. REALISTA"
-      },
-      {
-        "role": "SK Member",
-        "name": "AISEYIAH A. CANLAS"
-      },
-      {
-        "role": "SK Member",
-        "name": "MARYAN M. MARINO"
-      },
-      {
-        "role": "SK Member",
-        "name": "AUBREY M. GAVILAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "PRINCE ZYR SALAZAR"
-      },
-      {
-        "role": "SK Member",
-        "name": "AUDREY V. GANGIL"
-      },
-      {
-        "role": "SK Member",
-        "name": "ALESSANDRA C. GUDA"
-      },
-      {
-        "role": "SK Member",
-        "name": "STEPHEN C. OBRA"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "PATRICIA A. GAVILAN"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-batong-malake",
-    "barangay_name": "BATONG MALAKE",
-    "address": "Barangay Hall, Brgy. Batong Malake, Los Baños, Laguna",
-    "trunkline": ["0945 544 2954", "0919 254 4257"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-banica",
+    "barangay_name": "BANICA",
+    "address": "Barangay Hall, Brgy. Banica, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "IAN N. KALAW"
+        "name": "Hon. Barangay Captain (Banica)"
       },
       {
-        "role": "SB Member",
-        "name": "DELFIN M. PABALATE"
-      },
-      {
-        "role": "SB Member",
-        "name": "KRISTINE P. CADAPAN"
-      },
-      {
-        "role": "SB Member",
-        "name": "JOEY R. DE GALA"
-      },
-      {
-        "role": "SB Member",
-        "name": "NELSON R. BANDIAN"
-      },
-      {
-        "role": "SB Member",
-        "name": "RONDELL R. RAZALDO"
-      },
-      {
-        "role": "SB Member",
-        "name": "ELVIRA A. TEVES"
-      },
-      {
-        "role": "SB Member",
-        "name": "LEO L. CATIMBANG"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "VINCENT P. BANASIHAN"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "GENESIS J. BANDONG"
-      },
-      {
-        "role": "SK Member",
-        "name": "KAELA CERVANTINA CADAPAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "MIKAS SHANE M. AQUINO"
-      },
-      {
-        "role": "SK Member",
-        "name": "RAIVEN NICOLE E. BUENA"
-      },
-      {
-        "role": "SK Member",
-        "name": "ALIETH B. LANCETA"
-      },
-      {
-        "role": "SK Member",
-        "name": "FAYE MIKAELA BATUGON DIZON"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHN MOSES M. DONOS"
-      },
-      {
-        "role": "SK Member",
-        "name": "JENNYLOU C. ABAYAN"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "JANNA HE L. DAHONOG"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-baybayin",
-    "barangay_name": "BAYBAYIN",
-    "address": "Barangay Hall, Brgy. Baybayin, Los Baños, Laguna",
-    "trunkline": ["0995 679 2525"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-1-poblacion",
+    "barangay_name": "BARANGAY 1 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 1 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "GAUDENCIO VILLAMOR LORESTO"
+        "name": "Hon. Barangay Captain (Barangay 1 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "NICANOR P. LEDESMA"
-      },
-      {
-        "role": "SB Member",
-        "name": "ROBERT T. PALACPAC"
-      },
-      {
-        "role": "SB Member",
-        "name": "JEFFREY G. SAN VALENTIN"
-      },
-      {
-        "role": "SB Member",
-        "name": "CHONA V. PALACPAC"
-      },
-      {
-        "role": "SB Member",
-        "name": "RAMESES M. LIKWONG"
-      },
-      {
-        "role": "SB Member",
-        "name": "DELFIN H. CARPIO"
-      },
-      {
-        "role": "SB Member",
-        "name": "MERLITA L. RALLOS"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "FRANZES D. TOLENTINO"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "MARIE JOY P. PALACPAC"
-      },
-      {
-        "role": "SK Member",
-        "name": "TRICIA NICOLE S. CONSULTI"
-      },
-      {
-        "role": "SK Member",
-        "name": "KRISTINA G. DE VILLA"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHN BRYLE C. GOMEZ"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOEL O. RAMOS"
-      },
-      {
-        "role": "SK Member",
-        "name": "JAYPEE D. AGOJO"
-      },
-      {
-        "role": "SK Member",
-        "name": "JUNE O. DEL MUNDO"
-      },
-      {
-        "role": "SK Member",
-        "name": "TREXY C. CLARIDAD"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "ARNEL M. PESTANO"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-bayog",
-    "barangay_name": "BAYOG",
-    "address": "Barangay Hall, Brgy. Bayog, Los Baños, Laguna",
-    "trunkline": ["0926 963 4402"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-2-poblacion",
+    "barangay_name": "BARANGAY 2 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 2 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "EDUARDO E. DELMING"
+        "name": "Hon. Barangay Captain (Barangay 2 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "OBDULIA C. VASQUEZ"
-      },
-      {
-        "role": "SB Member",
-        "name": "JONAS E. ARAGON"
-      },
-      {
-        "role": "SB Member",
-        "name": "ROLANDO V. EVANGELISTA"
-      },
-      {
-        "role": "SB Member",
-        "name": "VIRGILIO A. TANDANG"
-      },
-      {
-        "role": "SB Member",
-        "name": "FELICIANO S. TANDANG"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "ERICA P. PAR"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "LORELEI M. HINTURAL"
-      },
-      {
-        "role": "SK Member",
-        "name": "TRICIA MAE B. REYES"
-      },
-      {
-        "role": "SK Member",
-        "name": "JANRIAN P. PAR"
-      },
-      {
-        "role": "SK Member",
-        "name": "MARIVEL P. CARILLAGA"
-      },
-      {
-        "role": "SK Member",
-        "name": "GIEN C. MAZO"
-      },
-      {
-        "role": "SK Member",
-        "name": "GUIA LORRAINE M. CATILLO"
-      },
-      {
-        "role": "SK Member",
-        "name": "KURT KEVIN Q. CLAVE"
-      },
-      {
-        "role": "SK Member",
-        "name": "CYRUS JYL M. FELIX"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "PATRICK E. ARCINUE"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-lalakay",
-    "barangay_name": "LALAKAY",
-    "address": "Barangay Hall, Brgy. Lalakay, Los Baños, Laguna",
-    "trunkline": ["0908 890 9125"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-3-poblacion",
+    "barangay_name": "BARANGAY 3 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 3 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "MARIO P. MAGULI"
+        "name": "Hon. Barangay Captain (Barangay 3 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "LETICIA C. CONCEPCION"
-      },
-      {
-        "role": "SB Member",
-        "name": "KAYNETH M. BATAS"
-      },
-      {
-        "role": "SB Member",
-        "name": "ELVIS Q. ATIENZA"
-      },
-      {
-        "role": "SB Member",
-        "name": "ROBERT R. DELA CRUZ"
-      },
-      {
-        "role": "SB Member",
-        "name": "CRISTOPHER BAUTISTA REVILLEZA"
-      },
-      {
-        "role": "SB Member",
-        "name": "DOMINGO T. OBOSA"
-      },
-      {
-        "role": "SB Member",
-        "name": "ALLAN R. GARROVILLAS"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "JOHN KYLE N. PAMPLONA"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "EILEEN RUTH S. FABAYOS"
-      },
-      {
-        "role": "SK Member",
-        "name": "CARLO B. TOLEDO"
-      },
-      {
-        "role": "SK Member",
-        "name": "KAYE MARTINEZ ORTE"
-      },
-      {
-        "role": "SK Member",
-        "name": "DANIEL PAOLO S. TUMDALA"
-      },
-      {
-        "role": "SK Member",
-        "name": "ELLA MAE C. ELASIGUE"
-      },
-      {
-        "role": "SK Member",
-        "name": "DESIREE J. ALMEYDA"
-      },
-      {
-        "role": "SK Member",
-        "name": "ERICA JOY B. ALEMANEA"
-      },
-      {
-        "role": "SK Member",
-        "name": "NORMAN L. DELA CRUZ"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "SHERALYN E. NAS"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-maahas",
-    "barangay_name": "MAAHAS",
-    "address": "Barangay Hall, Brgy. Maahas, Los Baños, Laguna",
-    "trunkline": ["0928 285 2720"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-4-poblacion",
+    "barangay_name": "BARANGAY 4 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 4 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "FERDINAND P. VARGAS"
+        "name": "Hon. Barangay Captain (Barangay 4 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "EVA MARIE C. LASANAS"
-      },
-      {
-        "role": "SB Member",
-        "name": "BERNARD S. BAUTISTA"
-      },
-      {
-        "role": "SB Member",
-        "name": "CARIDAD T. LANUANG"
-      },
-      {
-        "role": "SB Member",
-        "name": "GINO M. LAWAS"
-      },
-      {
-        "role": "SB Member",
-        "name": "GAUDENCIO M. PAGCANLUNGAN"
-      },
-      {
-        "role": "SB Member",
-        "name": "JOSEPH T. ALVAREZ"
-      },
-      {
-        "role": "SB Member",
-        "name": "GERARDO A. LANTICAN"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "CATHERINE D. EISMA"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "ALONA T. CANICOSA"
-      },
-      {
-        "role": "SK Member",
-        "name": "RAEJ P. SIMAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "KYLA NICOLE L. LINGON"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHN ROY M. TAMIS"
-      },
-      {
-        "role": "SK Member",
-        "name": "RALPH MARK M. MABILANGAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "SONNY M. ALVEZ"
-      },
-      {
-        "role": "SK Member",
-        "name": "SHANIA ISABEL B. MOLINAWAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "KYLE AERON L. BATULINA"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "MYLENE G. LAPIZ"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-malinta",
-    "barangay_name": "MALINTA",
-    "address": "Barangay Hall, Brgy. Malinta, Los Baños, Laguna",
-    "trunkline": ["0906 934 5752"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-5-poblacion",
+    "barangay_name": "BARANGAY 5 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 5 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "JESUS H. DE UNA JR"
+        "name": "Hon. Barangay Captain (Barangay 5 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "ROLANDO L. ERROBA"
-      },
-      {
-        "role": "SB Member",
-        "name": "RANIE F. ANDAL"
-      },
-      {
-        "role": "SB Member",
-        "name": "ERNESTO G. ALCANTARA"
-      },
-      {
-        "role": "SB Member",
-        "name": "ALLAN B. BIENES"
-      },
-      {
-        "role": "SB Member",
-        "name": "BENNY S. MORALDE"
-      },
-      {
-        "role": "SB Member",
-        "name": "SHERYL S. BAGNES"
-      },
-      {
-        "role": "SB Member",
-        "name": "GAUDENCIO D. MARIANO"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "EDMUND E. VELASCO"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "RICHEL C. TAKAHASHI"
-      },
-      {
-        "role": "SK Member",
-        "name": "RONA KAY F. PELEGRINA"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOSE ROD T. RECARIO"
-      },
-      {
-        "role": "SK Member",
-        "name": "JUDITH R. SARMIENTO"
-      },
-      {
-        "role": "SK Member",
-        "name": "MARY JOY E. BIENES"
-      },
-      {
-        "role": "SK Member",
-        "name": "MA. ALTHEA Q. VALLEJO"
-      },
-      {
-        "role": "SK Member",
-        "name": "ROSEMER V. SUBIAGA"
-      },
-      {
-        "role": "SK Member",
-        "name": "JIMUELL N. LEGASPI"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "KARL LOU T. LABARETE"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-mayondon",
-    "barangay_name": "MAYONDON",
-    "address": "Barangay Hall, Brgy. Mayondon, Los Baños, Laguna",
-    "trunkline": ["0906 783 7773", "0956 721 7127", "0938 298 8166"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-6-poblacion",
+    "barangay_name": "BARANGAY 6 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 6 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "ROMMEL N. MANINGAS"
+        "name": "Hon. Barangay Captain (Barangay 6 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "DANILO V. APOLINAR"
-      },
-      {
-        "role": "SB Member",
-        "name": "MIGUEL C. CONCIO"
-      },
-      {
-        "role": "SB Member",
-        "name": "MICHAEL E. ESCOBIN"
-      },
-      {
-        "role": "SB Member",
-        "name": "ERICSON B. REYES"
-      },
-      {
-        "role": "SB Member",
-        "name": "MARTA D. LONTOC"
-      },
-      {
-        "role": "SB Member",
-        "name": "FELISA C. CAUNCA"
-      },
-      {
-        "role": "SB Member",
-        "name": "MARJORIE E. DE ADA"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "MARIA AN A. EUSEBIO"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "REYMARC V. TORRES"
-      },
-      {
-        "role": "SK Member",
-        "name": "JANEYA M. SAPIN"
-      },
-      {
-        "role": "SK Member",
-        "name": "FRANCIS D. AJO"
-      },
-      {
-        "role": "SK Member",
-        "name": "CHESKA MAE H. DULAY"
-      },
-      {
-        "role": "SK Member",
-        "name": "CHARLES M. ARABIT"
-      },
-      {
-        "role": "SK Member",
-        "name": "DENNIS R. OARTE"
-      },
-      {
-        "role": "SK Member",
-        "name": "SOPHIA M. DIZON"
-      },
-      {
-        "role": "SK Member",
-        "name": "WENCIE J. BANASIHAN"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "ARIANE JOY M. TERBIO"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-putho-tuntungi",
-    "barangay_name": "PUTHO-TUNTUNGIN",
-    "address": "Barangay Hall, Brgy. Putho Tuntungi, Los Baños, Laguna",
-    "trunkline": ["0962 077 4706", "0970 736 3270"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-7-poblacion",
+    "barangay_name": "BARANGAY 7 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 7 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "FRANCISCO O. TORRES JR"
+        "name": "Hon. Barangay Captain (Barangay 7 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "RONALDO O. ONATE"
-      },
-      {
-        "role": "SB Member",
-        "name": "ELMER R. GARCIA"
-      },
-      {
-        "role": "SB Member",
-        "name": "ELENA S. RAMOS"
-      },
-      {
-        "role": "SB Member",
-        "name": "JOHN ANDREW PEREZ"
-      },
-      {
-        "role": "SB Member",
-        "name": "ESTELITA L. JACOBO"
-      },
-      {
-        "role": "SB Member",
-        "name": "ERVIM F. MALABANAN"
-      },
-      {
-        "role": "SB Member",
-        "name": "MANUEL P. ALBORIDA"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "JEMELYN E. TATAD"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "JOSEPH M. CARDINO"
-      },
-      {
-        "role": "SK Member",
-        "name": "LEVI JEN R. CUEVAS"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHNCEL P. BUEZA"
-      },
-      {
-        "role": "SK Member",
-        "name": "ANNE MAE P. FAUNDO"
-      },
-      {
-        "role": "SK Member",
-        "name": "OMAR C. CASTILLO"
-      },
-      {
-        "role": "SK Member",
-        "name": "DOROTHY C. RAMOS"
-      },
-      {
-        "role": "SK Member",
-        "name": "JINUEL D. ALBORIDA"
-      },
-      {
-        "role": "SK Member",
-        "name": "LORENXE B. DIOKNO"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "JAYVEE A. ESCOTON"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-san-antonio",
-    "barangay_name": "SAN ANTONIO",
-    "address": "Barangay Hall, Brgy. San Antonio, Los Baños, Laguna",
-    "trunkline": ["0960 576 0044"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-8-poblacion",
+    "barangay_name": "BARANGAY 8 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 8 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "RELLY C. MANAY"
+        "name": "Hon. Barangay Captain (Barangay 8 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "VICKY G. LAWAS"
-      },
-      {
-        "role": "SB Member",
-        "name": "DAISY E. MANESE"
-      },
-      {
-        "role": "SB Member",
-        "name": "ANGELINA M. MUNDIN"
-      },
-      {
-        "role": "SB Member",
-        "name": "JONATHAN M. MEJIA"
-      },
-      {
-        "role": "SB Member",
-        "name": "LIBERATO A. CALICA"
-      },
-      {
-        "role": "SB Member",
-        "name": "JOSEPHINE M. DIMASANGAL"
-      },
-      {
-        "role": "SB Member",
-        "name": "RENA THEA V. DIZON"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "ASHLEY J. PAYAS"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "MARIE JOY S. JUNIO"
-      },
-      {
-        "role": "SK Member",
-        "name": "MAEWIN L. GENIL"
-      },
-      {
-        "role": "SK Member",
-        "name": "CRISEL JOY B. OGALIN"
-      },
-      {
-        "role": "SK Member",
-        "name": "BERNADETTE LOPEZ"
-      },
-      {
-        "role": "SK Member",
-        "name": "ASHLEY N. SORRERA"
-      },
-      {
-        "role": "SK Member",
-        "name": "DENISE GRACE BALOGO"
-      },
-      {
-        "role": "SK Member",
-        "name": "YLA MARIE O. ROSARIO"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOHN CARLO C. GUBA"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "ELAINE M. LAPITAN"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-tadlak",
-    "barangay_name": "TADLAK",
-    "address": "Barangay Hall, Brgy. Tadlak, Los Baños, Laguna",
-    "trunkline": ["0921 526 3893"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-9-poblacion",
+    "barangay_name": "BARANGAY 9 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 9 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "JAIME B. BUENDIA"
+        "name": "Hon. Barangay Captain (Barangay 9 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "VICTOR M. DEL ROSA"
-      },
-      {
-        "role": "SB Member",
-        "name": "NANNET R. SALDANA"
-      },
-      {
-        "role": "SB Member",
-        "name": "IRENEO L. DIAZ"
-      },
-      {
-        "role": "SB Member",
-        "name": "ARMANDO C. LLANES JR"
-      },
-      {
-        "role": "SB Member",
-        "name": "HENRY R. EVANGELISTA"
-      },
-      {
-        "role": "SB Member",
-        "name": "LEOPOLDO M. TATAD"
-      },
-      {
-        "role": "SB Member",
-        "name": "GILBERTO G. BAUTISTA"
-      },
-      {
-        "role": "SK Chairperson",
-        "name": "JEROME F. ELIZALDE"
-      },
-      {
-        "role": "Barangay Secretary",
-        "name": "MA. CECCILIA P. ESCULTOR"
-      },
-      {
-        "role": "SK Member",
-        "name": "JESSEL C. LORIA"
-      },
-      {
-        "role": "SK Member",
-        "name": "KYLENE R. CAHINDI"
-      },
-      {
-        "role": "SK Member",
-        "name": "ROY D. LUMIBAO"
-      },
-      {
-        "role": "SK Member",
-        "name": "JHON PATRICK S. ERASGA"
-      },
-      {
-        "role": "SK Member",
-        "name": "MARC ANTHONY A. MILAN"
-      },
-      {
-        "role": "SK Member",
-        "name": "JOSEPH R. MORALES"
-      },
-      {
-        "role": "SK Member",
-        "name": "DIALYN SAMSON"
-      },
-      {
-        "role": "SK Secretary",
-        "name": "MARY ROSE P. ERASGA"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   },
   {
-    "slug": "barangay-timugan",
-    "barangay_name": "TIMUGAN",
-    "address": "Barangay Hall, Brgy. Timugan, Los Baños, Laguna",
-    "trunkline": ["0932 063 7743"],
-    "website": "https://www.losbanos.gov.ph",
+    "slug": "barangay-barangay-10-poblacion",
+    "barangay_name": "BARANGAY 10 (POBLACION)",
+    "address": "Barangay Hall, Brgy. Barangay 10 (Poblacion), Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
     "officials": [
       {
         "role": "Punong Barangay",
-        "name": "RENATO A. SAMSON"
+        "name": "Hon. Barangay Captain (Barangay 10 (Poblacion))"
       },
       {
-        "role": "SB Member",
-        "name": "ISAGANI D. BAUTISTA"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-11-poblacion",
+    "barangay_name": "BARANGAY 11 (POBLACION)",
+    "address": "Barangay Hall, Brgy. 11, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Barangay 11)"
       },
       {
-        "role": "SB Member",
-        "name": "RODERICK S. ISIDRO"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-barra",
+    "barangay_name": "BARRA",
+    "address": "Barangay Hall, Brgy. Barra, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Barra)"
       },
       {
-        "role": "SB Member",
-        "name": "LIZA C. MATUNDAN"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-bato",
+    "barangay_name": "BATO",
+    "address": "Barangay Hall, Brgy. Bato, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Bato)"
       },
       {
-        "role": "SB Member",
-        "name": "SOLIDAD D. ABDAH"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-baybay",
+    "barangay_name": "BAYBAY",
+    "address": "Barangay Hall, Brgy. Baybay, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Baybay)"
       },
       {
-        "role": "SB Member",
-        "name": "ELEAZAR B. AQUINO"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-bologo",
+    "barangay_name": "BOLOGO",
+    "address": "Barangay Hall, Brgy. Bologo, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Bologo)"
       },
       {
-        "role": "SB Member",
-        "name": "PAMELA FLORDELIZA F. DE VERA"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-cabugao",
+    "barangay_name": "CABUGAO",
+    "address": "Barangay Hall, Brgy. Cabugao, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Cabugao)"
       },
       {
-        "role": "SB Member",
-        "name": "MARY JEAN C. AQUINO"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-cagay",
+    "barangay_name": "CAGAY",
+    "address": "Barangay Hall, Brgy. Cagay, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Cagay)"
       },
       {
-        "role": "SK Chairperson",
-        "name": "RICO T. YADAO"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-cogon",
+    "barangay_name": "COGON",
+    "address": "Barangay Hall, Brgy. Cogon, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Cogon)"
       },
       {
-        "role": "Barangay Secretary",
-        "name": "WILROSE L. PENALVER"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-culajao",
+    "barangay_name": "CULAJAO",
+    "address": "Barangay Hall, Brgy. Culajao, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Culajao)"
       },
       {
-        "role": "SK Member",
-        "name": "FELICITY T. BAGAO"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-culasi",
+    "barangay_name": "CULASI",
+    "address": "Barangay Hall, Brgy. Culasi, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Culasi)"
       },
       {
-        "role": "SK Member",
-        "name": "RICA P. GAYLON"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-dayao",
+    "barangay_name": "DAYAO",
+    "address": "Barangay Hall, Brgy. Dayao, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Dayao)"
       },
       {
-        "role": "SK Member",
-        "name": "PHIL BOJO REPOTEN"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-dinginan",
+    "barangay_name": "DINGINAN",
+    "address": "Barangay Hall, Brgy. Dinginan, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Dinginan)"
       },
       {
-        "role": "SK Member",
-        "name": "MARJORY B. GUIMMAYEN"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-dumolog",
+    "barangay_name": "DUMOLOG",
+    "address": "Barangay Hall, Brgy. Dumolog, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Dumolog)"
       },
       {
-        "role": "SK Member",
-        "name": "DERICK B. ORAP"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-gabuan",
+    "barangay_name": "GABUAN",
+    "address": "Barangay Hall, Brgy. Gabuan, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Gabuan)"
       },
       {
-        "role": "SK Member",
-        "name": "KC MAE M. DELA CRUZ"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-inzo-arnaldo-village",
+    "barangay_name": "INZO ARNALDO VILLAGE",
+    "address": "Barangay Hall, Brgy. Inzo Arnaldo Village, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Inzo Arnaldo Village)"
       },
       {
-        "role": "SK Member",
-        "name": "JUSTINE JAKE L. EDUCADO"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-jumaguicjic",
+    "barangay_name": "JUMAGUICJIC",
+    "address": "Barangay Hall, Brgy. Jumaguicjic, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Jumaguicjic)"
       },
       {
-        "role": "SK Secretary",
-        "name": "CHARLES I. DE VERA"
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-lanot",
+    "barangay_name": "LANOT",
+    "address": "Barangay Hall, Brgy. Lanot, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Lanot)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-lawaan",
+    "barangay_name": "LAWAAN",
+    "address": "Barangay Hall, Brgy. Lawaan, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Lawaan)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-libas",
+    "barangay_name": "LIBAS",
+    "address": "Barangay Hall, Brgy. Libas, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Libas)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-liong",
+    "barangay_name": "LIONG",
+    "address": "Barangay Hall, Brgy. Liong, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Liong)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-loctugan",
+    "barangay_name": "LOCTUGAN",
+    "address": "Barangay Hall, Brgy. Loctugan, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Loctugan)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-lonoy",
+    "barangay_name": "LONOY",
+    "address": "Barangay Hall, Brgy. Lonoy, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Lonoy)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-milibili",
+    "barangay_name": "MILIBILI",
+    "address": "Barangay Hall, Brgy. Milibili, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Milibili)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-mongpong",
+    "barangay_name": "MONGPONG",
+    "address": "Barangay Hall, Brgy. Mongpong, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Mongpong)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-olotayan",
+    "barangay_name": "OLOTAYAN",
+    "address": "Barangay Hall, Brgy. Olotayan, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Olotayan)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-punta-cogon",
+    "barangay_name": "PUNTA COGON",
+    "address": "Barangay Hall, Brgy. Punta Cogon, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Punta Cogon)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-punta-tabuc",
+    "barangay_name": "PUNTA TABUC",
+    "address": "Barangay Hall, Brgy. Punta Tabuc, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Punta Tabuc)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-san-jose",
+    "barangay_name": "SAN JOSE",
+    "address": "Barangay Hall, Brgy. San Jose, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (San Jose)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-sibaguan",
+    "barangay_name": "SIBAGUAN",
+    "address": "Barangay Hall, Brgy. Sibaguan, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Sibaguan)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-talon",
+    "barangay_name": "TALON",
+    "address": "Barangay Hall, Brgy. Talon, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Talon)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-tanque",
+    "barangay_name": "TANQUE",
+    "address": "Barangay Hall, Brgy. Tanque, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Tanque)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-tiza",
+    "barangay_name": "TIZA",
+    "address": "Barangay Hall, Brgy. Tiza, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Tiza)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
+      }
+    ]
+  },
+  {
+    "slug": "barangay-tanza",
+    "barangay_name": "TANZA",
+    "address": "Barangay Hall, Brgy. Tanza, Roxas City, Capiz",
+    "trunkline": [
+      "(036) 621-0500"
+    ],
+    "website": "https://roxascity.gov.ph",
+    "officials": [
+      {
+        "role": "Punong Barangay",
+        "name": "Hon. Barangay Captain (Tanza)"
+      },
+      {
+        "role": "Barangay Kagawad",
+        "name": "Barangay Council Member"
       }
     ]
   }

@@ -5,6 +5,7 @@ import { FC } from 'react';
 // import JoinUsBanner from '../components/home/JoinUsBanner';
 import GovernmentSection from '@/components/home/GovernmentSection';
 import Hero from '@/components/home/Hero';
+import RoxasCultureSection from '@/components/home/RoxasCultureSection';
 // import NewsSection from '@/components/home/NewsSection';
 // import JoinUsStrip from '../components/home/JoinUsStrip';
 import ServicesSection from '@/components/home/ServicesSection';
@@ -25,6 +26,10 @@ const Home: FC = () => {
         <div className='space-y-16 py-12'>
           <ErrorBoundary name='Services'>
             <ServicesSection />
+          </ErrorBoundary>
+
+          <ErrorBoundary name='Culture'>
+            <RoxasCultureSection />
           </ErrorBoundary>
 
           <ErrorBoundary name='Timeline'>

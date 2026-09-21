@@ -91,6 +91,32 @@
     border-left-width: 2px;
     font-weight: 600;
   }
+
+  /* --- ROXAS CITY CULTURAL DESIGN TOKENS --- */
+  .roxas-hero-bg {
+    background: linear-gradient(135deg, #0b2545 0%, #134074 50%, #0066eb 100%);
+  }
+
+  .roxas-glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(11, 37, 69, 0.08);
+  }
+
+  .roxas-badge {
+    background: linear-gradient(90deg, #ff6b35 0%, #f7c59f 100%);
+    color: #0b2545;
+    font-weight: 700;
+  }
+
+  .roxas-hover-card {
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .roxas-hover-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px -6px rgba(0, 102, 235, 0.15);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
