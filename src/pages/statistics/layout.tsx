@@ -1,11 +1,14 @@
-import { useEffect } from 'react';
-
 export default function StatisticsLayout() {
-  useEffect(() => {
-    // Navigate to the standalone statistics page
-    window.location.href = '/statistics-city.html';
-  }, []);
-
-  // Render nothing while redirect occurs
-  return null;
+  return (
+    <iframe
+      src='/statistics-city.html'
+      title='City Statistics — Roxas City, Capiz'
+      style={{
+        width: '100%',
+        height: '100vh',
+        border: 'none',
+        display: 'block',
+      }}
+    />
+  );
 }
