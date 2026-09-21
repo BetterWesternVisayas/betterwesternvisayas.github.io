@@ -52,13 +52,20 @@ export const Navbar: FC = () => {
       {/* 1. TOP BAR: Responsive & Aligned Right */}
       <div className='border-b border-kapwa-border-weak bg-kapwa-bg-surface-raised'>
         <div className='container px-4 mx-auto'>
-          <div className='flex gap-3 justify-end items-center h-10 sm:gap-4 md:gap-6'>
-            <Link
-              to='/join-us'
-              className='text-kapwa-text-brand hover:text-kapwa-text-link-hover hidden text-[10px] font-bold tracking-widest whitespace-nowrap uppercase md:inline-flex md:text-xs'
-            >
-              🚀 Join Us
-            </Link>
+          <div className='flex gap-3 justify-between items-center h-10 sm:gap-4 md:gap-6'>
+            <div className='hidden items-center gap-1.5 text-[10px] font-bold text-sky-800 uppercase tracking-wider sm:inline-flex md:text-xs'>
+              <span>🦐</span>
+              <span>Roxas City</span>
+              <span className='text-slate-400'>|</span>
+              <span className='text-slate-600 font-medium lowercase first-letter:uppercase'>Seafood Capital of the Philippines</span>
+            </div>
+            <div className='flex gap-3 justify-end items-center h-10 sm:gap-4 md:gap-6 ml-auto'>
+              <Link
+                to='/join-us'
+                className='text-kapwa-text-brand hover:text-kapwa-text-link-hover hidden text-[10px] font-bold tracking-widest whitespace-nowrap uppercase md:inline-flex md:text-xs'
+              >
+                🚀 Join Us
+              </Link>
             <Link
               to='/about'
               className='hover:text-kapwa-text-brand hidden text-[10px] font-bold tracking-widest whitespace-nowrap text-kapwa-text-support uppercase md:inline-flex md:text-xs'
