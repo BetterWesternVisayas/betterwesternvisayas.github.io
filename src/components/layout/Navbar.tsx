@@ -104,6 +104,7 @@ export const Navbar: FC = () => {
           </div>
         </div>
       </div>
+    </div>
 
       {/* 2. MAIN NAV: Desktop Dropdowns + Mobile Toggle */}
       <div className='container px-4 mx-auto'>
