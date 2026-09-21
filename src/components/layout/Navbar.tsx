@@ -109,25 +109,18 @@ export const Navbar: FC = () => {
       {/* 2. MAIN NAV: Desktop Dropdowns + Mobile Toggle */}
       <div className='container px-4 mx-auto'>
         <div className='flex justify-between items-center h-16 md:h-20'>
-          {/* Brand/Logo Section (Constrained) */}
+          {/* Brand/Logo Section — banner logo already includes text */}
           <Link
             to='/'
-            className='group flex max-w-[60%] min-w-0 items-center md:max-w-md'
+            className='group flex items-center shrink-0'
             onClick={closeMenu}
           >
             <img
               src={config.portal.navbarLogoPath}
               alt={`${config.portal.name} Logo`}
-              className='mr-3 w-10 h-10 transition-transform shrink-0 group-hover:scale-105 md:h-12 md:w-12'
+              className='transition-transform group-hover:scale-105'
+              style={{ height: '40px', width: 'auto', aspectRatio: '266 / 81' }}
             />
-            <div className='flex flex-col justify-center min-w-0'>
-              <div className='text-lg font-black tracking-tighter leading-none text-kapwa-text-strong md:text-xl'>
-                {config.portal.name}
-              </div>
-              <div className='line-clamp-2 text-[9px] leading-tight font-medium text-kapwa-text-support md:line-clamp-1 md:text-xs md:leading-normal'>
-                Community Portal for {config.lgu.fullName}
-              </div>
-            </div>
           </Link>
 
           {/* Desktop Menu */}

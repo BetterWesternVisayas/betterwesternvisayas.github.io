@@ -41,20 +41,13 @@ export const Footer: FC = () => {
         <div className='grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6'>
           {/* Brand Column */}
           <div className='col-span-2 space-y-6 md:col-span-3 lg:col-span-2'>
+            {/* Footer brand — banner logo already includes text */}
             <div className='flex items-center'>
               <img
                 src={config.portal.logoWhitePath}
                 alt={config.portal.name}
-                className='mr-4 w-12 h-12'
+                style={{ height: '36px', width: 'auto', aspectRatio: '266 / 81' }}
               />
-              <div>
-                <div className='text-xl font-black tracking-tighter'>
-                  {config.portal.footerBrandName}
-                </div>
-                <div className='text-[10px] font-bold tracking-widest text-kapwa-text-disabled uppercase'>
-                  Community Civic Portal
-                </div>
-              </div>
             </div>
             <p className='max-w-sm text-sm leading-relaxed text-kapwa-text-disabled'>
               An open-source initiative providing transparent access to city
