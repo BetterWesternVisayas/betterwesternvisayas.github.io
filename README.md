@@ -1,8 +1,8 @@
-# 🏛️ Better LB (Los Baños)
+# 🏛️ BetterRoxas (Roxas City)
 
-A community-led, open-source portal designed to make the government of the **Municipality of Los Baños** accessible, transparent, and user-friendly.
+A community-led, open-source portal designed to make the government of the **City of Roxas, Capiz** accessible, transparent, and user-friendly.
 
-This project is a municipal-focused fork of [BetterGov.ph](https://bettergov.ph), adapted to meet the specific needs of Los Bañenses.
+This project is a city-focused portal part of [BetterGov.ph](https://bettergov.ph), adapted to meet the specific needs of Roxas City residents.
 
 ---
 ### Inspirations
@@ -12,11 +12,11 @@ BetterSolano.org https://github.com/BetterSolano/bettersolano
 Betterlocalgov https://github.com/iyanski/betterlocalgov
 
 ### Portal Features
-BetterLB provides Los Baños with:
-- **Public Services Directory**: Comprehensive guide to municipal services with requirements, fees, and step-by-step processes
-- **Legislative Portal**: Access to ordinances, resolutions, and executive orders from the Sangguniang Bayan
+BetterRoxas provides Roxas City with:
+- **Public Services Directory**: Comprehensive guide to city services with requirements, fees, and step-by-step processes
+- **Legislative Portal**: Access to ordinances, resolutions, and executive orders from the Sangguniang Panlungsod
 - **Transparency Dashboard**: Financial data, procurement bids, and infrastructure projects
-- **Government Directory**: Contact information for all municipal departments and officials
+- **Government Directory**: Contact information for all city departments and officials
 - **Multi-language Support**: English and Filipino translations
 
 ---

@@ -1,56 +1,59 @@
 {
   "lgu": {
-    "name": "Los Ba\u00f1os",
-    "fullName": "Municipality of Los Ba\u00f1os",
-    "province": "Laguna",
-    "districtEngineeringOffice": "Laguna 2nd DEO",
-    "region": "Region IV-A",
-    "regionCode": "CALABARZON",
-    "type": "municipality",
-    "officialWebsite": "https://losbanos.gov.ph",
-    "provinceWebsite": "https://laguna.gov.ph"
+    "name": "Roxas City",
+    "fullName": "City of Roxas",
+    "province": "Capiz",
+    "districtEngineeringOffice": "Capiz 1st DEO",
+    "region": "Region VI",
+    "regionCode": "Western Visayas",
+    "type": "city",
+    "officialWebsite": "https://roxascity.gov.ph",
+    "provinceWebsite": "https://capiz.gov.ph"
   },
   "portal": {
-    "name": "BetterLB",
-    "domain": "betterlb.org",
-    "baseUrl": "https://betterlb.org",
-    "description": "Community-powered portal of the Municipality of Los Ba\u00f1os.",
+    "name": "BetterRoxas",
+    "domain": "betterroxas.org",
+    "baseUrl": "https://betterroxas.org",
+    "description": "Community-powered portal of the City of Roxas, Capiz.",
     "brandColor": "#0066eb",
-    "footerBrandName": "Better Los Ba\u00f1os",
-    "logoWhitePath": "/logos/svg/betterlb-icon-white.svg",
-    "navbarLogoPath": "/logos/svg/betterlb-icon-colored.svg",
-    "defaultOgImagePath": "/logos/svg/betterlb-icon-colored.svg",
-    "faviconPath": "/logos/png/betterlb-banner-colored.png",
-    "faviconSvgPath": "/logos/svg/betterlb-logo-primary.svg",
-    "appleTouchIconPath": "/logos/png/betterlb-banner-inverted.png",
-    "githubUrl": "https://github.com/BetterLosBanos/betterlb",
+    "footerBrandName": "Better Roxas",
+    "logoWhitePath": "/logos/png/betterroxas-logo.png",
+    "navbarLogoPath": "/logos/png/betterroxas-logo.png",
+    "defaultOgImagePath": "/logos/png/betterroxas-logo.png",
+    "faviconPath": "/logos/png/betterroxas-logo.png",
+    "faviconSvgPath": "/logos/png/betterroxas-logo.png",
+    "appleTouchIconPath": "/logos/png/betterroxas-logo.png",
+    "githubUrl": "https://github.com/BetterWesternVisayas/betterwesternvisayas.github.io",
     "discordUrl": "https://discord.gg/dA6tkU4FYS",
-    "facebookUrl": "https://facebook.com/betterlb.org",
+    "facebookUrl": "https://facebook.com/betterroxas.org",
     "contactEmail": "volunteers@bettergov.ph"
   },
   "location": {
     "coordinates": {
-      "lat": 14.1763,
-      "lon": 121.2219
+      "lat": 11.5853,
+      "lon": 122.7511
     },
     "weather": {
-      "defaultCity": "Los Ba\u00f1os"
+      "defaultCity": "Roxas City"
     }
   },
   "transparency": {
     "procurement": {
-      "organizationName": "MUNICIPALITY OF LOS BA\u00d1OS, LAGUNA",
+      "organizationName": "CITY OF ROXAS, CAPIZ",
       "externalDashboard": "https://transparency.bettergov.ph/organizations/"
     },
     "infrastructure": {
-      "searchString": "Los Ba\u00f1os",
-      "exactMatchTargets": ["los ba\u00f1os", "los banos"]
+      "searchString": "Roxas City",
+      "exactMatchTargets": [
+        "roxas city",
+        "roxas"
+      ]
     }
   },
   "dataPaths": {
-    "departments": "src/data/lgu/losbanos/directory/departments.json",
-    "barangays": "src/data/lgu/losbanos/directory/barangays.json",
-    "services": "src/data/lgu/losbanos/services/categories"
+    "departments": "src/data/lgu/roxascity/directory/departments.json",
+    "barangays": "src/data/lgu/roxascity/directory/barangays.json",
+    "services": "src/data/lgu/roxascity/services/categories"
   },
   "features": {
     "openLGU": true,
