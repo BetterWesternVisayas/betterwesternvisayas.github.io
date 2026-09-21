@@ -1,28 +1,66 @@
 [
   {
-    "service": "Fire Safety Inspection Certificate (FSIC)",
-    "slug": "fire-safety-inspection-certificate",
-    "type": "transaction",
-    "description": "Required for occupancy and business permits to ensure the structure meets fire safety standards.",
-    "officeSlug": ["bureau-fire-protection"],
+    "service": "24/7 CDRRMO Emergency Disaster Response & Rescue Hotline",
+    "slug": "emergency-disaster-response",
+    "type": "information",
+    "description": "Round-the-clock emergency medical response, vehicular accident extrication, flood/typhoon rescue, and disaster relief dispatch operated by the City Disaster Risk Reduction & Management Office (CDRRMO) Roxas City.",
+    "officeSlug": ["municipal-mdrrmo-office"],
     "category": {
       "name": "Public Safety & Security",
       "slug": "public-safety-security"
     },
+    "steps": [
+      "Dial CDRRMO Roxas City 24/7 Operations Center: (036) 621-0500 or Mobile: 0977 204 9641 / 0927 509 1198.",
+      "Clearly state your name, exact location (Barangay, landmark, street), and nature of emergency.",
+      "Stay on the line while dispatch directs emergency ambulance or rescue units to the scene."
+    ],
     "requirements": [
-      "Unified Application Form",
-      "Building Permit Number and Date Issued",
-      "FSEC Number and Date Issued",
-      "Site Inspection by BFP personnel"
+      "Emergency incident details and callback contact number"
     ],
     "quickInfo": {
-      "processingTime": "3-5 days",
-      "whoCanApply": "Building Owners / Business Operators"
+      "processingTime": "Immediate Emergency Dispatch",
+      "fee": "Free emergency public service",
+      "whoCanApply": "Anyone requiring urgent assistance within Roxas City"
     },
-    "updatedAt": null,
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
-        "name": "BFP Fire Safety Regulations"
+        "name": "Roxas City Disaster Risk Reduction & Management Office",
+        "url": "https://roxascity.gov.ph"
+      }
+    ]
+  },
+  {
+    "service": "National Police Clearance & Roxas City PNP Assistance",
+    "slug": "police-clearance-assistance",
+    "type": "transaction",
+    "description": "Online application processing, biometric capture, and issuance of National Police Clearance at the Roxas City Police Station.",
+    "officeSlug": ["municipal-police-station"],
+    "category": {
+      "name": "Public Safety & Security",
+      "slug": "public-safety-security"
+    },
+    "steps": [
+      "Register and schedule an appointment online via https://pnpclearance.ph.",
+      "Pay the statutory police clearance fee through authorized Landbank/GCash payment channels.",
+      "Proceed to Roxas City Police Station (Corner Bilbao & Arzobispo St.) on scheduled date.",
+      "Undergo biometric capture (fingerprints, photo, digital signature) and claim printed clearance."
+    ],
+    "requirements": [
+      "Two (2) Valid Government-issued IDs",
+      "Official Payment Reference Number / Receipt",
+      "Barangay Clearance"
+    ],
+    "quickInfo": {
+      "processingTime": "15-20 Minutes upon arrival",
+      "fee": "₱150.00 standard PNP fee",
+      "appointmentType": "Online Appointment via pnpclearance.ph"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Philippine National Police - Roxas City Police Station",
+        "url": "https://pnpclearance.ph"
       }
     ]
   }

@@ -17,8 +17,8 @@ import type {
  * Development: localhost for local development
  */
 const ALLOWED_ORIGINS = [
-  'https://betterlb.pages.dev',
-  'https://betterlb.gov.ph', // Custom domain if configured
+  'https://betterwesternvisayas.github.io',
+  'https://betterroxas.org',
   'http://localhost:5173', // Vite dev server
   'http://localhost:8788', // Wrangler dev server
 ];
@@ -47,11 +47,11 @@ function getCorsHeaders(origin: string | null): Record<string, string> {
   };
 }
 
-// CONFIGURATION - Easy to change for other municipalities
+// CONFIGURATION - Roxas City, Capiz
 const DEFAULT_CITY: CityCoordinates = {
-  name: 'Los Baños',
-  lat: 14.1763,
-  lon: 121.2219,
+  name: 'Roxas City',
+  lat: 11.5853,
+  lon: 122.7511,
 };
 
 // Optional: Add more cities if needed

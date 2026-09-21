@@ -1,5 +1,39 @@
 [
   {
+    "service": "24/7 CDRRMO Emergency Disaster Response & Rescue Hotline",
+    "slug": "emergency-disaster-response",
+    "type": "information",
+    "description": "Round-the-clock emergency medical response, vehicular accident extrication, flood/typhoon rescue, and disaster relief dispatch operated by the City Disaster Risk Reduction & Management Office (CDRRMO) Roxas City.",
+    "officeSlug": [
+      "municipal-mdrrmo-office"
+    ],
+    "category": {
+      "name": "Public Safety & Security",
+      "slug": "public-safety-security"
+    },
+    "steps": [
+      "Dial CDRRMO Roxas City 24/7 Operations Center: (036) 621-0500 or Mobile: 0977 204 9641 / 0927 509 1198.",
+      "Clearly state your name, exact location (Barangay, landmark, street), and nature of emergency.",
+      "Stay on the line while dispatch directs emergency ambulance or rescue units to the scene."
+    ],
+    "requirements": [
+      "Emergency incident details and callback contact number"
+    ],
+    "quickInfo": {
+      "processingTime": "Immediate Emergency Dispatch",
+      "fee": "Free emergency public service",
+      "whoCanApply": "Anyone requiring urgent assistance within Roxas City"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Roxas City Disaster Risk Reduction & Management Office",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
     "service": "Acceptance of Livestock and Ante-mortem Inspection",
     "slug": "acceptance-of-livestock-and-ante-mortem-inspection",
     "serviceNumber": "7.1",
@@ -132,21 +166,38 @@
     "plainLanguageName": "Get Admission of Paternity/R.A. 9255"
   },
   {
-    "service": "Animal Bite Treatment Center",
-    "slug": "animal-bite-treatment-center",
+    "service": "Agricultural Crop Support & Farm Inputs Distribution",
+    "slug": "agricultural-crop-support",
     "type": "transaction",
-    "description": "Anti-rabies vaccination and wound management for individuals bitten by animals.",
-    "officeSlug": ["municipal-health-office"],
+    "description": "Distribution of certified high-yield palay seeds, organic bio-fertilizers, and farm machinery assistance for agrarian communities in Roxas City.",
+    "officeSlug": [
+      "municipal-agriculture-office"
+    ],
     "category": {
-      "name": "Health & Wellness",
-      "slug": "health-wellness"
+      "name": "Agriculture & Economic Development",
+      "slug": "agriculture-economic-development"
     },
-    "updatedAt": null,
+    "steps": [
+      "Verify enrollment in the Registry System for Basic Sectors in Agriculture (RSBSA).",
+      "Proceed to the City Agriculture Office during scheduled cropping season distribution.",
+      "Claim allocated certified seeds and bio-fertilizer vouchers."
+    ],
+    "requirements": [
+      "RSBSA Farmer Registration Stub / ID",
+      "Barangay Certification confirming active cultivation of agricultural land in Roxas City"
+    ],
     "quickInfo": {
-      "processingTime": "Immediate",
-      "appointmentType": "Walk-in (Urgent)"
+      "processingTime": "Seasonal Distribution",
+      "fee": "Free",
+      "whoCanApply": "RSBSA-registered farmers in Roxas City"
     },
-    "sources": [],
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Department of Agriculture Region VI / Roxas City Agriculture Office",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
     "source": "community"
   },
   {
@@ -163,7 +214,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -188,6 +239,44 @@
     },
     "processingTime": "10 minutes",
     "plainLanguageName": "Get Animal Treatment"
+  },
+  {
+    "service": "Annual Business Permit Renewal",
+    "slug": "business-permit-renewal",
+    "type": "transaction",
+    "description": "Annual renewal of Mayor's Permit for active commercial establishments operating in Roxas City, processed every January with early-payment incentives.",
+    "officeSlug": [
+      "business-permit-and-licensing-office"
+    ],
+    "category": {
+      "name": "Business, Trade & Investment",
+      "slug": "business-trade-investment"
+    },
+    "steps": [
+      "Submit previous year's Mayor's Permit and certified Gross Receipts / Income Tax Return.",
+      "Secure clearances from City Health, CENRO, and Bureau of Fire Protection at the BOSS Center.",
+      "Pay business license taxes and regulatory fees at the City Treasurer's Office.",
+      "Receive renewed Mayor's Permit and current year registration sticker."
+    ],
+    "requirements": [
+      "Previous Year Mayor's Permit and Official Receipts",
+      "Audited Financial Statement or Sworn Statement of Gross Receipts",
+      "Current Barangay Business Clearance",
+      "Current Fire Safety Inspection Certificate (BFP Roxas City)"
+    ],
+    "quickInfo": {
+      "processingTime": "Same Day (Annual BOSS Center)",
+      "whoCanApply": "Existing business owners in Roxas City",
+      "fee": "Based on gross sales tax brackets"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Roxas City Revenue Code",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
   },
   {
     "service": "Application and Issuance of Marriage License",
@@ -341,6 +430,87 @@
     "plainLanguageName": "Apply for and Issuance of Marriage License"
   },
   {
+    "service": "Application for Marriage License",
+    "slug": "application-marriage-license",
+    "type": "transaction",
+    "description": "Filing of application for marriage license for contracting parties where at least one party is a resident of Roxas City.",
+    "officeSlug": [
+      "local-civil-registry-office"
+    ],
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "steps": [
+      "Both applicants submit required documents at LCRO Roxas City.",
+      "Undergo Pre-Marriage Counseling (PMC) with City Health and CSWDO.",
+      "Complete 10-day statutory public posting period.",
+      "Claim Marriage License at LCRO (valid for 120 days nationwide)."
+    ],
+    "requirements": [
+      "PSA Birth Certificate of both parties",
+      "PSA Certificate of No Marriage (CENOMAR)",
+      "Barangay Certificate of Residency from Roxas City",
+      "Valid Government IDs of both parties",
+      "Parental Consent (for ages 18-21) or Parental Advice (for ages 22-24)"
+    ],
+    "quickInfo": {
+      "processingTime": "10-day statutory posting period",
+      "whoCanApply": "Couples planning marriage where at least one party is a Roxas City resident"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Family Code of the Philippines / LCRO Roxas City",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "Building Permit & Ancillary Permits Application",
+    "slug": "building-permit-application",
+    "type": "transaction",
+    "description": "Issuance of Building Permits and related ancillary permits (Architectural, Structural, Electrical, Sanitary/Plumbing, Mechanical) by the Office of the Building Official (OBO) / City Engineering Office of Roxas City.",
+    "officeSlug": [
+      "municipal-engineering-office"
+    ],
+    "category": {
+      "name": "Infrastructure & Public Works",
+      "slug": "infrastructure-public-works"
+    },
+    "steps": [
+      "Submit five (5) sets of signed and sealed building plans and Unified Application Form at the OBO receiving counter, City Hall.",
+      "Technical review by structural, sanitary, architectural, electrical, and fire safety evaluators.",
+      "Receive order of payment and settle building permit fees at the City Treasury.",
+      "Claim Building Permit and construction logbook."
+    ],
+    "requirements": [
+      "Certified True Copy of Transfer Certificate of Title (TCT) or Contract of Lease / Deed of Absolute Sale",
+      "Current Real Property Tax Receipt (Amilyar) and Tax Declaration",
+      "Five (5) complete sets of building plans signed and sealed by licensed professionals (Civil/Structural Engineer, Architect, Electrical Engineer, Master Plumber)",
+      "Locational / Zoning Clearance from City Planning Office",
+      "Fire Safety Evaluation Clearance (FSEC) from BFP Roxas City"
+    ],
+    "quickInfo": {
+      "processingTime": "3-5 Working Days",
+      "whoCanApply": "Property and prospective building owners in Roxas City",
+      "appointmentType": "Walk-in / OBO Counter"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Presidential Decree No. 1096 (National Building Code of the Philippines)",
+        "url": "https://dpwh.gov.ph"
+      },
+      {
+        "name": "Office of the Building Official - Roxas City",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
     "service": "Business Registration (New Applicant) - Online",
     "slug": "business-registration-new-applicant---online",
     "serviceNumber": "1.4",
@@ -412,7 +582,7 @@
         "instruction": "Additional requirements that may apply based on your situation:",
         "options": [
           {
-            "condition": "Required if head office is outside Los Baños",
+            "condition": "Required if head office is outside Roxas City",
             "document": "Photocopy of Corporate Community Tax Certificate",
             "where_to_secure": "Business Owner",
             "copies": null,
@@ -458,7 +628,10 @@
           {
             "letter": "A",
             "action": "Submit DTI, sketch and picture of location of business, and duly accomplished application form",
-            "details": ["Lessor - if renting", "Business Owner"]
+            "details": [
+              "Lessor - if renting",
+              "Business Owner"
+            ]
           },
           {
             "letter": "B",
@@ -478,7 +651,9 @@
           {
             "letter": "A",
             "action": "On the dashboard, click NEW to apply for new business",
-            "details": ["Upload all documents needed"]
+            "details": [
+              "Upload all documents needed"
+            ]
           }
         ]
       },
@@ -596,7 +771,7 @@
         "instruction": "Additional requirements that may apply based on your situation:",
         "options": [
           {
-            "condition": "Required if head office is outside Los Baños",
+            "condition": "Required if head office is outside Roxas City",
             "document": "Photocopy of Corporate Community Tax Certificate",
             "where_to_secure": "Business Owner",
             "copies": null,
@@ -708,7 +883,7 @@
         "instruction": "Additional requirements that may apply based on your situation:",
         "options": [
           {
-            "condition": "Required if head office is outside Los Baños",
+            "condition": "Required if head office is outside Roxas City",
             "document": "Photocopy of Corporate Community Tax Certificate",
             "where_to_secure": "Business Owner",
             "copies": null,
@@ -839,7 +1014,7 @@
         "instruction": "Additional requirements that may apply based on your situation:",
         "options": [
           {
-            "condition": "Required if head office is outside Los Baños",
+            "condition": "Required if head office is outside Roxas City",
             "document": "Photocopy of Corporate Community Tax Certificate",
             "where_to_secure": "Business Owner",
             "copies": null,
@@ -996,34 +1171,117 @@
     "plainLanguageName": "Get Business Termination/Closure"
   },
   {
-    "service": "Cash Subsidy for Solo Parents",
+    "service": "Cash Subsidy & Welfare Support for Solo Parents",
     "slug": "solo-parents-cash-subsidy",
     "type": "transaction",
-    "description": "Financial assistance provided semi-annually to qualified solo parents in the municipality.",
-    "officeSlug": ["municipal-social-welfare-and-development-office"],
+    "description": "Monthly financial aid, educational subsidy, and livelihood assistance provided to certified solo parents in Roxas City under RA 11861.",
+    "officeSlug": [
+      "municipal-social-welfare-development-office"
+    ],
     "category": {
       "name": "Social Services & Assistance",
       "slug": "social-services-assistance"
     },
     "steps": [
-      "Register as a Solo Parent with the MSWDO.",
-      "Submit required documents during the designated payout period.",
-      "Receive cash subsidy (Php 1,000 per month or as allocated)."
+      "Register and apply for Solo Parent ID at the CSWDO Roxas City.",
+      "Submit documentary proof of custody and single parenthood status.",
+      "Receive validated Solo Parent ID and inclusion in the city social benefit registry.",
+      "Receive designated periodic cash assistance payouts."
     ],
     "requirements": [
-      "Valid Solo Parent ID",
-      "Barangay Certification of Residency",
-      "Affidavit of Solo Parent status"
+      "PSA Birth Certificate of dependent children",
+      "Barangay Certification of Solo Parent status and residency in Roxas City",
+      "Affidavit of Solo Parent declaring custody of children without support",
+      "Income Tax Return (ITR) or Certificate of Indigency"
     ],
     "quickInfo": {
       "fee": "Free",
-      "whoCanApply": "Registered Solo Parents",
-      "documents": "Solo Parent ID"
+      "whoCanApply": "Registered Solo Parents residing in Roxas City",
+      "documents": "Valid Solo Parent ID, Proof of Custody"
     },
-    "updatedAt": null,
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
-        "name": "Republic Act No. 11861 (Expanded Solo Parents Welfare Act of 2022)"
+        "name": "Republic Act No. 11861 (Expanded Solo Parents Welfare Act)"
+      },
+      {
+        "name": "CSWDO Roxas City Solo Parents Division"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "CENRO Solid Waste Collection Schedule",
+    "slug": "garbage-collection-schedule",
+    "type": "information",
+    "description": "Weekly residential and commercial solid waste collection schedule managed by the City Environment & Natural Resources Office (CENRO) Roxas City.",
+    "officeSlug": [
+      "municipal-environment-and-natural-resources-office"
+    ],
+    "category": {
+      "name": "Environment & Natural Resources",
+      "slug": "environment-natural-resources"
+    },
+    "steps": [
+      "Monday & Thursday: Brgy. Baybay, Culasi, Libas, Barra (Biodegradable Waste)",
+      "Tuesday & Friday: Brgy. Lawaan, Tanque, Inzo Arnaldo, Tiza, Banica (Biodegradable Waste)",
+      "Wednesday: All Barangays (Residual & Non-Biodegradable / Recyclables)",
+      "Daily Morning & Evening: Teodoro Arcenas Trade Center (TATC) Market & Downtown Commercial District",
+      "Saturday & Sunday: Coastal Cleanup & Special Eco-Corridor Collection"
+    ],
+    "requirements": [
+      "Strict waste segregation at source (Biodegradable vs. Non-biodegradable vs. Hazardous).",
+      "Place tied garbage bins or trash bags at collection points only between 6:00 AM - 7:30 AM."
+    ],
+    "quickInfo": {
+      "processingTime": "Daily / Weekly Routine",
+      "whoCanApply": "All Roxas City residents & business owners"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Republic Act No. 9003 (Ecological Solid Waste Management Act)",
+        "url": "https://emb.gov.ph"
+      },
+      {
+        "name": "Roxas City Ecological Solid Waste Management Board",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "City Health Office & Health Station Directory",
+    "slug": "rhu-locations",
+    "type": "information",
+    "description": "Comprehensive network of city health centers providing free primary care, immunization, maternal health, tuberculosis DOTS, and outpatient consultations.",
+    "officeSlug": [
+      "municipal-health-office"
+    ],
+    "category": {
+      "name": "Health & Wellness",
+      "slug": "health-wellness"
+    },
+    "steps": [
+      "Main Center: Roxas City Health Office, City Hall Compound, Washington St.",
+      "Roxas City Diagnostic Center & Laboratory (Inzo Arnaldo Village)",
+      "Baybay & Culasi Coastal Health Sub-station (Purok Seafood, Baybay)",
+      "Lawaan & Tanque Primary Care Health Center",
+      "Animal Bite Treatment Center: City Health Office Compound"
+    ],
+    "requirements": [
+      "Barangay Health Card or Valid ID",
+      "PhilHealth Member Data Record (if available, though care is free for all indigents)"
+    ],
+    "relatedServices": [
+      "animal-bite-treatment-center",
+      "medical-assistance-aics"
+    ],
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Roxas City Health Office",
+        "url": "https://roxascity.gov.ph"
       }
     ],
     "source": "community"
@@ -1281,6 +1539,42 @@
     "plainLanguageName": "Pay Other Payments"
   },
   {
+    "service": "Community Tax Certificate (Cedula) Issuance",
+    "slug": "community-tax-certificate-cedula",
+    "type": "transaction",
+    "description": "Issuance of Community Tax Certificate (Individual or Corporate) required for notarized documents, government transactions, and business clearances in Roxas City.",
+    "officeSlug": [
+      "municipal-treasurers-office"
+    ],
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "steps": [
+      "Fill out Cedula information slip at the Treasury assessment counter, City Hall or participating Barangay Hall.",
+      "State declared gross income or earnings from business/profession for the preceding year.",
+      "Pay basic tax (₱5.00) plus additional tax based on gross income (₱1.00 per ₱1,000 earnings).",
+      "Affix signature and thumbmark, and receive original Community Tax Certificate."
+    ],
+    "requirements": [
+      "Valid Government ID",
+      "Proof of gross income (Payslip, ITR, or Certificate of Compensation if applicable)"
+    ],
+    "quickInfo": {
+      "processingTime": "5-10 Minutes",
+      "fee": "Statutory minimum ₱5.50 plus proportional income assessment",
+      "whoCanApply": "Individuals aged 18 and above residing or employed in Roxas City"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Local Government Code of 1991 / City Treasury Office",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
     "service": "Delayed Registration of Certificate of Death",
     "slug": "delayed-registration-of-certificate-of-death",
     "serviceNumber": "5.7",
@@ -1519,121 +1813,40 @@
     "plainLanguageName": "Get a Delayed Registration of Regular and Timely of Live Birth certificate"
   },
   {
-    "service": "Expanded Centenarian Program Payout (Ages 80, 85, 90, 95)",
-    "slug": "expanded-centenarian-payout",
+    "service": "Fisherfolk & Coastal Aquaculture Registration (BoatR & FishR)",
+    "slug": "fisherfolk-aquaculture-registration",
     "type": "transaction",
-    "description": "Provision of cash incentives for elderly residents reaching milestone ages of 80, 85, 90, and 95, facilitated by the National Commission of Senior Citizens (NCSC).",
-    "url": "",
-    "officeSlug": ["municipal-treasurers-office"],
+    "description": "Registration of municipal fisherfolk, motorized fishing vessels (3 gross tons and below), and coastal aquaculture operators in Roxas City under the City Agriculture Office.",
+    "officeSlug": [
+      "municipal-agriculture-office"
+    ],
     "category": {
-      "name": "Social Services & Assistance",
-      "slug": "social-services-assistance"
+      "name": "Agriculture & Economic Development",
+      "slug": "agriculture-economic-development"
     },
     "steps": [
-      "Verify if the senior's name is included in the official NCSC Masterlist (January to June 2025 batch).",
-      "Secure required templates (Authorization, SPA, or Warranty & Release forms) from the OSCA Office between 8:00 AM and 5:00 PM.",
-      "Prepare the specific set of documents based on the claimant's status (Personal, Representative, or Deceased).",
-      "Proceed to the Municipal Treasury Office on the designated payout date and time.",
-      "Submit documents for verification and receive the cash incentive."
+      "Secure registration forms at the City Agriculture Office (Fisheries Section), City Hall Compound.",
+      "Submit vessel specifications or aquaculture lease location details (fishponds, oyster/mussel beds in Sibuyan Sea estuaries).",
+      "Undergo vessel inspection and engine verification by City Coastal Law Enforcement officers.",
+      "Receive official Municipal Fisherfolk ID and BoatR vessel registration plates."
     ],
     "requirements": [
-      "FOR PERSONAL CLAIM: 2 copies of valid ID with signature or thumbmark.",
-      "FOR REPRESENTATIVE: Authorization Letter (NCSC template), Physical ID of grantee (original + photocopy), Physical ID of claimant (original + photocopy).",
-      "FOR REPRESENTATIVE (BEDRIDDEN): Barangay Certification signed by Captain and BHW or Medical Certificate.",
-      "FOR REPRESENTATIVE (PROOF OF LIFE): Half-body photo of the grantee holding a current calendar or newspaper.",
-      "FOR DECEASED GRANTEE: Special Power of Attorney (SPA template), Warranty and Release from Liability form, Original or CTC of Death Certificate, Claimant ID with 3 signatures, and Proof of Relationship."
-    ],
-    "faqs": [
-      {
-        "question": "Where can I get the SPA or Authorization templates?",
-        "answer": "Templates are available at the Office of the Senior Citizens Affairs (OSCA) from 8:00 AM to 5:00 PM."
-      },
-      {
-        "question": "Who is eligible for this specific payout?",
-        "answer": "Seniors who are part of the qualified beneficiaries list from January to June 2025 provided by the NCSC."
-      }
+      "Barangay Certification of residency in a coastal barangay (Baybay, Culasi, Libas, Barra, etc.)",
+      "Vessel admeasurement certificate from authorized City Fishery Technician",
+      "Valid Government ID",
+      "Two (2) 1x1 recent ID photos"
     ],
     "quickInfo": {
-      "processingTime": "Scheduled Payout (Dec 18, 2025)",
-      "fee": "Free",
-      "whoCanApply": "Seniors aged 80, 85, 90, 95",
-      "appointmentType": "Walk-in (Treasury Office)",
-      "documents": "Valid IDs, SPA/Authorization, Proof of Life"
+      "processingTime": "1-2 Working Days",
+      "fee": "Free for artisanal fisherfolk (subsidized)",
+      "whoCanApply": "Municipal fisherfolk and coastal fishpond/aquaculture operators in Roxas City",
+      "appointmentType": "Walk-in"
     },
-    "updatedAt": "2026-01-13T20:44:00Z",
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
-        "name": "National Commission of Senior Citizens (NCSC)",
-        "url": "https://ncsc.gov.ph"
-      },
-      {
-        "name": "Office of the Senior Citizens Affairs (OSCA) Los Baños"
-      }
-    ],
-    "source": "community"
-  },
-  {
-    "service": "Fire Safety Inspection Certificate (FSIC)",
-    "slug": "fire-safety-inspection-certificate",
-    "type": "transaction",
-    "description": "Required for occupancy and business permits to ensure the structure meets fire safety standards.",
-    "officeSlug": ["bureau-fire-protection"],
-    "category": {
-      "name": "Public Safety & Security",
-      "slug": "public-safety-security"
-    },
-    "requirements": [
-      "Unified Application Form",
-      "Building Permit Number and Date Issued",
-      "FSEC Number and Date Issued",
-      "Site Inspection by BFP personnel"
-    ],
-    "quickInfo": {
-      "processingTime": "3-5 days",
-      "whoCanApply": "Building Owners / Business Operators"
-    },
-    "updatedAt": null,
-    "sources": [
-      {
-        "name": "BFP Fire Safety Regulations"
-      }
-    ],
-    "source": "community"
-  },
-  {
-    "service": "Garbage Collection Schedule",
-    "slug": "garbage-collection-schedule",
-    "type": "information",
-    "description": "Weekly schedule for waste collection per barangay. Please segregate biodegradable and non-biodegradable waste.",
-    "officeSlug": ["municipal-environment-and-natural-resources-office"],
-    "category": {
-      "name": "Environment & Natural Resources",
-      "slug": "environment-natural-resources"
-    },
-    "steps": [
-      "Monday & Thursday: Batong Malake, San Antonio, Maahas (Biodegradable)",
-      "Tuesday & Friday: Bayog, Mayondon, Malinta (Biodegradable)",
-      "Wednesday: All Barangays (Non-Biodegradable / Recyclables)",
-      "Saturday: Special collection for Market area",
-      "Sunday: No Collection"
-    ],
-    "requirements": [
-      "Please ensure waste is segregated before putting it out.",
-      "Bring out trash only between 6:00 AM - 8:00 AM."
-    ],
-    "quickInfo": {
-      "processingTime": "Weekly",
-      "whoCanApply": "All Residents"
-    },
-    "updatedAt": null,
-    "sources": [
-      {
-        "name": "Republic Act No. 9003 (Ecological Solid Waste Management Act)",
-        "url": ""
-      },
-      {
-        "name": "MENRO Garbage Collection Policy",
-        "url": ""
+        "name": "Roxas City Fisheries and Aquatic Resources Management Council (CFARMC)",
+        "url": "https://roxascity.gov.ph"
       }
     ],
     "source": "community"
@@ -1652,7 +1865,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños and associations/organizations",
+    "whoMayAvail": "All residents of Roxas City and associations/organizations",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -1692,7 +1905,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "supportingDocumentsDetail": {
@@ -1866,7 +2079,7 @@
     },
     "classification": "Complex",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "Prospective house and/or building owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "Prospective house and/or building owners within the jurisdiction of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2037,7 +2250,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "Prospective house and/or building owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "Prospective house and/or building owners within the jurisdiction of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2198,7 +2411,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2B",
-    "whoMayAvail": "Business Establishment Owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "Business Establishment Owners within the jurisdiction of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2257,7 +2470,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "Electrical Service Provider Applicant within the jurisdiction of Los Baños",
+    "whoMayAvail": "Electrical Service Provider Applicant within the jurisdiction of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2345,7 +2558,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "House and/or building owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "House and/or building owners within the jurisdiction of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2385,7 +2598,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "House and/or building owners within the jurisdiction of Los Baños",
+    "whoMayAvail": "House and/or building owners within the jurisdiction of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -2501,6 +2714,44 @@
     "plainLanguageName": "Get a Certification of No Outstanding Obligation"
   },
   {
+    "service": "Issuance of Certified True Copy of Birth Certificate",
+    "slug": "issuance-birth-certificate",
+    "type": "transaction",
+    "description": "Issuance of certified transcriptions and true copies of Certificate of Live Birth registered with the Local Civil Registry Office (LCRO) of Roxas City.",
+    "officeSlug": [
+      "local-civil-registry-office"
+    ],
+    "category": {
+      "name": "Certificates & Vital Records",
+      "slug": "certificates-vital-records"
+    },
+    "steps": [
+      "Fill out request slip at the LCRO Public Assistance Counter, 1F Roxas City Hall.",
+      "Verify entry in the civil registry database or historical registry books.",
+      "Pay certification fee at the City Treasury cashier.",
+      "Present official receipt and claim certified document."
+    ],
+    "requirements": [
+      "Valid Government-issued ID of document owner or requesting authorized party",
+      "Authorization Letter and ID of owner if applicant is a representative",
+      "Exact details: Full Name of child, Date of Birth, Place of Birth, Father's Name, Mother's Maiden Name"
+    ],
+    "quickInfo": {
+      "processingTime": "15-30 Minutes",
+      "fee": "₱100.00 per certified copy",
+      "whoCanApply": "Document owner, parent, legal guardian, or authorized representative",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Local Civil Registry Office - City Government of Roxas",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
     "service": "Issuance of Certified True Copy of Tax Declaration and Other Kinds of Certification",
     "slug": "issuance-of-certified-true-copy-of-tax-declaration-and-other-kinds-of-certification",
     "serviceNumber": "2.5",
@@ -2570,7 +2821,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All Los Baños residents, Business Owners",
+    "whoMayAvail": "All Roxas City residents, Business Owners",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -3349,7 +3600,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -3408,6 +3659,41 @@
     "plainLanguageName": "Get Livestock Dispersal and Monitoring"
   },
   {
+    "service": "Mangrove Reforestation & Coastal Greenbelt Tree Planting",
+    "slug": "mangrove-coastal-greenbelt-program",
+    "type": "transaction",
+    "description": "Community environmental initiative supporting coastal resilience through mangrove seedling donation, technical planting guidance, and protected coastal zone monitoring in Palina and Sibuyan waterways.",
+    "officeSlug": [
+      "municipal-environment-and-natural-resources-office"
+    ],
+    "category": {
+      "name": "Environment & Natural Resources",
+      "slug": "environment-natural-resources"
+    },
+    "steps": [
+      "Submit letter of intent or tree-planting request to CENRO Roxas City.",
+      "Receive briefing on designated mangrove planting zones (Palina, Culasi, or Dayao estuaries).",
+      "Claim mangrove propagules/seedlings at the City Eco-Park nursery.",
+      "Participate in guided coastal planting activity with community fisherfolk stewards."
+    ],
+    "requirements": [
+      "Written Request / Community Activity Proposal",
+      "Identification of participating organization or institution"
+    ],
+    "quickInfo": {
+      "processingTime": "2-3 Working Days",
+      "whoCanApply": "Schools, NGOs, civic organizations, and youth groups"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "CENRO Roxas City Coastal Resource Management Unit",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
     "service": "Meat Inspection Services, Fee Assessment, and Issuance of Official Receipt",
     "slug": "meat-inspection-services-fee-assessment-and-issuance-of-official-receipt",
     "serviceNumber": "7.3",
@@ -3464,40 +3750,42 @@
     "plainLanguageName": "Get Meat Inspection Services, Fee Assessment, and Issuance of Official Receipt"
   },
   {
-    "service": "Medical Assistance (AICS)",
+    "service": "Medical & Crisis Assistance (AICS)",
     "slug": "medical-assistance-aics",
     "type": "transaction",
-    "description": "Assistance to Individuals in Crisis Situations for medical needs.",
-    "officeSlug": ["municipal-social-welfare-and-development-office"],
+    "description": "Assistance to Individuals in Crisis Situations providing financial grants for hospitalization, prescription medicines, diagnostic laboratory tests, and burial assistance.",
+    "officeSlug": [
+      "municipal-social-welfare-development-office"
+    ],
     "category": {
       "name": "Social Services & Assistance",
       "slug": "social-services-assistance"
     },
     "steps": [
-      "Submit requirements for screening.",
-      "Undergo interview by Social Worker.",
-      "Receive Guarantee Letter or Cash Assistance."
+      "Submit complete documentary requirements at the City Social Welfare and Development Office (CSWDO) Help Desk.",
+      "Undergo social case evaluation and assessment with a registered social worker.",
+      "Receive Guarantee Letter (GL) for partner hospitals or proceed to City Treasury for cash grant disbursement."
     ],
     "requirements": [
-      "Medical Certificate / Abstract",
-      "Hospital Bill / Prescription",
-      "Barangay Certificate of Indigency",
-      "Valid ID of claimant"
+      "Medical Certificate / Clinical Abstract from attending doctor",
+      "Hospital Bill or Official Prescription with price quotation",
+      "Barangay Certificate of Indigency from Roxas City barangay of residence",
+      "Valid Government-issued ID of claimant and patient"
     ],
     "quickInfo": {
-      "processingTime": "1-2 days",
-      "whoCanApply": "Indigent Residents",
+      "processingTime": "Within the day (Same-day evaluation)",
+      "whoCanApply": "Indigent residents of Roxas City",
       "appointmentType": "Walk-in"
     },
-    "updatedAt": null,
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
         "name": "DSWD Memorandum Circular No. 02 Series of 2014",
-        "url": ""
+        "url": "https://dswd.gov.ph"
       },
       {
-        "name": "MSWDO Guidelines on Financial Assistance",
-        "url": ""
+        "name": "CSWDO Roxas City Guidelines on Crisis Intervention",
+        "url": "https://roxascity.gov.ph"
       }
     ],
     "source": "community"
@@ -3516,7 +3804,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -3537,6 +3825,86 @@
     },
     "processingTime": "4 hours",
     "plainLanguageName": "Get Monitoring and Evaluation of Barangay Community Garden/Hapag, Backyard/Home Gardens, and Farmers Production Area"
+  },
+  {
+    "service": "National Police Clearance & Roxas City PNP Assistance",
+    "slug": "police-clearance-assistance",
+    "type": "transaction",
+    "description": "Online application processing, biometric capture, and issuance of National Police Clearance at the Roxas City Police Station.",
+    "officeSlug": [
+      "municipal-police-station"
+    ],
+    "category": {
+      "name": "Public Safety & Security",
+      "slug": "public-safety-security"
+    },
+    "steps": [
+      "Register and schedule an appointment online via https://pnpclearance.ph.",
+      "Pay the statutory police clearance fee through authorized Landbank/GCash payment channels.",
+      "Proceed to Roxas City Police Station (Corner Bilbao & Arzobispo St.) on scheduled date.",
+      "Undergo biometric capture (fingerprints, photo, digital signature) and claim printed clearance."
+    ],
+    "requirements": [
+      "Two (2) Valid Government-issued IDs",
+      "Official Payment Reference Number / Receipt",
+      "Barangay Clearance"
+    ],
+    "quickInfo": {
+      "processingTime": "15-20 Minutes upon arrival",
+      "fee": "₱150.00 standard PNP fee",
+      "appointmentType": "Online Appointment via pnpclearance.ph"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Philippine National Police - Roxas City Police Station",
+        "url": "https://pnpclearance.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "New Business Permit Application (Mayor's Permit)",
+    "slug": "new-business-permit",
+    "type": "transaction",
+    "description": "Application for a new Mayor's Permit and business license to operate a commercial, trading, or industrial establishment within Roxas City via the Business One-Stop Shop (BOSS).",
+    "officeSlug": [
+      "business-permit-and-licensing-office"
+    ],
+    "category": {
+      "name": "Business, Trade & Investment",
+      "slug": "business-trade-investment"
+    },
+    "steps": [
+      "Submit Unified Business Application Form at the Business Permits & Licensing Office (BPLO), City Hall Compound.",
+      "Receive automated one-stop assessment from City Engineering, City Health, CENRO, and BFP.",
+      "Pay corresponding business taxes, regulatory fees, and fire inspection fee at the City Treasury cashier.",
+      "Claim Mayor's Business Permit and official Business Plate."
+    ],
+    "requirements": [
+      "DTI Business Name Registration (Sole Proprietorship) or SEC Certificate of Registration (Corporation/Partnership)",
+      "Barangay Business Clearance from the barangay where business is situated",
+      "Contract of Lease (if renting) or Land Title / Tax Declaration (if owned)",
+      "Zoning & Locational Clearance from City Planning Office",
+      "Sanitary Permit from City Health Office",
+      "Fire Safety Inspection Certificate (FSIC) from BFP Roxas City"
+    ],
+    "quickInfo": {
+      "processingTime": "1-2 Working Days (via BOSS)",
+      "whoCanApply": "Entrepreneurs and corporate entities operating in Roxas City",
+      "appointmentType": "Walk-in / Online BPLO portal"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Roxas City Business Permits and Licensing Office (BPLO)",
+        "url": "https://roxascity.gov.ph"
+      },
+      {
+        "name": "Republic Act No. 11032 (Ease of Doing Business Act)"
+      }
+    ],
+    "source": "community"
   },
   {
     "service": "Payment of Fees for Sealing and Licensing of Weights and Measure Instrument",
@@ -3789,7 +4157,7 @@
     },
     "classification": "Simple",
     "typeOfTransaction": "G2C",
-    "whoMayAvail": "All residents of Los Baños",
+    "whoMayAvail": "All residents of Roxas City",
     "dataComplete": true,
     "needsVerification": false,
     "detailedRequirements": [
@@ -3824,38 +4192,43 @@
     "plainLanguageName": "Get Provision of Anti-Rabies Vaccination for Cats and Dogs"
   },
   {
-    "service": "Public School Directory",
+    "service": "Public & Private School Directory",
     "slug": "public-school-directory",
     "type": "information",
-    "description": "A comprehensive list of public elementary and secondary schools in the municipality.",
-    "officeSlug": ["department-of-education"],
+    "description": "Comprehensive directory of public and private educational institutions in Roxas City under the DepEd Schools Division of Roxas City and CHED Region VI.",
+    "officeSlug": [
+      "local-youth-and-development-office"
+    ],
     "category": {
       "name": "Education & Scholarship",
       "slug": "education-scholarship"
     },
     "steps": [
-      "Los Baños Central Elementary School (Timugan)",
-      "Mayondon Elementary School",
-      "Bayog Elementary School",
-      "Lalakay Elementary School",
-      "Los Baños National High School (Poblacion)",
-      "Bernardo F. San Juan National High School",
-      "South Hill School (Private)",
-      "University of the Philippines Rural High School"
+      "Capiz National High School (Fuentes Drive, Roxas City - Premier Public Secondary School)",
+      "President Manuel A. Roxas Memorial School North & South (Poblacion)",
+      "Roxas City School for Philippine Craftsmen (Brgy. Culasi)",
+      "Tanque National High School (Brgy. Tanque)",
+      "Don Ynocencio A. Del Rosario National High School (Brgy. Dayao)",
+      "Capiz State University - CAPSU Main Campus (Fuentes Drive)",
+      "Filamer Christian University (Roxas Avenue - Established 1904)",
+      "Colegio de la Purisima Concepcion (Arzobispo St. - Archdiocesan Catholic Institution)",
+      "St. Anthony College of Roxas City (San Roque Extension)"
     ],
     "requirements": [],
-    "relatedServices": ["scholarship-application"],
+    "relatedServices": [
+      "city-scholarship-program"
+    ],
     "faqs": [
       {
-        "question": "When does enrollment start?",
-        "answer": "Enrollment typically begins in July. Please follow the official DepEd page for announcements."
+        "question": "When does enrollment typically begin?",
+        "answer": "Basic education enrollment follows DepEd national schedules, usually between June and July. Higher education institutions begin admissions from April through August."
       }
     ],
-    "updatedAt": null,
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
-        "name": "DepEd Schools Division Office List",
-        "url": ""
+        "name": "DepEd Schools Division Office of Roxas City",
+        "url": "https://depedroxascity.ph"
       }
     ],
     "source": "community"
@@ -4133,6 +4506,43 @@
     },
     "processingTime": "50 minutes, 10+ days for release",
     "plainLanguageName": "Get R.A. 9048 - Petition for Correction of Clerical Error"
+  },
+  {
+    "service": "Real Property Tax Payment (Amilyar)",
+    "slug": "real-property-tax-payment",
+    "type": "transaction",
+    "description": "Assessment and payment of annual Real Property Tax (RPT) on land, buildings, and machinery in Roxas City, offering up to 20% prompt-payment discount for early settlement.",
+    "officeSlug": [
+      "municipal-treasurers-office"
+    ],
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "steps": [
+      "Present previous year's Official Receipt or Tax Declaration number at the City Assessor / Treasury Window, Roxas City Hall.",
+      "Receive statement of account detailing current year tax due and applicable prompt payment discount.",
+      "Pay in cash, manager's check, or authorized electronic banking channel.",
+      "Receive official receipt and tax clearance validation."
+    ],
+    "requirements": [
+      "Previous Year Official Receipt of RPT payment",
+      "Tax Declaration / Title number",
+      "Valid Government ID of property owner or authorized representative"
+    ],
+    "quickInfo": {
+      "processingTime": "10-15 Minutes",
+      "whoCanApply": "Real property owners in Roxas City",
+      "appointmentType": "Walk-in / Online Treasury Counter"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "City Treasurer's Office - Roxas City",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
   },
   {
     "service": "Registration of Regular and Timely Certificate of Death",
@@ -4561,28 +4971,129 @@
     "plainLanguageName": "Apply for Exhumation Permit"
   },
   {
-    "service": "Rural Health Unit (RHU) Locations",
-    "slug": "rhu-locations",
-    "type": "information",
-    "description": "Locations of health centers providing free primary care, immunization, and maternal services.",
-    "officeSlug": ["municipal-health-office"],
+    "service": "Roxas City Animal Bite Treatment Center",
+    "slug": "animal-bite-treatment-center",
+    "type": "transaction",
+    "description": "Post-exposure prophylaxis (PEP) anti-rabies vaccination, wound cleaning, and tetanus toxoid administration for animal bite victims.",
+    "officeSlug": [
+      "municipal-health-office"
+    ],
     "category": {
       "name": "Health & Wellness",
       "slug": "health-wellness"
     },
     "steps": [
-      "RHU 1: Main Health Center, Municipal Hall Compound, Brgy. Timugan",
-      "RHU 2: Brgy. Batong Malake (Near Barangay Hall)",
-      "RHU 3: Brgy. Mayondon (Purok 3)",
-      "Animal Bite Center: Municipal Hall Compound"
+      "Wash animal bite or scratch thoroughly with running water and soap for at least 15 minutes.",
+      "Proceed immediately to the Roxas City Animal Bite Treatment Center at City Hall Compound.",
+      "Triage evaluation and bite category assessment by attending nurse/physician.",
+      "Administration of anti-rabies vaccine and scheduling of subsequent booster doses."
     ],
-    "requirements": [],
-    "relatedServices": ["health-certificate"],
-    "updatedAt": null,
+    "requirements": [
+      "Patient identification (or parent/guardian if minor)",
+      "Animal observation data (status of the biting dog/cat)"
+    ],
+    "quickInfo": {
+      "processingTime": "Immediate / Emergency Priority",
+      "appointmentType": "Walk-in (Urgent Care)",
+      "fee": "Free / Subsidized by City Government"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
-        "name": "Municipal Health Office Registry",
-        "url": ""
+        "name": "National Rabies Prevention and Control Program (DOH)",
+        "url": "https://doh.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "Roxas City Tertiary Educational Assistance (Mayor's Scholarship)",
+    "slug": "city-scholarship-program",
+    "type": "transaction",
+    "description": "Financial tuition and stipend support granted to deserving underprivileged college students residing in Roxas City.",
+    "officeSlug": [
+      "local-youth-and-development-office"
+    ],
+    "category": {
+      "name": "Education & Scholarship",
+      "slug": "education-scholarship"
+    },
+    "steps": [
+      "Secure application form from the Local Youth Development Office (LYDO) at Roxas City Hall Compound.",
+      "Submit certified true copy of grades (GWA 85% or 2.0 with no failing mark).",
+      "Undergo socio-economic interview and verification with CSWDO social assessors.",
+      "Attend scholarship orientation and claim semester grant payout at the City Treasury Office."
+    ],
+    "requirements": [
+      "Certificate of Indigency from Barangay of residence in Roxas City",
+      "Official Certificate of Enrollment / Registration from accredited college/university",
+      "Certified True Copy of Grades from preceding semester",
+      "Voter's Certification of parent/guardian or applicant (Roxas City voter)"
+    ],
+    "quickInfo": {
+      "processingTime": "Per Semester Call",
+      "whoCanApply": "Bona fide college students residing in Roxas City",
+      "appointmentType": "Scheduled / Walk-in"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "City Government of Roxas - LYDO",
+        "url": "https://roxascity.gov.ph"
+      }
+    ],
+    "source": "community"
+  },
+  {
+    "service": "Senior Citizens Milestone Welfare & Centenarian Program",
+    "slug": "expanded-centenarian-payout",
+    "type": "transaction",
+    "description": "Provision of local cash incentives and national milestone honors for senior citizens celebrating milestone ages (80, 85, 90, 95, and 100) facilitated by OSCA Roxas City.",
+    "url": "",
+    "officeSlug": [
+      "office-senior-citizens-affairs"
+    ],
+    "category": {
+      "name": "Social Services & Assistance",
+      "slug": "social-services-assistance"
+    },
+    "steps": [
+      "Verify that the senior citizen is registered with the Office for the Senior Citizens' Affairs (OSCA) Roxas City.",
+      "Secure claim template and orientation at the OSCA Office, City Hall Compound.",
+      "Submit valid IDs and proof of milestone age for cross-verification.",
+      "Proceed to the City Treasury Office for cash gift release or receive home delivery for bedridden seniors."
+    ],
+    "requirements": [
+      "PSA Birth Certificate or Valid Senior Citizen ID issued by OSCA Roxas City",
+      "Barangay Certification of Residency confirming continuous residence in Roxas City",
+      "For representatives of bedridden seniors: Authorization Letter and Proof of Life photo"
+    ],
+    "faqs": [
+      {
+        "question": "Where is OSCA Roxas City located?",
+        "answer": "The Office for Senior Citizens' Affairs is located at the City Hall Compound, Washington St., Roxas City."
+      },
+      {
+        "question": "Are home visits conducted for bedridden seniors?",
+        "answer": "Yes, OSCA and CSWDO staff conduct personal home visits for bedridden centenarians and milestone seniors to deliver benefits directly."
+      }
+    ],
+    "quickInfo": {
+      "processingTime": "Scheduled City Payout",
+      "fee": "Free",
+      "whoCanApply": "Senior citizens aged 80, 85, 90, 95, and 100 residing in Roxas City",
+      "appointmentType": "Walk-in / Home Visit",
+      "documents": "Senior Citizen ID, Proof of Age"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "National Commission of Senior Citizens (NCSC)",
+        "url": "https://ncsc.gov.ph"
+      },
+      {
+        "name": "Office for the Senior Citizens' Affairs (OSCA) Roxas City",
+        "url": "https://roxascity.gov.ph"
       }
     ],
     "source": "community"

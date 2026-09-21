@@ -53,13 +53,13 @@ describe('formatGovName() - government name formatter', () => {
     });
 
     it('removes lowercase "barangay"', () => {
-      const result = formatGovName('barangay batong malake', 'barangay');
-      expect(result).toBe('Batong Malake');
+      const result = formatGovName('barangay baybay', 'barangay');
+      expect(result).toBe('Baybay');
     });
 
     it('capitalizes first word after prefix', () => {
-      const result = formatGovName('BARANGAY ANONG', 'barangay');
-      expect(result).toBe('Anong');
+      const result = formatGovName('BARANGAY CULASI', 'barangay');
+      expect(result).toBe('Culasi');
     });
 
     it('handles barangay with acronyms', () => {

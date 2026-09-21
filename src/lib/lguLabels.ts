@@ -32,20 +32,20 @@ const type = config.lgu.type;
 const labels = LGU_LABELS[type] ?? LGU_LABELS.municipality;
 
 export const lguLabels = {
-  /** "Municipality of Los Baños" / "City of ..." / "Province of ..." */
+  /** "City of Roxas" / "Municipality of ..." / "Province of ..." */
   fullName: config.lgu.fullName,
-  /** "Los Baños" */
+  /** "Roxas City" */
   name: config.lgu.name,
-  /** "Laguna" */
+  /** "Capiz" */
   province: config.lgu.province,
   /** "Mayor" / "Governor" */
   head: labels.head,
-  /** "Sangguniang Bayan" / "Sangguniang Panlungsod" */
+  /** "Sangguniang Panlungsod" / "Sangguniang Bayan" */
   body: labels.body,
   /** "Barangays" / "Municipalities & Cities" */
   subdivisions: labels.subdivisions,
-  /** "Municipal" / "City" / "Provincial" */
+  /** "City" / "Municipal" / "Provincial" */
   adjective: labels.adjective,
-  /** "{name}, {province}" e.g. "Los Baños, Laguna" */
+  /** "{name}, {province}" e.g. "Roxas City, Capiz" */
   location: `${config.lgu.name}, ${config.lgu.province}`,
 };

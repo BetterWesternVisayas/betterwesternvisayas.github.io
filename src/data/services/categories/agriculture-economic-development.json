@@ -1,1 +1,70 @@
-[]
+[
+  {
+    "service": "Fisherfolk & Coastal Aquaculture Registration (BoatR & FishR)",
+    "slug": "fisherfolk-aquaculture-registration",
+    "type": "transaction",
+    "description": "Registration of municipal fisherfolk, motorized fishing vessels (3 gross tons and below), and coastal aquaculture operators in Roxas City under the City Agriculture Office.",
+    "officeSlug": ["municipal-agriculture-office"],
+    "category": {
+      "name": "Agriculture & Economic Development",
+      "slug": "agriculture-economic-development"
+    },
+    "steps": [
+      "Secure registration forms at the City Agriculture Office (Fisheries Section), City Hall Compound.",
+      "Submit vessel specifications or aquaculture lease location details (fishponds, oyster/mussel beds in Sibuyan Sea estuaries).",
+      "Undergo vessel inspection and engine verification by City Coastal Law Enforcement officers.",
+      "Receive official Municipal Fisherfolk ID and BoatR vessel registration plates."
+    ],
+    "requirements": [
+      "Barangay Certification of residency in a coastal barangay (Baybay, Culasi, Libas, Barra, etc.)",
+      "Vessel admeasurement certificate from authorized City Fishery Technician",
+      "Valid Government ID",
+      "Two (2) 1x1 recent ID photos"
+    ],
+    "quickInfo": {
+      "processingTime": "1-2 Working Days",
+      "fee": "Free for artisanal fisherfolk (subsidized)",
+      "whoCanApply": "Municipal fisherfolk and coastal fishpond/aquaculture operators in Roxas City",
+      "appointmentType": "Walk-in"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Roxas City Fisheries and Aquatic Resources Management Council (CFARMC)",
+        "url": "https://roxascity.gov.ph"
+      }
+    ]
+  },
+  {
+    "service": "Agricultural Crop Support & Farm Inputs Distribution",
+    "slug": "agricultural-crop-support",
+    "type": "transaction",
+    "description": "Distribution of certified high-yield palay seeds, organic bio-fertilizers, and farm machinery assistance for agrarian communities in Roxas City.",
+    "officeSlug": ["municipal-agriculture-office"],
+    "category": {
+      "name": "Agriculture & Economic Development",
+      "slug": "agriculture-economic-development"
+    },
+    "steps": [
+      "Verify enrollment in the Registry System for Basic Sectors in Agriculture (RSBSA).",
+      "Proceed to the City Agriculture Office during scheduled cropping season distribution.",
+      "Claim allocated certified seeds and bio-fertilizer vouchers."
+    ],
+    "requirements": [
+      "RSBSA Farmer Registration Stub / ID",
+      "Barangay Certification confirming active cultivation of agricultural land in Roxas City"
+    ],
+    "quickInfo": {
+      "processingTime": "Seasonal Distribution",
+      "fee": "Free",
+      "whoCanApply": "RSBSA-registered farmers in Roxas City"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Department of Agriculture Region VI / Roxas City Agriculture Office",
+        "url": "https://roxascity.gov.ph"
+      }
+    ]
+  }
+]

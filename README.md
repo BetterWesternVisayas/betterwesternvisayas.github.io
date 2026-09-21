@@ -44,18 +44,18 @@ BetterLB is designed to be easily adapted for any Local Government Unit (LGU) in
 
 ### Key Configuration Fields
 
-| Field | Description | Example (Los Baños) |
+| Field | Description | Example (Roxas City) |
 |-------|-------------|---------------------|
-| `lgu.name` | Short municipality name | "Los Baños" |
-| `lgu.fullName` | Full official name | "Municipality of Los Baños" |
-| `lgu.province` | Province name | "Laguna" |
-| `lgu.region` | Region name | "Region IV-A" |
-| `lgu.regionCode` | Region code | "CALABARZON" |
-| `lgu.type` | LGU type | "municipality" or "city" |
-| `lgu.officialWebsite` | Official LGU website | "https://losbanos.gov.ph" |
-| `portal.name` | Portal name | "BetterLB" |
-| `portal.baseUrl` | Portal base URL | "https://betterlb.org" |
-| `portal.tagline` | Portal tagline | "Community Powered Los Baños Portal" |
+| `lgu.name` | Short city name | "Roxas City" |
+| `lgu.fullName` | Full official name | "City of Roxas" |
+| `lgu.province` | Province name | "Capiz" |
+| `lgu.region` | Region name | "Region VI" |
+| `lgu.regionCode` | Region code | "Western Visayas" |
+| `lgu.type` | LGU type | "city" |
+| `lgu.officialWebsite` | Official LGU website | "https://roxascity.gov.ph" |
+| `portal.name` | Portal name | "BetterRoxas" |
+| `portal.baseUrl` | Portal base URL | "https://betterroxas.org" |
+| `portal.tagline` | Portal tagline | "Community Powered Roxas City Portal" |
 
 **Note:** See [`FORKING.md`](./FORKING.md) for comprehensive forking instructions including database setup for legislative data.
 
@@ -161,29 +161,17 @@ betterlb/
 - **Search Integration**: Meilisearch-powered search with real-time indexing
 - **Internationalization**: Multi-language support with i18next
 
-### Los Baños-Specific Data
-
-BetterLB includes structured data for Los Baños:
+### Roxas City-Specific Data
+BetterRoxas includes structured data for Roxas City:
 
 | Data Type | Location | Description |
 |-----------|----------|-------------|
-| **Departments** | `/src/data/directory/departments.json` | Municipal departments and offices with contact info |
-| **Barangays** | `/src/data/directory/barangays.json` | 14 barangay profiles and officials |
-| **Services** | `/src/data/services/categories/*.json` | Public services by category (BPLO, Assessor, Engineering, etc.) |
-| **Citizens Charter** | `/src/data/citizens-charter/citizens-charter.json` | Service requirements, fees, and client steps |
-| **Legislation** | Cloudflare D1 Database | Ordinances, resolutions, executive orders |
-| **Statistics** | `/src/data/statistics/` | Municipal demographics and indicators |
-
-#### Data Pipeline for Legislative Documents
-
-Los Baños legislative documents are processed through a Python pipeline:
-
-1. **Scrape** (`pipeline/1_scrape.py`) - Download PDFs from official sources
-2. **Normalize** (`pipeline/1.5_normalize.py`) - Standardize filenames and metadata
-3. **Parse** (`pipeline/3_parse.py`) - Extract text and metadata from PDFs
-4. **Generate** (`pipeline/4_generate.py`) - Create structured JSON for database import
-
-See [`pipeline/README.md`](./pipeline/README.md) for complete documentation.
+| **Departments** | `/src/data/directory/departments.json` | City departments and offices with direct contact info |
+| **Barangays** | `/src/data/directory/barangays.json` | 47 official barangay profiles and councils |
+| **Services** | `/src/data/services/categories/*.json` | Public services by category (BPLO, Civil Registry, City Engineering, etc.) |
+| **Citizens Charter** | `/src/data/citizens-charter/citizens-charter.json` | Service requirements, processing times, and steps |
+| **Legislation** | Cloudflare D1 Database | Ordinances, resolutions, and executive orders |
+| **Statistics** | `/src/data/statistics/` | City demographics, CMCI competitiveness, and BLGF financials |
 
 ---
 
@@ -191,13 +179,13 @@ See [`pipeline/README.md`](./pipeline/README.md) for complete documentation.
 
 ### 1. Clone and Install
 ```bash
-git clone https://github.com/BetterLosBanos/betterlb
-cd betterlb
+git clone https://github.com/BetterWesternVisayas/betterwesternvisayas.github.io
+cd betterwesternvisayas.github.io
 npm install
 ```
 
 ### 2. Prepare Data
-Since the service directory is split into manageable category files, you must merge them before running the app:
+Since the service directory is split into category files, merge them before running:
 ```bash
 python3 scripts/merge_services.py
 ```
@@ -208,51 +196,50 @@ npm run dev
 ```
 **Access the portal at:** `http://localhost:5173`
 
-### 4. Running Tests
+### 4. Running Tests & Quality Checks
 ```bash
-npm run test:e2e        # Run all end-to-end tests
-npm run lint            # Check code quality (max warnings = 0)
+npm run test            # Run unit tests
+npm run lint            # Check code quality
 npm run format          # Format code with Prettier
 ```
 
 ### 5. Building for Production
 ```bash
-npm run build           # Combines merge_services, TypeScript, and Vite build
+npm run build           # TypeScript check, service merge, and Vite build
 ```
-
-**Note:** The build script runs `tsc && npm run merge:data && vite build` automatically
 
 ---
 
-## 🏛️ Los Baños Government Structure
+## 🏛️ Roxas City Government Structure
 
 ### Executive Branch
-- **Mayor**: Chief executive officer of the municipality
-- **Vice Mayor**: Presiding officer of the Sangguniang Bayan and mayoral successor
-- **Municipal Departments**: Administrative offices implementing municipal programs
+- **City Mayor**: Ronnie T. Dadivas - Chief executive officer of the City of Roxas
+- **City Vice Mayor**: Teresa H. Almalbis - Presiding officer of the Sangguniang Panlungsod
+- **City Administrator**: Love Angeline L. Dadivas - Chief administrative coordinator
+- **City Departments**: 30+ specialized offices implementing city services, disaster response, and welfare
 
-### Legislative Branch (Sangguniang Bayan)
-The Sangguniang Bayan is the legislative body of Los Baños, composed of:
-- **Vice Mayor** (Presiding Officer)
-- **8 Regular Councilors** (District representatives)
-- **2 Ex-Officio Councilors** (ABC President and SK Federation President)
+### Legislative Branch (Sangguniang Panlungsod)
+The Sangguniang Panlungsod is the legislative body of Roxas City, composed of:
+- **City Vice Mayor** (Presiding Officer)
+- **10 Regular City Councilors**
+- **Ex-Officio Councilors** (Liga ng mga Barangay President & SK Federation President)
 
 ### Key Departments
-- **BPLO**: Business Permit and Licensing Office
-- **MTO**: Municipal Treasurer's Office
-- **Assessor's Office**: Property assessment and taxation
-- **Engineering Office**: Infrastructure and public works
-- **MPDC**: Municipal Planning and Development Coordinator
-- **LCR**: Local Civil Registry
-- **Municipal Health Office**: Public health services
-- **Municipal Agriculture Office**: Agricultural programs
-
-See the [Government Directory](https://betterlb.org/government) on the live site for complete department listings and contact information.
+- **BPLO**: Business Permit and Licensing Office (BOSS Center)
+- **CTO**: City Treasurer's Office (Revenues, Amilyar, Cedula)
+- **City Assessor's Office**: Real property assessment and taxation
+- **City Engineering Office / OBO**: Building permits and public works
+- **CPDO**: City Planning and Development Office
+- **LCRO**: Local Civil Registry Office (Birth, Marriage, Death certificates)
+- **City Health Office**: Primary healthcare, diagnostic laboratory, and animal bite center
+- **City Agriculture Office**: Fisherfolk and crop farmer assistance
+- **CENRO**: City Environment & Natural Resources Office (waste management & coastal greenbelt)
+- **CSWDO**: City Social Welfare & Development Office (crisis assistance, solo parents)
 
 ---
 
 ## Join the Grassroots Movement
-We are looking for volunteers passionate individuals who want to make Los Baños a better place. You don't need to be a developer to help!
+We are looking for volunteers and passionate individuals who want to make Roxas City a better place. You don't need to be a developer to help!
 
 ### How You Can Contribute:
 1.  **Non-Developers**: Visit the `/contribute` page on the live site to suggest new services or fix outdated information via GitHub Issues (requires a free GitHub account).
@@ -299,26 +286,28 @@ See [`ARCHITECTURE.md`](./ARCHITECTURE.md#deployment) for detailed deployment st
 This project is released under the [Creative Commons CC0](https://creativecommons.org/publicdomain/zero/1.0/) dedication. The work is dedicated to the public domain and can be freely used, modified, and distributed without restriction.
 
 ### Data Attribution
-BetterLB aggregates data from multiple sources:
+BetterRoxas aggregates data from multiple sources:
 
 | Data Source | Type | Attribution |
 |-------------|------|-------------|
-| **Municipality of Los Baños** | Official government data, services directory | Public domain |
+| **City Government of Roxas** | Official government data, services directory | Public domain |
+| **Philippine Statistics Authority (PSA)** | Census and demographic data | Republic of the Philippines |
+| **Bureau of Local Government Finance (BLGF)** | SRE and annual regular income reports | Republic of the Philippines |
 | **Philippine Government Procurement Portal (PhilGEPS)** | Procurement bids and awards | Republic of the Philippines |
 | **Department of Budget and Management (DBM)** | Financial releases | Republic of the Philippines |
 | **Department of Public Works and Highways (DPWH)** | Infrastructure projects | Republic of the Philippines |
-| **Official Gazette of the Philippines** | Legislative documents reference | Republic of the Philippines |
 
-**Note**: Data is presented as-is and may not reflect the most current information. Always verify with official LGU sources.
+**Note**: Data is presented as-is and may not reflect real-time updates. Always verify with official LGU sources.
 
 ---
 
-## 📞 Contact and Support
+## 📞 Contact and Community
 
-### For Los Baños Residents
-- **Website**: https://betterlb.org
-- **GitHub Issues**: Report bugs or suggest features at [github.com/BetterLosBanos/betterlb/issues](https://github.com/BetterLosBanos/betterlb/issues)
-- **Community**: Join our community contributions via the "Contribute" page on the portal
+### For Roxas City Residents
+- **Website**: https://betterroxas.org
+- **Live Deployment**: https://betterwesternvisayas.github.io/
+- **GitHub Issues**: Report suggestions or submit information updates at our repository
+- **Community**: Join our civic volunteers via the "Contribute" page on the portal
 
 ### For Other LGUs
 - **Forking Guide**: See [`FORKING.md`](./FORKING.md) for detailed instructions

@@ -137,7 +137,7 @@ export default function WeatherMapSection() {
         config.location.coordinates.lon,
       ]).addTo(mapInstance);
       const popupContent = document.createElement('div');
-      popupContent.textContent = `${config.lgu.fullName} Municipal Hall`;
+      popupContent.textContent = `${config.lgu.fullName} ${config.lgu.type === 'city' ? 'City' : 'Municipal'} Hall`;
       const popupSub = document.createElement('div');
       popupSub.textContent = `${config.lgu.province}, Philippines`;
       popupContent.appendChild(popupSub);

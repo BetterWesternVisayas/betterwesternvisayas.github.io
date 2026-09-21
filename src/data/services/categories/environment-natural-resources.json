@@ -1,38 +1,70 @@
 [
   {
-    "service": "Garbage Collection Schedule",
+    "service": "CENRO Solid Waste Collection Schedule",
     "slug": "garbage-collection-schedule",
     "type": "information",
-    "description": "Weekly schedule for waste collection per barangay. Please segregate biodegradable and non-biodegradable waste.",
+    "description": "Weekly residential and commercial solid waste collection schedule managed by the City Environment & Natural Resources Office (CENRO) Roxas City.",
     "officeSlug": ["municipal-environment-and-natural-resources-office"],
     "category": {
       "name": "Environment & Natural Resources",
       "slug": "environment-natural-resources"
     },
     "steps": [
-      "Monday & Thursday: Batong Malake, San Antonio, Maahas (Biodegradable)",
-      "Tuesday & Friday: Bayog, Mayondon, Malinta (Biodegradable)",
-      "Wednesday: All Barangays (Non-Biodegradable / Recyclables)",
-      "Saturday: Special collection for Market area",
-      "Sunday: No Collection"
+      "Monday & Thursday: Brgy. Baybay, Culasi, Libas, Barra (Biodegradable Waste)",
+      "Tuesday & Friday: Brgy. Lawaan, Tanque, Inzo Arnaldo, Tiza, Banica (Biodegradable Waste)",
+      "Wednesday: All Barangays (Residual & Non-Biodegradable / Recyclables)",
+      "Daily Morning & Evening: Teodoro Arcenas Trade Center (TATC) Market & Downtown Commercial District",
+      "Saturday & Sunday: Coastal Cleanup & Special Eco-Corridor Collection"
     ],
     "requirements": [
-      "Please ensure waste is segregated before putting it out.",
-      "Bring out trash only between 6:00 AM - 8:00 AM."
+      "Strict waste segregation at source (Biodegradable vs. Non-biodegradable vs. Hazardous).",
+      "Place tied garbage bins or trash bags at collection points only between 6:00 AM - 7:30 AM."
     ],
     "quickInfo": {
-      "processingTime": "Weekly",
-      "whoCanApply": "All Residents"
+      "processingTime": "Daily / Weekly Routine",
+      "whoCanApply": "All Roxas City residents & business owners"
     },
-    "updatedAt": null,
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
         "name": "Republic Act No. 9003 (Ecological Solid Waste Management Act)",
-        "url": ""
+        "url": "https://emb.gov.ph"
       },
       {
-        "name": "MENRO Garbage Collection Policy",
-        "url": ""
+        "name": "Roxas City Ecological Solid Waste Management Board",
+        "url": "https://roxascity.gov.ph"
+      }
+    ]
+  },
+  {
+    "service": "Mangrove Reforestation & Coastal Greenbelt Tree Planting",
+    "slug": "mangrove-coastal-greenbelt-program",
+    "type": "transaction",
+    "description": "Community environmental initiative supporting coastal resilience through mangrove seedling donation, technical planting guidance, and protected coastal zone monitoring in Palina and Sibuyan waterways.",
+    "officeSlug": ["municipal-environment-and-natural-resources-office"],
+    "category": {
+      "name": "Environment & Natural Resources",
+      "slug": "environment-natural-resources"
+    },
+    "steps": [
+      "Submit letter of intent or tree-planting request to CENRO Roxas City.",
+      "Receive briefing on designated mangrove planting zones (Palina, Culasi, or Dayao estuaries).",
+      "Claim mangrove propagules/seedlings at the City Eco-Park nursery.",
+      "Participate in guided coastal planting activity with community fisherfolk stewards."
+    ],
+    "requirements": [
+      "Written Request / Community Activity Proposal",
+      "Identification of participating organization or institution"
+    ],
+    "quickInfo": {
+      "processingTime": "2-3 Working Days",
+      "whoCanApply": "Schools, NGOs, civic organizations, and youth groups"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "CENRO Roxas City Coastal Resource Management Unit",
+        "url": "https://roxascity.gov.ph"
       }
     ]
   }

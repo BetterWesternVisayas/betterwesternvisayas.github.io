@@ -66,8 +66,8 @@ export default function MunicipalIncomePage() {
     <>
       {/* PageHero - documented pattern for layout headers */}
       <PageHero
-        title='Municipal Income'
-        description='Detailed analysis of revenue sources, fiscal autonomy, and national tax dependency.'
+        title='City Income & Revenue'
+        description='Comprehensive analysis of Roxas City revenue sources, fiscal autonomy, and national tax allotment.'
       >
         <div className='flex flex-wrap justify-center gap-2'>
           <Badge variant='primary' dot>

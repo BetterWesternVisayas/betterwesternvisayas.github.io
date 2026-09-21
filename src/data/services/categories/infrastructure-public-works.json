@@ -1,1 +1,42 @@
-[]
+[
+  {
+    "service": "Building Permit & Ancillary Permits Application",
+    "slug": "building-permit-application",
+    "type": "transaction",
+    "description": "Issuance of Building Permits and related ancillary permits (Architectural, Structural, Electrical, Sanitary/Plumbing, Mechanical) by the Office of the Building Official (OBO) / City Engineering Office of Roxas City.",
+    "officeSlug": ["municipal-engineering-office"],
+    "category": {
+      "name": "Infrastructure & Public Works",
+      "slug": "infrastructure-public-works"
+    },
+    "steps": [
+      "Submit five (5) sets of signed and sealed building plans and Unified Application Form at the OBO receiving counter, City Hall.",
+      "Technical review by structural, sanitary, architectural, electrical, and fire safety evaluators.",
+      "Receive order of payment and settle building permit fees at the City Treasury.",
+      "Claim Building Permit and construction logbook."
+    ],
+    "requirements": [
+      "Certified True Copy of Transfer Certificate of Title (TCT) or Contract of Lease / Deed of Absolute Sale",
+      "Current Real Property Tax Receipt (Amilyar) and Tax Declaration",
+      "Five (5) complete sets of building plans signed and sealed by licensed professionals (Civil/Structural Engineer, Architect, Electrical Engineer, Master Plumber)",
+      "Locational / Zoning Clearance from City Planning Office",
+      "Fire Safety Evaluation Clearance (FSEC) from BFP Roxas City"
+    ],
+    "quickInfo": {
+      "processingTime": "3-5 Working Days",
+      "whoCanApply": "Property and prospective building owners in Roxas City",
+      "appointmentType": "Walk-in / OBO Counter"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Presidential Decree No. 1096 (National Building Code of the Philippines)",
+        "url": "https://dpwh.gov.ph"
+      },
+      {
+        "name": "Office of the Building Official - Roxas City",
+        "url": "https://roxascity.gov.ph"
+      }
+    ]
+  }
+]

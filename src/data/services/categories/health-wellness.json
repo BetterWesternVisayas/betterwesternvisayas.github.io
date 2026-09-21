@@ -1,45 +1,65 @@
 [
   {
-    "service": "Rural Health Unit (RHU) Locations",
+    "service": "City Health Office & Health Station Directory",
     "slug": "rhu-locations",
     "type": "information",
-    "description": "Locations of health centers providing free primary care, immunization, and maternal services.",
+    "description": "Comprehensive network of city health centers providing free primary care, immunization, maternal health, tuberculosis DOTS, and outpatient consultations.",
     "officeSlug": ["municipal-health-office"],
     "category": {
       "name": "Health & Wellness",
       "slug": "health-wellness"
     },
     "steps": [
-      "RHU 1: Main Health Center, Municipal Hall Compound, Brgy. Timugan",
-      "RHU 2: Brgy. Batong Malake (Near Barangay Hall)",
-      "RHU 3: Brgy. Mayondon (Purok 3)",
-      "Animal Bite Center: Municipal Hall Compound"
+      "Main Center: Roxas City Health Office, City Hall Compound, Washington St.",
+      "Roxas City Diagnostic Center & Laboratory (Inzo Arnaldo Village)",
+      "Baybay & Culasi Coastal Health Sub-station (Purok Seafood, Baybay)",
+      "Lawaan & Tanque Primary Care Health Center",
+      "Animal Bite Treatment Center: City Health Office Compound"
     ],
-    "requirements": [],
-    "relatedServices": ["health-certificate"],
-    "updatedAt": null,
+    "requirements": [
+      "Barangay Health Card or Valid ID",
+      "PhilHealth Member Data Record (if available, though care is free for all indigents)"
+    ],
+    "relatedServices": ["animal-bite-treatment-center", "medical-assistance-aics"],
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
-        "name": "Municipal Health Office Registry",
-        "url": ""
+        "name": "Roxas City Health Office",
+        "url": "https://roxascity.gov.ph"
       }
     ]
   },
   {
-    "service": "Animal Bite Treatment Center",
+    "service": "Roxas City Animal Bite Treatment Center",
     "slug": "animal-bite-treatment-center",
     "type": "transaction",
-    "description": "Anti-rabies vaccination and wound management for individuals bitten by animals.",
+    "description": "Post-exposure prophylaxis (PEP) anti-rabies vaccination, wound cleaning, and tetanus toxoid administration for animal bite victims.",
     "officeSlug": ["municipal-health-office"],
     "category": {
       "name": "Health & Wellness",
       "slug": "health-wellness"
     },
-    "updatedAt": null,
+    "steps": [
+      "Wash animal bite or scratch thoroughly with running water and soap for at least 15 minutes.",
+      "Proceed immediately to the Roxas City Animal Bite Treatment Center at City Hall Compound.",
+      "Triage evaluation and bite category assessment by attending nurse/physician.",
+      "Administration of anti-rabies vaccine and scheduling of subsequent booster doses."
+    ],
+    "requirements": [
+      "Patient identification (or parent/guardian if minor)",
+      "Animal observation data (status of the biting dog/cat)"
+    ],
     "quickInfo": {
-      "processingTime": "Immediate",
-      "appointmentType": "Walk-in (Urgent)"
+      "processingTime": "Immediate / Emergency Priority",
+      "appointmentType": "Walk-in (Urgent Care)",
+      "fee": "Free / Subsidized by City Government"
     },
-    "sources": []
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "National Rabies Prevention and Control Program (DOH)",
+        "url": "https://doh.gov.ph"
+      }
+    ]
   }
 ]

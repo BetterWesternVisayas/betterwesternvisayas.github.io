@@ -21,14 +21,14 @@ export default function DepartmentsIndex() {
     .filter(d => d.office_name.toLowerCase().includes(search.toLowerCase()))
     .sort((a, b) => {
       const clean = (name: string) =>
-        name.replace(/DEPARTMENT OF |MUNICIPAL |LOCAL /g, '');
+        name.replace(/DEPARTMENT OF |CITY |MUNICIPAL |LOCAL /g, '');
       return clean(a.office_name).localeCompare(clean(b.office_name));
     });
 
   return (
     <>
       <PageHero
-        title='Municipal Departments'
+        title='City Departments'
         description={`${filtered.length} active offices.`}
       >
         <SearchInput

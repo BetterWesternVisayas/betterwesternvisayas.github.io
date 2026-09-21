@@ -77,7 +77,7 @@ export default function CompetitivenessPage() {
       {/* PageHero - documented pattern for layout headers */}
       <PageHero
         title='Competitiveness'
-        description='National evaluation of municipal progress across pillars of governance and development.'
+        description='National evaluation of city progress across pillars of governance, economic dynamism, and resilience.'
       >
         <div className='flex flex-wrap gap-2 justify-center'>
           <Badge variant='primary' dot>
@@ -97,8 +97,8 @@ export default function CompetitivenessPage() {
         />
         <StatCard
           label='Official Rank'
-          value='33'
-          subtext='1st Class Municipality'
+          value='31'
+          subtext='Component Cities Category'
           variant='secondary'
         >
           <div className='flex items-center gap-0.5 rounded-full border border-kapwa-border-success bg-kapwa-bg-success-weak px-2 py-0.5 text-kapwa-text-success'>

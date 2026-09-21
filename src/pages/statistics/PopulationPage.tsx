@@ -28,9 +28,9 @@ import populationData from '@/data/statistics/population.json';
 
 // 14 Highly Distinct Colors (Top 3 mapped to Brand Primaries)
 const BRGY_COLORS = [
-  '#0066eb', // 1. Municipal Blue (Mayondon)
-  '#cc3e00', // 2. Brand Orange (San Antonio)
-  '#059669', // 3. Emerald Green (Batong Malake)
+  '#0066eb', // 1. Brand Blue (Baybay)
+  '#cc3e00', // 2. Brand Orange (Lawaan)
+  '#059669', // 3. Emerald Green (Culasi)
   '#7c3aed', // 4. Vivid Purple
   '#dc2626', // 5. Strong Red
   '#0891b2', // 6. Cyan/Teal
@@ -87,7 +87,7 @@ export default function PopulationPage() {
       {/* PageHero - documented pattern for layout headers */}
       <PageHero
         title='Population Profile'
-        description='Detailed demographic analysis tracking growth from the municipal level down to individual barangays.'
+        description='Detailed demographic analysis tracking growth from the city-wide level down to individual barangays.'
       >
         <div className='flex flex-wrap gap-2 justify-center'>
           <Badge variant='primary' dot>
@@ -132,7 +132,7 @@ export default function PopulationPage() {
               : 'hover:text-kapwa-text-support text-kapwa-text-strong0'
           )}
         >
-          <TrendingUp className='w-4 h-4' /> Municipal Growth
+          <TrendingUp className='w-4 h-4' /> City Growth
         </button>
         <button
           onClick={() => setActiveTab('barangays')}
@@ -151,7 +151,7 @@ export default function PopulationPage() {
       <DetailSection
         title={
           activeTab === 'municipality'
-            ? 'Total Municipal Growth'
+            ? 'Total City Growth'
             : 'Barangay Trends'
         }
         icon={TrendingUp}
@@ -245,7 +245,7 @@ export default function PopulationPage() {
       <DetailSection title='How to read this data' icon={Info}>
         <p className='text-xs italic leading-relaxed text-kapwa-text-disabled'>
           {activeTab === 'municipality'
-            ? 'The municipal growth chart tracks long-term population expansion from 1960 to current estimates.'
+            ? 'The city growth chart tracks long-term population expansion from 1960 to current estimates.'
             : 'The comparison chart allows you to track which barangays are experiencing the fastest urban growth relative to their 2010 baseline.'}
         </p>
       </DetailSection>

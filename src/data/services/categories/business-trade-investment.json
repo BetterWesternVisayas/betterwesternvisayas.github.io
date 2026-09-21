@@ -1,1 +1,77 @@
-[]
+[
+  {
+    "service": "New Business Permit Application (Mayor's Permit)",
+    "slug": "new-business-permit",
+    "type": "transaction",
+    "description": "Application for a new Mayor's Permit and business license to operate a commercial, trading, or industrial establishment within Roxas City via the Business One-Stop Shop (BOSS).",
+    "officeSlug": ["business-permit-and-licensing-office"],
+    "category": {
+      "name": "Business, Trade & Investment",
+      "slug": "business-trade-investment"
+    },
+    "steps": [
+      "Submit Unified Business Application Form at the Business Permits & Licensing Office (BPLO), City Hall Compound.",
+      "Receive automated one-stop assessment from City Engineering, City Health, CENRO, and BFP.",
+      "Pay corresponding business taxes, regulatory fees, and fire inspection fee at the City Treasury cashier.",
+      "Claim Mayor's Business Permit and official Business Plate."
+    ],
+    "requirements": [
+      "DTI Business Name Registration (Sole Proprietorship) or SEC Certificate of Registration (Corporation/Partnership)",
+      "Barangay Business Clearance from the barangay where business is situated",
+      "Contract of Lease (if renting) or Land Title / Tax Declaration (if owned)",
+      "Zoning & Locational Clearance from City Planning Office",
+      "Sanitary Permit from City Health Office",
+      "Fire Safety Inspection Certificate (FSIC) from BFP Roxas City"
+    ],
+    "quickInfo": {
+      "processingTime": "1-2 Working Days (via BOSS)",
+      "whoCanApply": "Entrepreneurs and corporate entities operating in Roxas City",
+      "appointmentType": "Walk-in / Online BPLO portal"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Roxas City Business Permits and Licensing Office (BPLO)",
+        "url": "https://roxascity.gov.ph"
+      },
+      {
+        "name": "Republic Act No. 11032 (Ease of Doing Business Act)"
+      }
+    ]
+  },
+  {
+    "service": "Annual Business Permit Renewal",
+    "slug": "business-permit-renewal",
+    "type": "transaction",
+    "description": "Annual renewal of Mayor's Permit for active commercial establishments operating in Roxas City, processed every January with early-payment incentives.",
+    "officeSlug": ["business-permit-and-licensing-office"],
+    "category": {
+      "name": "Business, Trade & Investment",
+      "slug": "business-trade-investment"
+    },
+    "steps": [
+      "Submit previous year's Mayor's Permit and certified Gross Receipts / Income Tax Return.",
+      "Secure clearances from City Health, CENRO, and Bureau of Fire Protection at the BOSS Center.",
+      "Pay business license taxes and regulatory fees at the City Treasurer's Office.",
+      "Receive renewed Mayor's Permit and current year registration sticker."
+    ],
+    "requirements": [
+      "Previous Year Mayor's Permit and Official Receipts",
+      "Audited Financial Statement or Sworn Statement of Gross Receipts",
+      "Current Barangay Business Clearance",
+      "Current Fire Safety Inspection Certificate (BFP Roxas City)"
+    ],
+    "quickInfo": {
+      "processingTime": "Same Day (Annual BOSS Center)",
+      "whoCanApply": "Existing business owners in Roxas City",
+      "fee": "Based on gross sales tax brackets"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Roxas City Revenue Code",
+        "url": "https://roxascity.gov.ph"
+      }
+    ]
+  }
+]

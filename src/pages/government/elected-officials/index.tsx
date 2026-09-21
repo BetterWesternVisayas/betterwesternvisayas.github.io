@@ -244,9 +244,7 @@ export default function ElectedOfficialsPage() {
     [allExecutive]
   );
 
-  const sbData = legislativeData.find(
-    item => item.slug === '12th-sangguniang-bayan'
-  );
+  const sbData = legislativeData[0];
 
   const getChairedCommittees = (memberName: string): Committee[] =>
     (sbData?.permanent_committees ?? []).filter(
@@ -263,7 +261,7 @@ export default function ElectedOfficialsPage() {
     <div className='space-y-8'>
       <PageHero
         title='Elected Officials'
-        description='The elected leaders and legislative body of the Municipal Government.'
+        description='The elected leaders and legislative body of the City Government.'
         breadcrumb={[
           { label: 'Government', href: '/government' },
           { label: 'Elected Officials', href: '/government/elected-officials' },

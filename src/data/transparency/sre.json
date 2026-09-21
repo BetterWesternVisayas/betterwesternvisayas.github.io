@@ -2,10 +2,10 @@
   {
     "period": "Q1-2024",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
-      "lgu_type": "Municipality"
+      "region": "Region VI",
+      "province": "Capiz",
+      "lgu_name": "Roxas City",
+      "lgu_type": "City"
     },
     "current_operating_income": {
       "local_sources": {
@@ -94,10 +94,10 @@
   {
     "period": "Q2-2024",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
-      "lgu_type": "Municipality"
+      "region": "Region VI",
+      "province": "Capiz",
+      "lgu_name": "Roxas City",
+      "lgu_type": "City"
     },
     "current_operating_income": {
       "local_sources": {
@@ -186,10 +186,10 @@
   {
     "period": "Q3-2024",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
-      "lgu_type": "Municipality"
+      "region": "Region VI",
+      "province": "Capiz",
+      "lgu_name": "Roxas City",
+      "lgu_type": "City"
     },
     "current_operating_income": {
       "local_sources": {
@@ -278,10 +278,10 @@
   {
     "period": "Q4-2024",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
-      "lgu_type": "Municipality"
+      "region": "Region VI",
+      "province": "Capiz",
+      "lgu_name": "Roxas City",
+      "lgu_type": "City"
     },
     "current_operating_income": {
       "local_sources": {
@@ -370,10 +370,10 @@
   {
     "period": "Q1-2025",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
-      "lgu_type": "Municipality"
+      "region": "Region VI",
+      "province": "Capiz",
+      "lgu_name": "Roxas City",
+      "lgu_type": "City"
     },
     "current_operating_income": {
       "local_sources": {
@@ -462,10 +462,10 @@
   {
     "period": "Q2-2025",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
-      "lgu_type": "Municipality"
+      "region": "Region VI",
+      "province": "Capiz",
+      "lgu_name": "Roxas City",
+      "lgu_type": "City"
     },
     "current_operating_income": {
       "local_sources": {
@@ -554,10 +554,10 @@
   {
     "period": "Q3-2025",
     "location_info": {
-      "region": "Region IV-A",
-      "province": "Laguna",
-      "lgu_name": "Los Baños",
-      "lgu_type": "Municipality"
+      "region": "Region VI",
+      "province": "Capiz",
+      "lgu_name": "Roxas City",
+      "lgu_type": "City"
     },
     "current_operating_income": {
       "local_sources": {

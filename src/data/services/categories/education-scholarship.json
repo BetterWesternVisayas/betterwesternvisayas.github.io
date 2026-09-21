@@ -1,37 +1,73 @@
 [
   {
-    "service": "Public School Directory",
+    "service": "Public & Private School Directory",
     "slug": "public-school-directory",
     "type": "information",
-    "description": "A comprehensive list of public elementary and secondary schools in the municipality.",
-    "officeSlug": ["department-of-education"],
+    "description": "Comprehensive directory of public and private educational institutions in Roxas City under the DepEd Schools Division of Roxas City and CHED Region VI.",
+    "officeSlug": ["local-youth-and-development-office"],
     "category": {
       "name": "Education & Scholarship",
       "slug": "education-scholarship"
     },
     "steps": [
-      "Los Baños Central Elementary School (Timugan)",
-      "Mayondon Elementary School",
-      "Bayog Elementary School",
-      "Lalakay Elementary School",
-      "Los Baños National High School (Poblacion)",
-      "Bernardo F. San Juan National High School",
-      "South Hill School (Private)",
-      "University of the Philippines Rural High School"
+      "Capiz National High School (Fuentes Drive, Roxas City - Premier Public Secondary School)",
+      "President Manuel A. Roxas Memorial School North & South (Poblacion)",
+      "Roxas City School for Philippine Craftsmen (Brgy. Culasi)",
+      "Tanque National High School (Brgy. Tanque)",
+      "Don Ynocencio A. Del Rosario National High School (Brgy. Dayao)",
+      "Capiz State University - CAPSU Main Campus (Fuentes Drive)",
+      "Filamer Christian University (Roxas Avenue - Established 1904)",
+      "Colegio de la Purisima Concepcion (Arzobispo St. - Archdiocesan Catholic Institution)",
+      "St. Anthony College of Roxas City (San Roque Extension)"
     ],
     "requirements": [],
-    "relatedServices": ["scholarship-application"],
+    "relatedServices": ["city-scholarship-program"],
     "faqs": [
       {
-        "question": "When does enrollment start?",
-        "answer": "Enrollment typically begins in July. Please follow the official DepEd page for announcements."
+        "question": "When does enrollment typically begin?",
+        "answer": "Basic education enrollment follows DepEd national schedules, usually between June and July. Higher education institutions begin admissions from April through August."
       }
     ],
-    "updatedAt": null,
+    "updatedAt": "2026-09-21T00:00:00Z",
     "sources": [
       {
-        "name": "DepEd Schools Division Office List",
-        "url": ""
+        "name": "DepEd Schools Division Office of Roxas City",
+        "url": "https://depedroxascity.ph"
+      }
+    ]
+  },
+  {
+    "service": "Roxas City Tertiary Educational Assistance (Mayor's Scholarship)",
+    "slug": "city-scholarship-program",
+    "type": "transaction",
+    "description": "Financial tuition and stipend support granted to deserving underprivileged college students residing in Roxas City.",
+    "officeSlug": ["local-youth-and-development-office"],
+    "category": {
+      "name": "Education & Scholarship",
+      "slug": "education-scholarship"
+    },
+    "steps": [
+      "Secure application form from the Local Youth Development Office (LYDO) at Roxas City Hall Compound.",
+      "Submit certified true copy of grades (GWA 85% or 2.0 with no failing mark).",
+      "Undergo socio-economic interview and verification with CSWDO social assessors.",
+      "Attend scholarship orientation and claim semester grant payout at the City Treasury Office."
+    ],
+    "requirements": [
+      "Certificate of Indigency from Barangay of residence in Roxas City",
+      "Official Certificate of Enrollment / Registration from accredited college/university",
+      "Certified True Copy of Grades from preceding semester",
+      "Voter's Certification of parent/guardian or applicant (Roxas City voter)"
+    ],
+    "quickInfo": {
+      "processingTime": "Per Semester Call",
+      "whoCanApply": "Bona fide college students residing in Roxas City",
+      "appointmentType": "Scheduled / Walk-in"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "City Government of Roxas - LYDO",
+        "url": "https://roxascity.gov.ph"
       }
     ]
   }

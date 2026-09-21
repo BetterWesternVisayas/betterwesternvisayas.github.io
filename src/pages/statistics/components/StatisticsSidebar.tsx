@@ -21,7 +21,7 @@ export default function StatisticsSidebar() {
     },
     {
       path: '/statistics/municipal-income',
-      label: 'Municipal Income',
+      label: 'City Income',
       icon: Wallet,
       description: 'Revenue sources',
     },

@@ -29,9 +29,9 @@ export const test = base.extend({
           status: 200,
           contentType: 'application/json',
           body: JSON.stringify({
-            los_ba_os: {
-              name: 'Los Baños',
-              coordinates: { lat: 14.1763, lon: 121.2219 },
+            roxas_city: {
+              name: 'Roxas City',
+              coordinates: { lat: 11.5853, lon: 122.7511 },
               weather: [{ icon: '01d', description: 'partly cloudy' }],
               main: {
                 temp: 28,
@@ -47,7 +47,7 @@ export const test = base.extend({
               dt: Math.floor(Date.now() / 1000),
               sys: {},
               timezone: 28800,
-              id: 1706511,
+              id: 1688849,
               timestamp: new Date().toISOString(),
               hourly: [],
             },
@@ -76,8 +76,8 @@ export const test = base.extend({
           status: 200,
           contentType: 'application/json',
           body: JSON.stringify({
-            los_ba_os: {
-              name: 'Los Baños',
+            roxas_city: {
+              name: 'Roxas City',
               temperature: 28,
               description: 'partly cloudy',
             },

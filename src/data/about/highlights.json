@@ -1,25 +1,25 @@
 [
   {
-    "title": "The \"Mainit\" Legacy",
-    "description": "Before the Spaniards arrived, the settlement was known as 'Mainit' (Hot). Its thermal waters, heated by the dormant Mt. Makiling, were believed to cure ailments long before the first hospital was built.",
+    "title": "Seafood Capital & Diwal Sanctuary",
+    "description": "Roxas City's vast coastal estuaries, clean Sibuyan marine waters, and rich mangrove ecosystems sustain the Philippines' highest concentration of premium seafood. The resurgence of the rare Diwal (angel wing clam) stands as a national triumph of community-led marine conservation.",
     "theme": "slate",
     "icon": "Waves"
   },
   {
-    "title": "Rizal's Mountain",
-    "description": "Dr. Jose Rizal frequently scoured the jungles of Mt. Makiling. Spanish authorities once suspected him of using the peak to hoist a German flag or spy for Germany.",
+    "title": "Cradle of the First Republic President",
+    "description": "The ancestral legacy of President Manuel A. Roxas defines the city's civic ethos. His preserved birthplace along Rizal Street stands as a timeless monument to Filipino statesmanship, constitutional leadership, and post-war nation building.",
     "theme": "orange",
     "icon": "Feather"
   },
   {
-    "title": "Friar Lands",
-    "description": "Vast tracts of land were once owned by Dominican Friars. Don Francisco Mercado, father of Jose Rizal, leased these lands for sugarcane and rice, tying the national hero's family deep into the soil of Los Baños.",
+    "title": "Panay River & Mangrove Lifeline",
+    "description": "Meandering through the heart of the city, the Panay River is both an ecological artery and a cultural highway. Community river tours at Palina and Cadimahan demonstrate how local fisherfolk lead sustainable ecotourism and mangrove preservation.",
     "theme": "amber",
     "icon": "Leaf"
   },
   {
-    "title": "Nature & Delicacies",
-    "description": "Today, the 'Special Science and Nature City' is synonymous with two things: the legendary Buko Pie and its numerous hot spring resorts, remaining a favorite sanctuary for travelers.",
+    "title": "Capiz Shell Artistry & Cultural Soul",
+    "description": "From radiant Placuna placenta shellcraft to the spirited Sinadya sa Halaran festival, Roxas City harmonizes time-honored Hiligaynon traditions with modern civic energy and genuine Visayan hospitality.",
     "theme": "emerald",
     "icon": "Mountain"
   }

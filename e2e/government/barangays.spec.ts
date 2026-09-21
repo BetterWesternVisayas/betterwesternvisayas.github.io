@@ -16,7 +16,7 @@ test.describe('Barangays Pages', () => {
     const cards = page.locator('a[href*="/government/barangays/"]');
     const count = await cards.count();
 
-    // Should have multiple barangays (Los Baños has 14 barangays)
+    // Should have multiple barangays (Roxas City has 47 barangays)
     expect(count).toBeGreaterThan(10);
 
     // Check first card has proper structure
@@ -34,7 +34,7 @@ test.describe('Barangays Pages', () => {
 
     // Search for a specific barangay
     const searchInput = page.locator('input[placeholder*="Search"]');
-    await searchInput.fill('Anos');
+    await searchInput.fill('Baybay');
 
     // Wait for filtering to apply
     await page.waitForTimeout(300);

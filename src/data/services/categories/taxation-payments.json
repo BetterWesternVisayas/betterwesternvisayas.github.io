@@ -1,1 +1,69 @@
-[]
+[
+  {
+    "service": "Real Property Tax Payment (Amilyar)",
+    "slug": "real-property-tax-payment",
+    "type": "transaction",
+    "description": "Assessment and payment of annual Real Property Tax (RPT) on land, buildings, and machinery in Roxas City, offering up to 20% prompt-payment discount for early settlement.",
+    "officeSlug": ["municipal-treasurers-office"],
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "steps": [
+      "Present previous year's Official Receipt or Tax Declaration number at the City Assessor / Treasury Window, Roxas City Hall.",
+      "Receive statement of account detailing current year tax due and applicable prompt payment discount.",
+      "Pay in cash, manager's check, or authorized electronic banking channel.",
+      "Receive official receipt and tax clearance validation."
+    ],
+    "requirements": [
+      "Previous Year Official Receipt of RPT payment",
+      "Tax Declaration / Title number",
+      "Valid Government ID of property owner or authorized representative"
+    ],
+    "quickInfo": {
+      "processingTime": "10-15 Minutes",
+      "whoCanApply": "Real property owners in Roxas City",
+      "appointmentType": "Walk-in / Online Treasury Counter"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "City Treasurer's Office - Roxas City",
+        "url": "https://roxascity.gov.ph"
+      }
+    ]
+  },
+  {
+    "service": "Community Tax Certificate (Cedula) Issuance",
+    "slug": "community-tax-certificate-cedula",
+    "type": "transaction",
+    "description": "Issuance of Community Tax Certificate (Individual or Corporate) required for notarized documents, government transactions, and business clearances in Roxas City.",
+    "officeSlug": ["municipal-treasurers-office"],
+    "category": {
+      "name": "Taxation & Payments",
+      "slug": "taxation-payments"
+    },
+    "steps": [
+      "Fill out Cedula information slip at the Treasury assessment counter, City Hall or participating Barangay Hall.",
+      "State declared gross income or earnings from business/profession for the preceding year.",
+      "Pay basic tax (₱5.00) plus additional tax based on gross income (₱1.00 per ₱1,000 earnings).",
+      "Affix signature and thumbmark, and receive original Community Tax Certificate."
+    ],
+    "requirements": [
+      "Valid Government ID",
+      "Proof of gross income (Payslip, ITR, or Certificate of Compensation if applicable)"
+    ],
+    "quickInfo": {
+      "processingTime": "5-10 Minutes",
+      "fee": "Statutory minimum ₱5.50 plus proportional income assessment",
+      "whoCanApply": "Individuals aged 18 and above residing or employed in Roxas City"
+    },
+    "updatedAt": "2026-09-21T00:00:00Z",
+    "sources": [
+      {
+        "name": "Local Government Code of 1991 / City Treasury Office",
+        "url": "https://roxascity.gov.ph"
+      }
+    ]
+  }
+]

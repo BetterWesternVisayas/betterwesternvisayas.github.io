@@ -3,7 +3,7 @@
     "slug": "sangguniang-panlungsod-ng-roxas",
     "branch": "Legislative Branch",
     "chamber": "Sangguniang Panlungsod of Roxas City",
-    "address": "Roxas City Hall, Arzobispo Street, Roxas City, Capiz",
+    "address": "Roxas City Hall, Washington St., Roxas City, Capiz 5800",
     "trunkline": "(036) 621-0500",
     "website": "https://roxascity.gov.ph",
     "email": "sp@roxascity.gov.ph",
@@ -73,6 +73,90 @@
         "name": "HERBERT S. CHU",
         "website": "https://roxascity.gov.ph",
         "personId": "chu-herbert"
+      }
+    ],
+    "permanent_committees": [
+      {
+        "committee": "Committee on Laws, Rules, Ordinances & Good Governance",
+        "chairperson": "JOHN PAUL J. ARCENAS",
+        "members": [
+          { "name": "MIDELO D. OCAMPO", "role": "Vice Chairperson" },
+          { "name": "JAIME R. MAGBANUA", "role": "Member" },
+          { "name": "PAUL IVAN R. BATICADOS", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Appropriations, Ways and Means & Finance",
+        "chairperson": "MIDELO D. OCAMPO",
+        "members": [
+          { "name": "ALBERT GREGORY A. POTATO", "role": "Vice Chairperson" },
+          { "name": "REYNALDO C. SAN ANTONIO", "role": "Member" },
+          { "name": "FERNANDO LUIS A. VITERBO", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Health, Sanitation & Social Welfare",
+        "chairperson": "JAIME R. MAGBANUA",
+        "members": [
+          { "name": "HERBERT S. CHU", "role": "Vice Chairperson" },
+          { "name": "MORENO A. GONZAGA", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Agriculture, Fisheries & Aquatic Resources",
+        "chairperson": "REYNALDO C. SAN ANTONIO",
+        "members": [
+          { "name": "EARL C. SICAD", "role": "Vice Chairperson" },
+          { "name": "JOHN PAUL J. ARCENAS", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Trade, Commerce, Industry & Tourism",
+        "chairperson": "ALBERT GREGORY A. POTATO",
+        "members": [
+          { "name": "FERNANDO LUIS A. VITERBO", "role": "Vice Chairperson" },
+          { "name": "PAUL IVAN R. BATICADOS", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Public Works, Infrastructure & Urban Planning",
+        "chairperson": "FERNANDO LUIS A. VITERBO",
+        "members": [
+          { "name": "MIDELO D. OCAMPO", "role": "Vice Chairperson" },
+          { "name": "MORENO A. GONZAGA", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Public Safety, Peace and Order & CDRRMO Matters",
+        "chairperson": "MORENO A. GONZAGA",
+        "members": [
+          { "name": "EARL C. SICAD", "role": "Vice Chairperson" },
+          { "name": "REYNALDO C. SAN ANTONIO", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Education, Science & Technology",
+        "chairperson": "PAUL IVAN R. BATICADOS",
+        "members": [
+          { "name": "JOHN PAUL J. ARCENAS", "role": "Vice Chairperson" },
+          { "name": "HERBERT S. CHU", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Environmental Protection & Natural Resources",
+        "chairperson": "EARL C. SICAD",
+        "members": [
+          { "name": "ALBERT GREGORY A. POTATO", "role": "Vice Chairperson" },
+          { "name": "JAIME R. MAGBANUA", "role": "Member" }
+        ]
+      },
+      {
+        "committee": "Committee on Transportation, Traffic Management & Public Utilities",
+        "chairperson": "HERBERT S. CHU",
+        "members": [
+          { "name": "MIDELO D. OCAMPO", "role": "Vice Chairperson" },
+          { "name": "MORENO A. GONZAGA", "role": "Member" }
+        ]
       }
     ]
   }

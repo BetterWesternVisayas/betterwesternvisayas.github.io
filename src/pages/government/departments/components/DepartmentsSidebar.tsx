@@ -18,18 +18,18 @@ export default function DepartmentsSidebar() {
 
   const sortedDepartments = [...departmentsData].sort((a, b) => {
     const cleanA = a.office_name.replace(
-      /MUNICIPAL |LOCAL |DEPARTMENT OF /g,
+      /CITY |MUNICIPAL |LOCAL |DEPARTMENT OF /g,
       ''
     );
     const cleanB = b.office_name.replace(
-      /MUNICIPAL |LOCAL |DEPARTMENT OF /g,
+      /CITY |MUNICIPAL |LOCAL |DEPARTMENT OF /g,
       ''
     );
     return cleanA.localeCompare(cleanB);
   });
 
   return (
-    <SidebarContainer title='Municipal Departments'>
+    <SidebarContainer title='City Departments'>
       {sortedDepartments.map(dept => {
         // 2. Get the specific icon or fallback to a default building icon
         const IconComponent = officeIcons[dept.slug] || Building2Icon;
