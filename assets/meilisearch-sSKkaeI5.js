@@ -1,0 +1,1 @@
+import{t as e}from"./vendor-search-C4LWbUgd.js";var t=new e({host:`https://search2.bettergov.ph`,apiKey:``}),n={PHILGEPS:`philgeps`,DPWH:`dpwh`,PHILGEPS_ORGS:`philgeps_organizations`};export{t as n,n as t};

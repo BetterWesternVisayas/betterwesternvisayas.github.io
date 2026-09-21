@@ -1,0 +1,1 @@
+import{d as e,i as t,t as n}from"./vendor-react-BA8xVtf4.js";var r=n();function i(){let{document:n}=e();return(0,r.jsx)(t,{to:`/openlgu/documents/${n}`,replace:!0})}export{i as default};
