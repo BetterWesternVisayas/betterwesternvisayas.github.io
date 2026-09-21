@@ -71,13 +71,6 @@ const ReferenceImplementationPage = lazy(
 
 // Statistics Dashboard
 const StatisticsLayout = lazy(() => import('@/pages/statistics/layout'));
-const PopulationPage = lazy(() => import('@/pages/statistics/PopulationPage'));
-const MunicipalIncomePage = lazy(
-  () => import('@/pages/statistics/MunicipalIncomePage')
-);
-const CompetitivenessPage = lazy(
-  () => import('@/pages/statistics/CompetitivenessPage')
-);
 
 // OpenLGU Portal
 const OpenLGULayout = lazy(() => import('@/pages/openlgu/layout'));
@@ -224,18 +217,7 @@ function AppContent() {
 
             {/* Statistics Dashboard — feature gated */}
             {config.features.statistics && (
-              <Route path='statistics' element={<StatisticsLayout />}>
-                <Route index element={<PopulationPage />} />
-                <Route path='population' element={<PopulationPage />} />
-                <Route
-                  path='municipal-income'
-                  element={<MunicipalIncomePage />}
-                />
-                <Route
-                  path='competitiveness'
-                  element={<CompetitivenessPage />}
-                />
-              </Route>
+              <Route path='statistics' element={<StatisticsLayout />} />
             )}
 
             {/* OpenLGU Portal — feature gated */}

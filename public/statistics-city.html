@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>City Statistics — Roxas City, Capiz</title>
+<style>
+  :root{
+    --royal:#0038A8;          /* Philippine royal blue */
+    --royal-2:#0B4FD1;
+    --royal-3:#3E6EDB;
+    --royal-4:#8FAEEF;
+    --royal-5:#CBD9F7;
+    --navy:#071B4D;
+    --ink:#0A0F1F;
+    --white:#FFFFFF;
+    --bg:#FFFFFF;
+    --tint:#F6F9FF;
+    --line:#E4EAF5;
+    --gray:#6B7280;
+    --muted:#5B6C8E;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16px; line-height:1.55;
+  }
+  .topline{height:6px;background:linear-gradient(90deg,#0038A8 0%,#0B4FD1 45%,#3E6EDB 100%)}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 20px 72px}
+
+  /* ---------- masthead ---------- */
+  .page-head{text-align:center;padding:54px 20px 8px;max-width:820px;margin:0 auto}
+  .page-head h1{margin:0;font-size:clamp(34px,5.4vw,54px);font-weight:800;letter-spacing:-.03em;color:#0A0F1F;line-height:1.08}
+  .page-head p{margin:14px 0 0;font-size:clamp(15px,1.8vw,18px);color:var(--gray)}
+  .page-head .stamp{margin-top:14px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#98A2B3;font-weight:700}
+
+  /* ---------- stat strip ---------- */
+  .stats{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));
+    gap:12px;margin:30px 0 6px;
+  }
+  .stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 15px}
+  .stat .k{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gray);font-weight:800}
+  .stat .v{font-size:24px;font-weight:800;letter-spacing:-.02em;margin-top:4px;color:var(--royal)}
+  .stat .s{font-size:11.5px;color:var(--gray);margin-top:2px}
+
+  /* ---------- shell / sidebar ---------- */
+  .shell{display:grid;grid-template-columns:286px minmax(0,1fr);gap:26px;align-items:start;margin-top:26px}
+  .shell.nav-off{grid-template-columns:minmax(0,1fr)}
+  .shell.nav-off .side{display:none}
+  .side{position:sticky;top:16px}
+
+  .menu-toggle{
+    display:inline-flex;align-items:center;gap:8px;background:none;border:0;margin:0 0 10px;padding:5px 3px;
+    font:inherit;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;
+    color:#98A2B3;cursor:pointer;border-radius:6px
+  }
+  .menu-toggle:hover{color:var(--royal)}
+  .menu-toggle svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.9}
+
+  .menu-chip{
+    display:none;align-items:center;gap:8px;margin:0 0 14px;padding:8px 14px;border-radius:999px;
+    background:#fff;border:1px solid var(--line);color:var(--royal);font:inherit;font-size:11.5px;
+    font-weight:800;letter-spacing:.12em;text-transform:uppercase;cursor:pointer
+  }
+  .menu-chip:hover{border-color:var(--royal-4)}
+  .menu-chip svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.9}
+  .shell.nav-off .menu-chip{display:inline-flex}
+
+  .nav-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .nav-title{
+    padding:13px 16px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;
+    color:var(--gray);background:#FAFBFE;border-bottom:1px solid var(--line)
+  }
+  .nav-item{
+    display:flex;gap:12px;align-items:flex-start;padding:13px 16px;text-decoration:none;color:inherit;
+    border-left:4px solid transparent;border-bottom:1px solid #EFF2F9
+  }
+  .nav-item:last-child{border-bottom:0}
+  .nav-item:hover{background:#F7FAFF}
+  .nav-item.is-active{border-left-color:var(--royal);background:#F5F8FF}
+  .nav-item b{display:block;font-size:14.5px;font-weight:800;color:#101828;letter-spacing:-.01em}
+  .nav-item i{display:block;font-style:normal;font-size:12.5px;color:var(--gray);margin-top:2px}
+  .nav-item.is-active b{color:var(--royal)}
+  .nav-item.is-active i{color:var(--royal-2)}
+  .nav-ico{flex:0 0 auto;margin-top:1px}
+  .nav-ico svg{width:21px;height:21px;fill:none;stroke:#9AA5B8;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .nav-item:hover .nav-ico svg{stroke:var(--royal-3)}
+  .nav-item.is-active .nav-ico svg{stroke:var(--royal)}
+  .side-note{margin-top:12px;padding:0 4px;font-size:11.5px;line-height:1.6;color:#98A2B3}
+
+  /* ---------- panels ---------- */
+  .panel{
+    background:#fff;border:1px solid var(--line);border-radius:18px;
+    padding:36px 30px 28px;margin-bottom:26px;scroll-margin-top:20px
+  }
+  .panel-head{text-align:center;max-width:780px;margin:0 auto 28px}
+  .panel-head h2{margin:0;font-size:clamp(28px,3.8vw,42px);font-weight:800;letter-spacing:-.03em;color:#0A0F1F;line-height:1.1}
+  .panel-head p{margin:13px 0 18px;font-size:clamp(14.5px,1.6vw,16.5px);color:var(--gray)}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+  .badge{
+    display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);
+    border-radius:999px;padding:6px 14px;font-size:11px;font-weight:800;letter-spacing:.1em;
+    text-transform:uppercase;color:var(--gray);white-space:nowrap
+  }
+  .badge.primary{color:var(--royal);border-color:#C6D5F4}
+  .badge .dot{width:8px;height:8px;border-radius:50%;background:var(--royal);display:inline-block}
+
+  /* ---------- content ---------- */
+  h3{margin:26px 0 10px;font-size:18px}
+  h4{margin:0 0 4px;font-size:15.5px;color:var(--ink)}
+  .grid{display:grid;gap:16px}
+  .g2{grid-template-columns:repeat(auto-fit,minmax(310px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 18px 14px}
+  .card.tint{background:linear-gradient(180deg,#fff 0%,var(--tint) 100%)}
+  .card p{margin:6px 0 0;font-size:14px}
+  .card .sub{color:var(--gray);font-size:12.5px;margin-top:4px}
+  .src{font-size:11.5px;color:var(--gray);margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}
+  .src a{color:var(--royal-2);text-decoration:none}
+  .src a:hover{text-decoration:underline}
+  .chart{width:100%;height:auto;display:block;overflow:visible}
+  .legend{display:flex;flex-wrap:wrap;gap:12px;margin-top:10px;font-size:12.5px;color:var(--gray)}
+  .legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:12px}
+  .kpi{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 13px}
+  .kpi .k{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--gray);font-weight:800}
+  .kpi .v{font-size:21px;font-weight:800;color:var(--royal);margin-top:4px}
+  .kpi .s{font-size:11.5px;color:var(--gray)}
+
+  .tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+  th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{background:#EEF3FE;color:var(--navy);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+  tbody tr:hover{background:#F7FAFF}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  .pill{
+    display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:700;
+    background:#E6EEFF;color:var(--royal);border:1px solid var(--royal-5);white-space:nowrap
+  }
+  .pill.top{background:var(--royal);color:#fff;border-color:var(--royal)}
+
+  ul.tight{margin:6px 0 0;padding-left:18px;font-size:14px}
+  ul.tight li{margin:4px 0}
+  .callout{
+    background:#EEF3FE;border:1px solid var(--royal-5);border-left:5px solid var(--royal);
+    border-radius:12px;padding:13px 15px;font-size:13.5px;margin-top:14px
+  }
+  .callout b{color:var(--royal)}
+  .note{font-size:12.5px;color:var(--gray)}
+  ol.sources{padding-left:20px;font-size:13px}
+  ol.sources li{margin:8px 0}
+  ol.sources a{color:var(--royal-2);word-break:break-word}
+  sup.cite{font-size:11px;font-weight:700;color:var(--royal)}
+  sup.cite a{color:var(--royal);text-decoration:none;border-bottom:1px dotted var(--royal-3)}
+
+  footer{margin-top:8px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--gray)}
+
+  #tip{
+    position:fixed;z-index:99;pointer-events:none;opacity:0;transition:opacity .12s;
+    background:rgba(7,27,77,.95);color:#fff;font-size:12px;padding:6px 9px;border-radius:8px;
+    max-width:240px;line-height:1.35
+  }
+  #tip b{color:#BFD3FF}
+
+  @media (max-width:900px){
+    .shell{grid-template-columns:minmax(0,1fr);gap:16px}
+    .side{position:static}
+    .panel{padding:26px 18px 20px}
+    .panel-head{margin-bottom:22px}
+  }
+  @media print{
+    .side,.menu-toggle,.menu-chip{display:none !important}
+    .shell{grid-template-columns:minmax(0,1fr)}
+    .panel{border:0;padding:0;margin-bottom:22px}
+    .topline{display:none}
+  }
+</style>
+</head>
+<body>
+<div class="topline"></div>
+
+<header class="page-head">
+  <h1>City Statistics</h1>
+  <p>Data-driven insights into the population, economy, and performance of Roxas City.</p>
+  <div class="stamp">Roxas City, Capiz · Western Visayas · compiled 22 September 2026</div>
+</header>
+
+<div class="wrap">
+
+  <!-- ===================== QUICK STATS ===================== -->
+  <div class="stats">
+    <div class="stat"><div class="k">Population (2024)</div><div class="v">185,236</div><div class="s">2024 POPCEN · +0.79%/yr vs 2020<sup class="cite"><a href="#s1">1</a>,<a href="#s2">2</a></sup></div></div>
+    <div class="stat"><div class="k">Households (2024)</div><div class="v">43,257</div><div class="s">Land area 95.07 km²<sup class="cite"><a href="#s15">15</a>,<a href="#s2">2</a></sup></div></div>
+    <div class="stat"><div class="k">Density (2024)</div><div class="v">1,948/km²</div><div class="s">≈5,046 per sq mi<sup class="cite"><a href="#s1">1</a>,<a href="#s15">15</a></sup></div></div>
+    <div class="stat"><div class="k">CMCI 2024 rank</div><div class="v">48th</div><div class="s">of 116 component cities (was 56th of 114)<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></div></div>
+    <div class="stat"><div class="k">Income class</div><div class="v">2nd class</div><div class="s">city — DOF reclassification, Dec 2024<sup class="cite"><a href="#s11">11</a>,<a href="#s12">12</a></sup></div></div>
+    <div class="stat"><div class="k">FY 2025 budget</div><div class="v">₱1.43 B</div><div class="s">₱1.0 B+ national tax allotment<sup class="cite"><a href="#s10">10</a></sup></div></div>
+    <div class="stat"><div class="k">Poverty incidence</div><div class="v">6.54%</div><div class="s">2023 estimates (9.52% in 2021)<sup class="cite"><a href="#s3">3</a>,<a href="#s4">4</a></sup></div></div>
+    <div class="stat"><div class="k">Registered voters</div><div class="v">112,738</div><div class="s">2025 elections (104,264 in 2019)<sup class="cite"><a href="#s15">15</a>,<a href="#s2">2</a></sup></div></div>
+  </div>
+
+  <div class="shell" id="shell">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="side">
+      <button class="menu-toggle" id="menuToggle" aria-controls="sideNav" aria-expanded="true">
+        <span id="toggleLabel">Hide menu</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="18" height="17" rx="2.5"/><path d="M9 3.5v17"/></svg>
+      </button>
+
+      <nav class="nav-card" id="sideNav" aria-label="Sections">
+        <div class="nav-title">City Statistics</div>
+
+        <a class="nav-item is-active" href="#demographics" data-target="demographics">
+          <span class="nav-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M16 20v-1.6a3.4 3.4 0 0 0-3.4-3.4H6.4A3.4 3.4 0 0 0 3 18.4V20"/><circle cx="9.5" cy="8" r="3.4"/><path d="M21 20v-1.6a3.4 3.4 0 0 0-2.6-3.3M15.8 4.6a3.4 3.4 0 0 1 0 6.6"/></svg>
+          </span>
+          <span class="nav-txt"><b>Demographics</b><i>Population growth</i></span>
+        </a>
+
+        <a class="nav-item" href="#competitiveness" data-target="competitiveness">
+          <span class="nav-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4.6A1.6 1.6 0 0 0 3 7.6 3.4 3.4 0 0 0 6.4 11H7M17 6h2.4A1.6 1.6 0 0 1 21 7.6 3.4 3.4 0 0 1 17.6 11H17"/><path d="M12 14v3.2M8.6 20h6.8M10 20v-1.6a1.4 1.4 0 0 1 1.4-1.4h1.2A1.4 1.4 0 0 1 14 18.4V20"/></svg>
+          </span>
+          <span class="nav-txt"><b>Competitiveness</b><i>CMCI index &amp; rankings</i></span>
+        </a>
+
+        <a class="nav-item" href="#income" data-target="income">
+          <span class="nav-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.4"/><path d="M3 10h18"/><path d="M16.5 14.5h1.5"/></svg>
+          </span>
+          <span class="nav-txt"><b>City Income</b><i>Revenue sources</i></span>
+        </a>
+      </nav>
+
+      <div class="side-note">
+        Sources: PSA · DTI-CMCI · COA · DOF/BLGF · PIA.<br>
+        Every chart is attributed; see "Methodology &amp; Sources" at the end of the page.
+      </div>
+    </aside>
+
+    <!-- ===================== MAIN ===================== -->
+    <main class="main-col">
+      <button class="menu-chip" id="menuChip" aria-controls="sideNav">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3.5" width="18" height="17" rx="2.5"/><path d="M9 3.5v17"/></svg>
+        Show menu
+      </button>
+
+      <!-- ========== 1. DEMOGRAPHICS ========== -->
+      <section class="panel" id="demographics">
+        <header class="panel-head">
+          <h2>Population Profile</h2>
+          <p>Detailed demographic analysis tracking growth from the city-wide level down to individual barangays.</p>
+          <div class="badges">
+            <span class="badge primary"><i class="dot"></i>Census 2024</span>
+            <span class="badge">47 barangays</span>
+          </div>
+        </header>
+
+        <div class="grid g2">
+          <div class="card">
+            <h4>Census population, 1903 – 2024</h4>
+            <div class="sub">Roxas City grew from 21,472 (1903) to 185,236 (2024) — about 8.6× in 121 years.</div>
+            <div id="c-pop"></div>
+            <div class="src">Source: PSA censuses of population (1903–2024) via PhilAtlas city profile;<sup class="cite"><a href="#s2">2</a></sup> 2024 count from the 2024 POPCEN.<sup class="cite"><a href="#s1">1</a></sup></div>
+          </div>
+
+          <div class="grid" style="gap:16px">
+            <div class="card">
+              <h4>Annual population growth rate</h4>
+              <div class="sub">Growth has cooled to below 1% per year in the 2020–2024 period.</div>
+              <div id="c-apgr"></div>
+              <div class="src">Source: PSA, intercensal annualized growth rates.<sup class="cite"><a href="#s2">2</a></sup> 2024 rate (0.79%) per 2024 POPCEN summary.<sup class="cite"><a href="#s15">15</a></sup></div>
+            </div>
+            <div class="card">
+              <h4>Share of the provincial population (2024)</h4>
+              <div class="sub">Roxas City hosts 22.18% of Capiz's 835,098 residents<sup class="cite"><a href="#s17">17</a></sup> on 3.66% of its land.<sup class="cite"><a href="#s2">2</a></sup></div>
+              <div id="c-share"></div>
+              <div class="src">Computed: 185,236 ÷ 835,098 (PSA 2024 POPCEN).<sup class="cite"><a href="#s1">1</a>,<a href="#s17">17</a></sup></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid g2" style="margin-top:16px">
+          <div class="card">
+            <h4>Age structure (2015 census)</h4>
+            <div class="sub">Median age 25.56 · total dependency ratio 54.1 (youth 44.8, old-age 9.3). The 15–19 bracket is the largest single group.</div>
+            <div id="c-age"></div>
+            <div class="src">Source: PSA, 2015 Census of Population age distribution for Roxas City.<sup class="cite"><a href="#s2">2</a></sup> City-level age tables from the 2020/2024 censuses were not yet published in the cited series.</div>
+          </div>
+
+          <div class="grid" style="gap:16px">
+            <div class="card">
+              <h4>Households</h4>
+              <div class="sub">Households nearly tripled since 1990 while average household size fell from 5.49 to 4.40 members (2015).<sup class="cite"><a href="#s2">2</a></sup></div>
+              <div id="c-hh"></div>
+              <div class="src">Source: PSA census household counts, 1990–2015;<sup class="cite"><a href="#s2">2</a></sup> 2024 household count (43,257) from the 2024 POPCEN summary.<sup class="cite"><a href="#s15">15</a></sup></div>
+            </div>
+            <div class="card">
+              <h4>Ten most populous barangays (2020)</h4>
+              <div class="sub">Lawa-an and Baybay each hold over 9,000 residents; the city has 47 barangays.<sup class="cite"><a href="#s2">2</a></sup></div>
+              <div id="c-brgy"></div>
+              <div class="src">Source: PSA, 2020 Census of Population and Housing, barangay-level counts.<sup class="cite"><a href="#s2">2</a></sup></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card tint" style="margin-top:16px">
+          <h4>Key demographic facts</h4>
+          <ul class="tight">
+            <li><b>Most populous in Capiz, second in Western Visayas</b> after Iloilo City.<sup class="cite"><a href="#s15">15</a></sup></li>
+            <li><b>1,948 inhabitants per km²</b> in 2024 — the city holds <b>22.18%</b> of Capiz's residents on just <b>3.66%</b> of the province's land area.<sup class="cite"><a href="#s1">1</a>,<a href="#s17">17</a>,<a href="#s2">2</a></sup></li>
+            <li><b>Electorate:</b> 112,738 registered voters for the May 2025 elections (up from 104,264 in 2019 — 54,036 female / 50,228 male then).<sup class="cite"><a href="#s15">15</a>,<a href="#s2">2</a></sup></li>
+            <li><b>Geography:</b> coastal component city on Panay Island, 95.07 km², 7.0 m elevation, 47 barangays, postal code 5800.<sup class="cite"><a href="#s15">15</a>,<a href="#s2">2</a></sup></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== 2. COMPETITIVENESS ========== -->
+      <section class="panel" id="competitiveness">
+        <header class="panel-head">
+          <h2>Competitiveness</h2>
+          <p>How Roxas City scores and ranks in the DTI Cities &amp; Municipalities Competitiveness Index — five pillars, each weighted 20%.</p>
+          <div class="badges">
+            <span class="badge primary"><i class="dot"></i>CMCI 2024</span>
+            <span class="badge">116 component cities</span>
+          </div>
+        </header>
+
+        <div class="kpis">
+          <div class="kpi"><div class="k">Overall rank — CMCI 2024</div><div class="v">48th <span style="font-size:13px;font-weight:600;color:var(--gray)">of 116</span></div><div class="s">Component cities nationwide; 56th of 114 in 2023<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></div></div>
+          <div class="kpi"><div class="k">Composite score 2024</div><div class="v">38.68</div><div class="s">Sum of 5 pillar scores; 35.54 in 2023 (computed)<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></div></div>
+          <div class="kpi"><div class="k">Regional standing</div><div class="v">No. 1</div><div class="s">Most competitive component city in Western Visayas, CMCI 2024<sup class="cite"><a href="#s7">7</a></sup></div></div>
+          <div class="kpi"><div class="k">Most improved</div><div class="v">18th</div><div class="s">Among 116 component cities, CMCI 2024<sup class="cite"><a href="#s7">7</a></sup></div></div>
+        </div>
+
+        <div class="grid g2" style="margin-top:16px">
+          <div class="card">
+            <h4>Five pillars — score profile, 2023 vs 2024</h4>
+            <div class="sub">Radar scale 0–12 (the highest 2024 score is Resiliency at 11.32). Big jumps: Innovation and Resiliency.</div>
+            <div id="c-radar"></div>
+            <div class="legend">
+              <span><i style="background:var(--royal-4)"></i>2023 scores (114 component cities)</span>
+              <span><i style="background:var(--royal)"></i>2024 scores (116 component cities)</span>
+            </div>
+            <div class="src">Source: DTI CMCI LGU profile — Roxas (CZ), 2023 and 2024 cycles.<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></div>
+          </div>
+
+          <div class="card">
+            <h4>Pillar ranks: where Roxas City moved</h4>
+            <div class="sub">Rank 1 = most competitive. Lines sloping up mean a better rank in 2024.</div>
+            <div id="c-slope"></div>
+            <div class="src">Source: DTI CMCI — Roxas (CZ) profiles, 2023 (of 114) and 2024 (of 116 component cities).<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></div>
+          </div>
+        </div>
+
+        <div class="grid g2" style="margin-top:16px">
+          <div class="card">
+            <h4>Pillar detail (CMCI 2024)</h4>
+            <div class="tbl-wrap">
+              <table>
+                <thead><tr><th>Pillar (20% weight each)</th><th class="num">Rank 2024</th><th class="num">Score 2024</th><th class="num">Rank 2023</th><th class="num">Score 2023</th></tr></thead>
+                <tbody>
+                  <tr><td>Economic Dynamism</td><td class="num">62nd</td><td class="num">4.1246</td><td class="num">80th</td><td class="num">3.0420</td></tr>
+                  <tr><td>Government Efficiency</td><td class="num">104th</td><td class="num">9.2785</td><td class="num">90th</td><td class="num">8.5903</td></tr>
+                  <tr><td>Infrastructure</td><td class="num">27th</td><td class="num">5.3384</td><td class="num">34th</td><td class="num">5.2385</td></tr>
+                  <tr><td>Resiliency</td><td class="num">76th</td><td class="num">11.3178</td><td class="num">106th</td><td class="num">10.6267</td></tr>
+                  <tr><td>Innovation</td><td class="num">22nd</td><td class="num">8.6247</td><td class="num">34th</td><td class="num">8.0427</td></tr>
+                  <tr style="background:#EEF3FE;font-weight:700"><td>Overall (sum of pillars)</td><td class="num">48th</td><td class="num">38.6840*</td><td class="num">56th</td><td class="num">35.5402*</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="note" style="margin-top:8px">*Overall scores computed by this page as the sum of the five published pillar scores (the CMCI overall score is the sum of pillar scores).<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></div>
+            <div class="src">Source: DTI CMCI LGU profiles.<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></div>
+          </div>
+
+          <div class="card">
+            <h4>Score composition — the sum of five pillars</h4>
+            <div class="sub">Roxas City added <b>+3.14 points</b> overall between the 2023 and 2024 cycles, driven by Resiliency, Innovation and Economic Dynamism.</div>
+            <div id="c-stack"></div>
+            <div class="legend">
+              <span><i style="background:var(--royal)"></i>Economic Dynamism</span>
+              <span><i style="background:var(--royal-2)"></i>Government Efficiency</span>
+              <span><i style="background:var(--royal-3)"></i>Infrastructure</span>
+              <span><i style="background:var(--royal-4)"></i>Resiliency</span>
+              <span><i style="background:var(--royal-5)"></i>Innovation</span>
+            </div>
+            <div class="src">Source: DTI CMCI pillar scores; totals computed by this page.<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h4>National top-25 indicator ranks in CMCI 2024 (out of 116 component cities)</h4>
+          <div class="sub">Roxas City's strongest sub-indicators — several are outright No. 1 nationwide in its city category.</div>
+          <div class="tbl-wrap">
+            <table>
+              <thead><tr><th>Indicator</th><th>Pillar</th><th class="num">Rank</th><th class="num">Score</th></tr></thead>
+              <tbody>
+                <tr><td>Compliance to ARTA Citizens Charter</td><td>Government Efficiency</td><td class="num"><span class="pill top">1st</span></td><td class="num">2.0000</td></tr>
+                <tr><td>ICT Plan</td><td>Innovation</td><td class="num"><span class="pill top">1st</span></td><td class="num">2.0001</td></tr>
+                <tr><td>ICT Use: E-BPLS Software</td><td>Innovation</td><td class="num"><span class="pill top">1st</span></td><td class="num">2.0000</td></tr>
+                <tr><td>Online Payment Facilities</td><td>Innovation</td><td class="num"><span class="pill top">1st</span></td><td class="num">2.0000</td></tr>
+                <tr><td>Local Risk Assessments</td><td>Resiliency</td><td class="num"><span class="pill top">1st</span></td><td class="num">2.0000</td></tr>
+                <tr><td>Land Use Plan</td><td>Resiliency</td><td class="num"><span class="pill">2nd</span></td><td class="num">1.9828</td></tr>
+                <tr><td>Disaster Risk Reduction Plan</td><td>Resiliency</td><td class="num"><span class="pill">2nd</span></td><td class="num">1.9545</td></tr>
+                <tr><td>Getting Business Permits</td><td>Government Efficiency</td><td class="num"><span class="pill">2nd</span></td><td class="num">1.5000</td></tr>
+                <tr><td>Intellectual Property Registration</td><td>Innovation</td><td class="num"><span class="pill">3rd</span></td><td class="num">0.6332</td></tr>
+                <tr><td>Cost of Living</td><td>Economic Dynamism</td><td class="num"><span class="pill">10th</span></td><td class="num">1.4648</td></tr>
+                <tr><td>Compliance to National Directives</td><td>Government Efficiency</td><td class="num"><span class="pill">10th</span></td><td class="num">1.4643</td></tr>
+                <tr><td>Presence of Investment Promotion Unit</td><td>Government Efficiency</td><td class="num"><span class="pill">11th</span></td><td class="num">1.4286</td></tr>
+                <tr><td>Information Technology Capacity</td><td>Infrastructure</td><td class="num"><span class="pill">16th</span></td><td class="num">0.4554</td></tr>
+                <tr><td>Internet Capability</td><td>Innovation</td><td class="num"><span class="pill">19th</span></td><td class="num">1.0020</td></tr>
+                <tr><td>Distance to Ports</td><td>Infrastructure</td><td class="num"><span class="pill">20th</span></td><td class="num">1.9047</td></tr>
+                <tr><td>LGU Investment</td><td>Infrastructure</td><td class="num"><span class="pill">21st</span></td><td class="num">0.3705</td></tr>
+                <tr><td>Education</td><td>Infrastructure</td><td class="num"><span class="pill">23rd</span></td><td class="num">0.5085</td></tr>
+                <tr><td>Social Protection</td><td>Government Efficiency</td><td class="num"><span class="pill">24th</span></td><td class="num">1.7168</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="src">Source: DTI CMCI — Roxas (CZ) 2024 profile, indicator rankings among 116 component cities.<sup class="cite"><a href="#s5">5</a></sup></div>
+        </div>
+
+        <div class="grid g2" style="margin-top:16px">
+          <div class="card tint">
+            <h4>Areas that still pull the rank down (CMCI 2024)</h4>
+            <ul class="tight">
+              <li><b>Innovation Financing: R&amp;D Expenditures Allotment — 84th</b> (score 0.0000).<sup class="cite"><a href="#s5">5</a></sup></li>
+              <li><b>Utilities — 102nd</b> and <b>Employed Population — 97th</b> in the Resiliency pillar.<sup class="cite"><a href="#s5">5</a></sup></li>
+              <li><b>Cost of Doing Business — 81st</b> and <b>Presence of Business &amp; Professional Organizations — 78th</b> (Economic Dynamism).<sup class="cite"><a href="#s5">5</a></sup></li>
+              <li><b>Social Protection</b> slipped from 14th (2023) to 24th (2024); <b>Government Efficiency</b> fell from 90th to 104th overall even as its score rose.<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></li>
+            </ul>
+          </div>
+          <div class="card tint">
+            <h4>Awards and milestones</h4>
+            <ul class="tight">
+              <li><b>CMCI 2024:</b> Top 1 Most Competitive Component City in Western Visayas; Rank 18 in Most Improved Rankings among 116 component cities nationwide.<sup class="cite"><a href="#s7">7</a></sup></li>
+              <li><b>7th Regional CMCI (2023):</b> Most Competitive Component City in Region VI, plus regional pillar awards for Infrastructure and Innovation, 3rd Most Improved LGU, and 3rd in Economic Dynamism.<sup class="cite"><a href="#s8">8</a>,<a href="#s9">9</a></sup></li>
+              <li><b>CMCI 2022:</b> entered the Top 10 of Most Improved Rankings for component cities.<sup class="cite"><a href="#s18">18</a></sup></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 3. CITY INCOME ========== -->
+      <section class="panel" id="income">
+        <header class="panel-head">
+          <h2>City Income</h2>
+          <p>Where the city government's money comes from, how Roxas City is classified, and how household poverty has moved.</p>
+          <div class="badges">
+            <span class="badge primary"><i class="dot"></i>FY 2025 budget</span>
+            <span class="badge">COA FY 2024 audit</span>
+          </div>
+        </header>
+
+        <div class="grid g2">
+          <div class="card">
+            <h4>FY 2025 budget — where the money comes from</h4>
+            <div class="sub">The city is operating on a <b>₱1.43 billion</b> budget for fiscal year 2025; more than ₱1 billion is its national tax allotment (NTA) share, while <b>₱413.9 million</b> comes from local taxes and other revenues. ₱60.5 million is earmarked for Local Economic Enterprises (fishing port, market, slaughterhouse, transport terminal).<sup class="cite"><a href="#s10">10</a></sup></div>
+            <div id="c-budget"></div>
+            <div class="src">Source: The Capiz Times, "P1.43 billion budget for City Hall," 25 January 2025.<sup class="cite"><a href="#s10">10</a></sup> NTA slice (≈₱1.016 B) is derived: ₱1.43 B − ₱413.9 M.</div>
+          </div>
+
+          <div class="card">
+            <h4>City income class under RA 11964</h4>
+            <div class="sub">Classified by <b>average annual regular income over three fiscal years</b>. The DOF reclassified Roxas City from third to <b>second class</b> in December 2024, and PSA's PSGC also lists "2nd" as the city's income class.<sup class="cite"><a href="#s11">11</a>,<a href="#s12">12</a>,<a href="#s1">1</a></sup></div>
+            <div id="c-band"></div>
+            <div class="src">Source: RA 11964 city income ranges (Supreme Court E-Library);<sup class="cite"><a href="#s13">13</a></sup> reclassification reported by Manila Bulletin and Daily Guardian, Dec 2024.<sup class="cite"><a href="#s11">11</a>,<a href="#s12">12</a></sup></div>
+          </div>
+        </div>
+
+        <div class="grid g2" style="margin-top:16px">
+          <div class="card">
+            <h4>Annual regular income, FY 2009 – FY 2016</h4>
+            <div class="sub">Locally sourced revenue + IRA/NTA + national tax shares: <b>₱368.7 M (2009) → ₱624.7 M (2016)</b>, a compound growth of about <b>7.8% per year</b>. Growth on this series is what moved the city up the income ladder — regular income has since crossed ₱1 billion (2nd-class band).<sup class="cite"><a href="#s2">2</a>,<a href="#s11">11</a></sup></div>
+            <div id="c-inc"></div>
+            <div class="src">Source: BLGF annual regular income data for Roxas City, 2009–2016, via PhilAtlas.<sup class="cite"><a href="#s2">2</a></sup> Compound growth computed by this page.</div>
+          </div>
+
+          <div class="card">
+            <h4>Financial snapshot (Commission on Audit)</h4>
+            <div class="tbl-wrap">
+              <table>
+                <thead><tr><th>Item</th><th class="num">Amount</th><th>Period</th></tr></thead>
+                <tbody>
+                  <tr><td>Total assets</td><td class="num">₱3,592,403,527.20</td><td>FY 2024<sup class="cite"><a href="#s14">14</a></sup></td></tr>
+                  <tr><td>Total revenue</td><td class="num">₱1,375 million</td><td>FY 2024<sup class="cite"><a href="#s15">15</a></sup></td></tr>
+                  <tr><td>Approved annual budget</td><td class="num">₱1.43 billion</td><td>FY 2025<sup class="cite"><a href="#s10">10</a></sup></td></tr>
+                  <tr><td>National tax allotment share</td><td class="num">&gt; ₱1 billion</td><td>FY 2025<sup class="cite"><a href="#s10">10</a></sup></td></tr>
+                  <tr><td>Local taxes &amp; other revenues</td><td class="num">₱413.9 million</td><td>FY 2025<sup class="cite"><a href="#s10">10</a></sup></td></tr>
+                  <tr><td>Annual regular income</td><td class="num">₱624.7 million</td><td>FY 2016<sup class="cite"><a href="#s2">2</a></sup></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout">
+              <b>Reading tip:</b> "Revenue" (actual receipts, COA) and "budget" (appropriation ordinance) are different measures,
+              and the city's receipts include its national tax allotment — a transfer, not locally raised money. Locally sourced
+              income is the ₱413.9 million slice for FY 2025.<sup class="cite"><a href="#s10">10</a>,<a href="#s15">15</a></sup>
+            </div>
+            <div class="src">Sources: COA FY 2024 annual audit data (total assets);<sup class="cite"><a href="#s14">14</a></sup> LGU financial summary compiled from COA/DOF reports (revenue);<sup class="cite"><a href="#s15">15</a></sup> The Capiz Times (budget and its composition).<sup class="cite"><a href="#s10">10</a></sup></div>
+          </div>
+        </div>
+
+        <div class="grid g2" style="margin-top:16px">
+          <div class="card">
+            <h4>Poverty incidence, 2000 – 2023</h4>
+            <div class="sub">Poverty incidence among the city's population fell from <b>25.88% (2000)</b> to <b>6.54% (2023)</b>; the 2018–2021 uptick coincided with the pandemic period.</div>
+            <div id="c-pov"></div>
+            <div class="src">Source: PSA / NSCB city and municipal-level poverty estimates (Family Income and Expenditure Survey-based small area estimates), 2000–2023.<sup class="cite"><a href="#s3">3</a>,<a href="#s4">4</a></sup></div>
+          </div>
+
+          <div class="card tint">
+            <h4>The wider provincial economy (Capiz)</h4>
+            <div class="kpis" style="margin-top:6px">
+              <div class="kpi"><div class="k">Capiz GDP (2023)</div><div class="v">₱79.47 B</div><div class="s">up from ₱74.38 B in 2022<sup class="cite"><a href="#s16">16</a></sup></div></div>
+              <div class="kpi"><div class="k">Growth (2024)</div><div class="v">5.0%</div><div class="s">with services the largest sector (+6.9%)<sup class="cite"><a href="#s16">16</a></sup></div></div>
+              <div class="kpi"><div class="k">Growth (2025)</div><div class="v">8.7%</div><div class="s">2nd fastest-growing province in PH<sup class="cite"><a href="#s16">16</a></sup></div></div>
+              <div class="kpi"><div class="k">Aquaculture (2025)</div><div class="v">₱16.12 B</div><div class="s">+69.9% from ₱9.49 B in 2024<sup class="cite"><a href="#s16">16</a></sup></div></div>
+            </div>
+            <ul class="tight" style="margin-top:12px">
+              <li>Wholesale and retail trade is the biggest driver of the province's growth, supported by agriculture, forestry and fishing — the sectors where Roxas City, as the provincial trading and logistics hub, concentrates its economy.<sup class="cite"><a href="#s16">16</a>,<a href="#s15">15</a></sup></li>
+              <li>Roxas City styles itself the <b>"Seafood Capital of the Philippines"</b> — marine wealth around the city anchors its fishing, trading and processing base.<sup class="cite"><a href="#s15">15</a></sup></li>
+              <li>Under CMCI 2024, the city ranked <b>10th nationwide on Cost of Living</b> among component cities — a low-cost environment for residents and small firms.<sup class="cite"><a href="#s5">5</a></sup></li>
+            </ul>
+            <div class="src">Sources: PSA Provincial Product Accounts as reported by Daily Guardian (Sept 2026);<sup class="cite"><a href="#s16">16</a></sup> DTI CMCI 2024.<sup class="cite"><a href="#s5">5</a></sup></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 4. NOTES ========== -->
+      <section class="panel" id="notes">
+        <header class="panel-head">
+          <h2>Methodology &amp; Sources</h2>
+          <p>What is measured, by whom, and how to read these charts.</p>
+          <div class="badges">
+            <span class="badge primary"><i class="dot"></i>18 sources</span>
+            <span class="badge">Updated 22 Sep 2026</span>
+          </div>
+        </header>
+
+        <div class="grid g2">
+          <div class="card">
+            <h4>Notes on the data</h4>
+            <ul class="tight">
+              <li><b>Census counts</b> are de jure PSA census results. The 2024 figure comes from the 2024 Census of Population (POPCEN 2024); city-level age tables for that round were not in the cited series, so age structure uses the 2015 Census.<sup class="cite"><a href="#s2">2</a></sup></li>
+              <li><b>CMCI</b> covers LGUs that submit data; rankings compare Roxas City only against other <i>component cities</i> (116 in 2024, 114 in 2023). Higher score = more competitive; rank 1 = best. Pillar scores are published by DTI; the overall totals shown here are the arithmetic sum of the five pillar scores, as CMCI defines overall competitiveness as that sum.<sup class="cite"><a href="#s5">5</a>,<a href="#s6">6</a></sup></li>
+              <li><b>Income class</b> is set by the DOF from the average annual regular income of three fiscal years, under RA 11964 (automatic income classification). Second class = ₱1.0 B–₱1.3 B; first class = ₱1.3 B and above.<sup class="cite"><a href="#s13">13</a></sup></li>
+              <li><b>Poverty incidence</b> is the proportion of the population below the official poverty threshold, estimated by PSA from the FIES via small area estimation; city estimates are not available every year.<sup class="cite"><a href="#s3">3</a>,<a href="#s4">4</a></sup></li>
+              <li><b>Provenance:</b> the financial-figure summary for FY 2024 (revenue, expenditure, liabilities) is a compiled LGU profile whose figures are drawn from COA audit reports; total assets are cross-checked directly against the COA FY 2024 audit record.<sup class="cite"><a href="#s14">14</a>,<a href="#s15">15</a></sup></li>
+              <li><b>Rounding &amp; derived values</b> are flagged in each chart caption; shares and compound growth are computed by this page from the cited primary figures.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h4>Sources</h4>
+            <ol class="sources">
+              <li id="s1">Philippine Statistics Authority — <i>Philippine Standard Geographic Code: City of Roxas (061914000)</i> (income class "2nd"; population 185,236, 2024 POPCEN). <a href="https://psa.gov.ph/classification/psgc/barangays/0601914000" target="_blank" rel="noopener">psa.gov.ph</a></li>
+              <li id="s2">PhilAtlas — <i>Roxas City, Province of Capiz</i> (PSA census series 1903–2020; 2015 age structure and household tables; BLGF annual regular income 2009–2016; 2019 electorate). <a href="https://www.philatlas.com/visayas/r06/capiz/roxas-city.html" target="_blank" rel="noopener">philatlas.com</a></li>
+              <li id="s3">Philippine Statistics Authority — <i>881 Cities and Municipalities Recorded Poverty Incidence of 20 Percent or Lower in 2023</i> (release 6 Feb 2026; Roxas City 6.54%). <a href="https://psa.gov.ph/content/881-cities-and-municipalities-recorded-poverty-incidence-20-percent-or-lower-2023" target="_blank" rel="noopener">psa.gov.ph</a></li>
+              <li id="s4">Philippine Statistics Authority — <i>2021 City and Municipal Level Poverty Estimates</i> (Roxas City 9.52%); earlier NSCB/PSA estimates in the same series cover 2000, 2003, 2006, 2009, 2012 and 2018. <a href="https://www.psa.gov.ph/content/psa-releases-2021-city-and-municipal-level-poverty-estimates" target="_blank" rel="noopener">psa.gov.ph</a></li>
+              <li id="s5">DTI — Cities and Municipalities Competitiveness Index, <i>LGU Profile: Roxas (CZ), 2024</i> (overall rank 48th/116; pillar and indicator ranks and scores). <a href="https://cmci.dti.gov.ph/lgu-profile.php?lgu=Roxas+(CZ)&amp;year=2024" target="_blank" rel="noopener">cmci.dti.gov.ph</a></li>
+              <li id="s6">DTI — CMCI, <i>LGU Profile: Roxas (CZ), 2023</i> (overall rank 56th/114; pillar and indicator ranks and scores). <a href="https://cmci.dti.gov.ph/lgu-profile.php?lgu=Roxas+(CZ)&amp;year=2023" target="_blank" rel="noopener">cmci.dti.gov.ph</a></li>
+              <li id="s7">Roxas City Government (official) — <i>Roxas City TOP 1 Most Competitive Component City in Western Visayas, Rank 18 Most Improved Ranking among 116 Component Cities Nationwide</i> (26 Aug 2024). <a href="https://roxascity.gov.ph/roxas-city-top-1-most-competitive-componenet-city-in-western-visayas-rank-18-most-improved-ranking-among-116-component-cities-nationwide/" target="_blank" rel="noopener">roxascity.gov.ph</a></li>
+              <li id="s8">The Capiz Times — <i>Roxas City bags awards in 7th Regional CMCI</i> (18 Oct 2023). <a href="https://thecapiztimes.com/articles/roxas-city-bags-awards-in-7th-regional-cmci/" target="_blank" rel="noopener">thecapiztimes.com</a></li>
+              <li id="s9">SunStar — <i>Iloilo City sweeps awards at 7th CMCI</i> (Oct 2023; lists Roxas City as Most Competitive Component City, Region VI, and regional Infrastructure &amp; Innovation pillar winner). <a href="https://www.sunstar.com.ph/iloilo/iloilo-city-sweeps-5-awards-at-7th-cmci" target="_blank" rel="noopener">sunstar.com.ph</a></li>
+              <li id="s10">The Capiz Times — <i>P1.43 billion budget for City Hall</i> (25 Jan 2025; FY 2025 budget, NTA share, ₱413.9 M local revenues, ₱60.5 M for Local Economic Enterprises). <a href="https://thecapiztimes.com/articles/p1-43-billion-budget-for-city-hall/" target="_blank" rel="noopener">thecapiztimes.com</a></li>
+              <li id="s11">Manila Bulletin — <i>DOF elevates Roxas City into second-class city</i> (9 Dec 2024). <a href="https://mb.com.ph/2024/12/9/dilg-elevates-roxas-city-into-second-class-city" target="_blank" rel="noopener">mb.com.ph</a></li>
+              <li id="s12">Daily Guardian — <i>Roxas City Reclassified as Second-Class City</i> (Dec 2024). <a href="https://dailyguardian.com.ph/roxas-city-reclassified-as-second-class-city/" target="_blank" rel="noopener">dailyguardian.com.ph</a></li>
+              <li id="s13">Republic Act No. 11964, <i>Automatic Income Classification of Provinces, Cities and Municipalities</i> (thresholds for city income classes). <a href="https://elibrary.judiciary.gov.ph/thebookshelf/showdocs/2/96834" target="_blank" rel="noopener">Supreme Court E-Library</a></li>
+              <li id="s14">Commission on Audit — <i>Annual Audit Reports, Local Government Units: City of Roxas (Capiz), FY 2024</i> (total assets ₱3,592,403,527.20; report published 15 April 2026). <a href="https://www.coa.gov.ph/reports/annual-audit-reports/aar-local-government-units/" target="_blank" rel="noopener">coa.gov.ph</a></li>
+              <li id="s15">Wikipedia — <i>Roxas City</i> (LGU profile whose economy block aggregates COA audit statements and PSA/COMELEC data): FY 2024 revenue ₱1,375 M, expenditure ₱601.7 M, liabilities ₱469.7 M, area 95.07 km², households 43,257, 2024 household/population growth rate 0.79%, electorate 112,738 (2025 elections), "Seafood Capital of the Philippines." Used only where the underlying agency is identified; primary agency figures are preferred elsewhere in this brief. <a href="https://en.wikipedia.org/wiki/Roxas_City" target="_blank" rel="noopener">en.wikipedia.org/wiki/Roxas_City</a></li>
+              <li id="s16">Daily Guardian / Panay News — PSA Provincial Product Accounts for Western Visayas (Capiz GDP ₱79.47 B in 2023, 5.0% growth in 2024, 8.7% growth in 2025 — 2nd fastest-growing province; aquaculture output ₱16.12 B in 2025). <a href="https://www.dailyguardian.com.ph/blog/w-visayas-economic-growth-2025-capiz-antique-guimaras-lead" target="_blank" rel="noopener">dailyguardian.com.ph</a> · <a href="https://www.panaynews.net/psa-capiz-posts-8-7-gdp-growth-ranks-2nd-phs-fastest-growing-province/" target="_blank" rel="noopener">panaynews.net</a></li>
+              <li id="s17">Philippine Information Agency — <i>Capiz registers 716,145 under nat'l ID system</i> (cites 2024 census population of Capiz: 835,098; Roxas City registration 177,800 at 96% coverage). <a href="https://pia.gov.ph/news/capiz-registers-716145-under-natl-id-system/" target="_blank" rel="noopener">pia.gov.ph</a></li>
+              <li id="s18">Daily Guardian — <i>Roxas City is one of 'Most Improved Cities'</i> (Oct 2022 CMCI Top 10 most improved, component city category). <a href="https://dailyguardian.com.ph/roxas-city-is-one-of-most-improved-cities/" target="_blank" rel="noopener">dailyguardian.com.ph</a></li>
+            </ol>
+            <div class="src">All links accessed 22 September 2026. Where a news report relays an agency dataset (e.g., PSA Provincial Product Accounts, DOF income classification), both the agency and the report are named.</div>
+          </div>
+        </div>
+
+        <footer>
+          <p><b>Roxas City, Capiz — City Statistics.</b> Compiled from public Philippine government sources
+          (PSA, DTI-CMCI, COA, DOF/BLGF, PIA) and cited news reports, 22 September 2026. Figures are as published by the cited agencies;
+          this brief is an independent compilation and is not an official publication of the City Government of Roxas or of any agency named.</p>
+          <p class="note">Charts are rendered from the cited values only. Where a number is derived (shares, sums, growth rates), the derivation is stated in the caption.</p>
+        </footer>
+      </section>
+
+    </main>
+  </div>
+</div>
+
+<div id="tip" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  "use strict";
+  var NS = "http://www.w3.org/2000/svg";
+  var C = {royal:"#0038A8", royal2:"#0B4FD1", royal3:"#3E6EDB", royal4:"#8FAEEF", royal5:"#CBD9F7",
+           navy:"#071B4D", line:"#E4EAF5", muted:"#6B7280", white:"#FFFFFF"};
+
+  /* ---------------- sidebar behaviour ---------------- */
+  var shell = document.getElementById("shell");
+  var tgl   = document.getElementById("menuToggle");
+  var lbl   = document.getElementById("toggleLabel");
+  var chip  = document.getElementById("menuChip");
+
+  function setNav(open){
+    shell.classList.toggle("nav-off", !open);
+    tgl.setAttribute("aria-expanded", open ? "true" : "false");
+    lbl.textContent = open ? "Hide menu" : "Show menu";
+  }
+  if(tgl){ tgl.addEventListener("click", function(){ setNav(shell.classList.contains("nav-off")); }); }
+  if(chip){ chip.addEventListener("click", function(){ setNav(true); window.scrollTo({top:0, behavior:"smooth"}); }); }
+
+  /* scroll-spy for the three nav items */
+  var links = [].slice.call(document.querySelectorAll(".nav-item"));
+  var secs  = links.map(function(l){ return document.getElementById(l.getAttribute("data-target")); });
+  function spy(){
+    var y = window.pageYOffset + 150, idx = 0;
+    secs.forEach(function(s,i){ if(s && s.offsetTop <= y) idx = i; });
+    links.forEach(function(l,i){ l.classList.toggle("is-active", i === idx); });
+  }
+  if(links.length){
+    window.addEventListener("scroll", spy, {passive:true});
+    window.addEventListener("resize", spy);
+    spy();
+  }
+
+  /* ---------------- chart helpers ---------------- */
+  function E(tag, attrs, parent){
+    var n = document.createElementNS(NS, tag);
+    if(attrs){ for(var k in attrs){ if(attrs[k] !== null && attrs[k] !== undefined) n.setAttribute(k, attrs[k]); } }
+    if(parent) parent.appendChild(n);
+    return n;
+  }
+  function txt(parent, x, y, s, o){
+    o = o || {};
+    var t = E("text", {x:x, y:y, "font-size":o.size||11, fill:o.fill||C.muted,
+      "text-anchor":o.anchor||"middle", "font-weight":o.weight||400,
+      "font-family":"inherit", transform:o.rot?("rotate("+o.rot+" "+x+" "+y+")"):null}, parent);
+    t.textContent = s;
+    return t;
+  }
+  function svg(host, w, h){
+    var box = document.getElementById(host);
+    if(!box) return null;
+    box.innerHTML = "";
+    return E("svg", {viewBox:"0 0 "+w+" "+h, width:"100%", role:"img",
+      preserveAspectRatio:"xMidYMid meet", style:"overflow:visible"}, box);
+  }
+  function money(v){
+    if(v >= 1000) return "₱" + (v/1000).toFixed(2).replace(/\.00$/,"") + " B";
+    return "₱" + (Math.round(v*10)/10).toLocaleString("en-PH") + " M";
+  }
+  function num(v){ return v.toLocaleString("en-PH"); }
+  function barPath(x,y,w,h,r){
+    r = Math.min(r, w/2, h/2);
+    if(h <= 0.5) return "M"+x+","+y+"h"+w;
+    return "M"+x+","+(y+h)+"V"+(y+r)+"a"+r+","+r+" 0 0 1 "+r+","+(-r)+"h"+(w-2*r)+
+           "a"+r+","+r+" 0 0 1 "+r+","+r+"V"+(y+h)+"Z";
+  }
+  var tip = document.getElementById("tip");
+  function bindTip(node, html){
+    node.addEventListener("mousemove", function(ev){
+      tip.innerHTML = html;
+      tip.style.opacity = 1;
+      var x = ev.clientX + 14, y = ev.clientY - 12;
+      if(x + 250 > window.innerWidth) x = ev.clientX - 250;
+      tip.style.left = x + "px";
+      tip.style.top  = Math.max(8, y) + "px";
+    });
+    node.addEventListener("mouseleave", function(){ tip.style.opacity = 0; });
+  }
+
+  /* ---------------- charts ---------------- */
+  function censusBars(){
+    var data = [[1903,21472],[1918,22022],[1939,29021],[1948,32353],[1960,49326],[1970,67648],
+                [1975,71305],[1980,81183],[1990,103171],[1995,118715],[2000,126352],[2007,147738],
+                [2010,156197],[2015,167003],[2020,179292],[2024,185236]];
+    var w=760,h=330,ml=56,mr=12,mt=18,mb=52, iw=w-ml-mr, ih=h-mt-mb, ymax=200000;
+    var s = svg("c-pop", w, h); if(!s) return;
+    [0,50000,100000,150000,200000].forEach(function(v){
+      var y = mt + ih - (v/ymax)*ih;
+      E("line",{x1:ml,x2:ml+iw,y1:y,y2:y,stroke:C.line,"stroke-width":1},s);
+      txt(s, ml-9, y+4, v===0?"0":(v/1000)+"k", {anchor:"end", size:10.5});
+    });
+    var bw = iw/data.length, pad = Math.min(9, bw*0.24);
+    data.forEach(function(d,i){
+      var v=d[1], bh=(v/ymax)*ih, x=ml+i*bw+pad/2, y=mt+ih-bh;
+      var last = (i===data.length-1), y2020 = (i===data.length-2);
+      var col = last?C.navy:(y2020?C.royal:C.royal3);
+      var r = E("path",{d:barPath(x,y,bw-pad,bh,4), fill:col}, s);
+      bindTip(r, "<b>"+d[0]+" census</b><br>"+num(v)+" people");
+      E("line",{x1:ml+i*bw+pad/2,x2:ml+(i+1)*bw-pad/2,y1:mt+ih,y2:mt+ih,stroke:col,"stroke-width":2},s);
+      txt(s, x+(bw-pad)/2, mt+ih+16, String(d[0]), {size:10, rot:-45, fill:C.muted, anchor:"end"});
+    });
+    [[2024,185236],[2020,179292]].forEach(function(pair){
+      var i = data.findIndex(function(d){return d[0]===pair[0];});
+      var v=pair[1], x=ml+i*bw+bw/2, y=mt+ih-(v/ymax)*ih-7;
+      txt(s, x, y, num(v), {size:11, weight:700, fill:C.navy});
+    });
+    txt(s, ml-9, mt-6, "people", {anchor:"start", size:10, fill:C.muted});
+  }
+
+  function apgrLine(){
+    var pts = [[2010,2.05],[2015,1.28],[2020,1.51],[2024,0.79]];
+    var w=420,h=210,ml=40,mr=16,mt=18,mb=34, iw=w-ml-mr, ih=h-mt-mb, ymax=2.6;
+    var s=svg("c-apgr",w,h); if(!s) return;
+    [0,1,2].forEach(function(v){
+      var y=mt+ih-(v/ymax)*ih;
+      E("line",{x1:ml,x2:ml+iw,y1:y,y2:y,stroke:C.line},s);
+      txt(s, ml-8, y+4, v+"%", {anchor:"end", size:10.5});
+    });
+    var x = function(i){ return ml + (i/(pts.length-1))*iw; };
+    var y = function(v){ return mt + ih - (v/ymax)*ih; };
+    var d = pts.map(function(p,i){ return (i?"L":"M") + x(i) + "," + y(p[1]); }).join(" ");
+    E("path",{d:d, fill:"none", stroke:C.royal, "stroke-width":2.6, "stroke-linejoin":"round"},s);
+    pts.forEach(function(p,i){
+      var c = E("circle",{cx:x(i), cy:y(p[1]), r:5.2, fill:C.white, stroke:C.royal, "stroke-width":2.6}, s);
+      bindTip(c, "<b>"+p[0]+"</b><br>"+p[1]+"% per year");
+      txt(s, x(i), mt+ih+18, String(p[0]), {size:10.5});
+      txt(s, x(i), y(p[1])-10, p[1]+"%", {size:10.5, weight:700, fill:C.navy});
+    });
+  }
+
+  function donut(host, slices, opts){
+    opts = opts||{};
+    var w=opts.w||380, h=opts.h||250, cx=w*0.5, cy=h*0.52, R=Math.min(w,h)*0.36, r=R*0.58;
+    var s=svg(host,w,h); if(!s) return;
+    var total = slices.reduce(function(a,b){ return a+b.value; },0), acc=-Math.PI/2;
+    slices.forEach(function(sl){
+      var ang = (sl.value/total)*Math.PI*2, a0=acc, a1=acc+ang; acc=a1;
+      var large = ang>Math.PI?1:0;
+      var d = "M"+(cx+R*Math.cos(a0))+","+(cy+R*Math.sin(a0))+
+              "A"+R+","+R+" 0 "+large+" 1 "+(cx+R*Math.cos(a1))+","+(cy+R*Math.sin(a1))+
+              "L"+(cx+r*Math.cos(a1))+","+(cy+r*Math.sin(a1))+
+              "A"+r+","+r+" 0 "+large+" 0 "+(cx+r*Math.cos(a0))+","+(cy+r*Math.sin(a0))+"Z";
+      var p = E("path",{d:d, fill:sl.color, stroke:"#fff", "stroke-width":2}, s);
+      bindTip(p, "<b>"+sl.label+"</b><br>"+sl.tip);
+      var mid=(a0+a1)/2, lx=cx+(R+r)/2*Math.cos(mid), ly=cy+(R+r)/2*Math.sin(mid);
+      if(sl.value/total > 0.08){
+        txt(s, lx, ly+4, Math.round(sl.value/total*100)+"%", {size:12, weight:800, fill:"#fff"});
+      }
+    });
+    txt(s, cx, cy-R-10, opts.center||"", {size:11, fill:C.muted});
+    if(opts.center2) txt(s, cx, cy+4, opts.center2, {size:15, weight:800, fill:C.royal});
+    if(opts.sub) txt(s, cx, cy+R+20, opts.sub, {size:10.5, fill:C.muted});
+    return s;
+  }
+
+  function ageBars(){
+    var data = [["Under 1",3145,0],["1–4",12914,0],["5–9",15996,0],["10–14",16465,0],["15–19",17451,2],
+                ["20–24",16013,2],["25–29",13460,2],["30–34",11493,2],["35–39",10660,2],["40–44",9606,2],
+                ["45–49",9348,2],["50–54",8171,2],["55–59",6846,2],["60–64",5325,2],["65–69",3889,1],
+                ["70–74",2572,1],["75–79",1903,1],["80+",1746,1]];
+    var rowH=19, w=520, ml=64, mr=54, mt=14, mb=26, iw=w-ml-mr, ih=data.length*rowH;
+    var h=ih+mt+mb, max=18000;
+    var s=svg("c-age",w,h); if(!s) return;
+    var cols=[C.royal4, C.royal3, C.royal];
+    data.forEach(function(d,i){
+      var y=mt+i*rowH+2.5, bw=(d[1]/max)*iw;
+      var rect=E("rect",{x:ml, y:y, width:Math.max(bw,1), height:rowH-5.5, rx:2.5, fill:cols[d[2]]}, s);
+      bindTip(rect, "<b>"+d[0]+" yrs</b><br>"+num(d[1])+" people · "+(d[1]/167003*100).toFixed(2)+"%");
+      txt(s, ml-8, y+rowH-9, d[0], {anchor:"end", size:10.5});
+      txt(s, ml+bw+6, y+rowH-9, num(d[1]), {anchor:"start", size:10, fill:C.muted});
+    });
+    var lg = ["0–14 (young dependents)","15–64 (working age)","65+ (old dependents)"];
+    lg.forEach(function(t,i){
+      var x = ml + i*(iw/2.6), y = h-8;
+      E("rect",{x:x, y:y-8, width:10, height:10, rx:2.5, fill:cols[[0,2,1][i]]}, s);
+      txt(s, x+15, y+1, t, {anchor:"start", size:10});
+    });
+  }
+
+  function hhBars(){
+    var data=[[1990,18709],[1995,22822],[2000,25126],[2007,29754],[2010,34058],[2015,37816],[2024,43257]];
+    var w=430,h=230,ml=48,mr=10,mt=20,mb=38, iw=w-ml-mr, ih=h-mt-mb, ymax=48000;
+    var s=svg("c-hh",w,h); if(!s) return;
+    [0,20000,40000].forEach(function(v){
+      var y=mt+ih-(v/ymax)*ih;
+      E("line",{x1:ml,x2:ml+iw,y1:y,y2:y,stroke:C.line},s);
+      txt(s, ml-8, y+4, (v===0?"0":(v/1000)+"k"), {anchor:"end", size:10.5});
+    });
+    var bw=iw/data.length, pad=Math.min(12,bw*0.3);
+    data.forEach(function(d,i){
+      var bh=(d[1]/ymax)*ih, x=ml+i*bw+pad/2, y=mt+ih-bh;
+      var rect=E("rect",{x:x,y:y,width:bw-pad,height:bh,rx:4,fill:i===data.length-1?C.navy:C.royal3},s);
+      bindTip(rect,"<b>"+d[0]+"</b><br>"+num(d[1])+" households");
+      txt(s, x+(bw-pad)/2, y-6, num(d[1]), {size:9.5, weight:700, fill:C.navy});
+      txt(s, x+(bw-pad)/2, mt+ih+16, String(d[0]), {size:10});
+    });
+    txt(s, ml-8, mt-6, "households", {anchor:"start", size:10});
+  }
+
+  function brgyBars(){
+    var data=[["Lawa-an",11484],["Baybay",9732],["Banica",8950],["Tiza",8919],["Bolo",8001],
+              ["Culasi",7869],["Libas",7802],["Milibili",7120],["Dinginan",7064],["Lanot",6421]];
+    var rowH=25, w=430, ml=76, mr=52, mt=14, mb=20, iw=w-ml-mr, h=data.length*rowH+mt+mb, max=12000;
+    var s=svg("c-brgy",w,h); if(!s) return;
+    data.forEach(function(d,i){
+      var y=mt+i*rowH+3, bw=(d[1]/max)*iw;
+      var rect=E("rect",{x:ml,y:y,width:Math.max(bw,1),height:rowH-8,rx:3.5,fill:i<3?C.royal:C.royal3},s);
+      bindTip(rect,"<b>Barangay "+d[0]+"</b><br>"+num(d[1])+" residents (2020)");
+      txt(s, ml-8, y+rowH-12, d[0], {anchor:"end", size:10.5});
+      txt(s, ml+bw+6, y+rowH-12, num(d[1]), {anchor:"start", size:10, fill:C.muted});
+    });
+  }
+
+  function radar(){
+    var axes=["Economic Dynamism","Government Efficiency","Infrastructure","Resiliency","Innovation"];
+    var s23=[3.0420,8.5903,5.2385,10.6267,8.0427], s24=[4.1246,9.2785,5.3384,11.3178,8.6247];
+    var w=440,h=380,cx=w/2,cy=h/2+4,R=Math.min(w,h)*0.335, max=12;
+    var s=svg("c-radar",w,h); if(!s) return;
+    var N=axes.length, ang=function(i){ return -Math.PI/2 + i*(Math.PI*2/N); };
+    [3,6,9,12].forEach(function(v){
+      var pts=[];
+      for(var i=0;i<N;i++){ pts.push((cx+ (v/max)*R*Math.cos(ang(i)))+","+(cy+(v/max)*R*Math.sin(ang(i)))); }
+      E("polygon",{points:pts.join(" "), fill:"none", stroke:C.line, "stroke-width":1},s);
+      txt(s, cx+4, cy-(v/max)*R+3, String(v), {anchor:"start", size:9, fill:C.muted});
+    });
+    axes.forEach(function(a,i){
+      E("line",{x1:cx,y1:cy,x2:cx+R*Math.cos(ang(i)),y2:cy+R*Math.sin(ang(i)),stroke:C.line},s);
+      var lx=cx+(R+34)*Math.cos(ang(i)), ly=cy+(R+26)*Math.sin(ang(i));
+      var lines = a.split(" ");
+      if(a==="Economic Dynamism" || a==="Government Efficiency"){
+        txt(s, lx, ly-6, lines[0], {size:10.5, weight:700, fill:C.navy});
+        txt(s, lx, ly+6, lines.slice(1).join(" "), {size:10.5, weight:700, fill:C.navy});
+      } else {
+        txt(s, lx, ly+4, a, {size:10.5, weight:700, fill:C.navy});
+      }
+    });
+    function poly(vals, color, fillOp, dash){
+      var pts=[];
+      for(var i=0;i<N;i++){ pts.push((cx+(vals[i]/max)*R*Math.cos(ang(i)))+","+(cy+(vals[i]/max)*R*Math.sin(ang(i)))); }
+      E("polygon",{points:pts.join(" "), fill:color, "fill-opacity":fillOp, stroke:color,
+        "stroke-width":2.4, "stroke-dasharray":dash||null, "stroke-linejoin":"round"},s);
+      for(var j=0;j<N;j++){
+        var p=E("circle",{cx:cx+(vals[j]/max)*R*Math.cos(ang(j)), cy:cy+(vals[j]/max)*R*Math.sin(ang(j)),
+          r:4.6, fill:C.white, stroke:color, "stroke-width":2.2}, s);
+        bindTip(p, "<b>"+axes[j]+"</b><br>"+vals[j].toFixed(4)+" ("+(color===C.royal?"2024":"2023")+")");
+      }
+    }
+    poly(s23, C.royal4, 0.30, "5 4");
+    poly(s24, C.royal, 0.22, null);
+  }
+
+  function slope(){
+    var rows=[["Resiliency",106,76],["Government Efficiency",90,104],["Economic Dynamism",80,62],
+              ["Infrastructure",34,27],["Innovation",34,22]];
+    var w=470,h=340, ml=54,mr=54,mt=34,mb=34, iw=w-ml-mr, ih=h-mt-mb, maxR=116;
+    var s=svg("c-slope",w,h); if(!s) return;
+    var y=function(r){ return mt + ((r-1)/(maxR-1))*ih; };
+    [1,20,40,60,80,100,116].forEach(function(r){
+      var yy=y(r);
+      E("line",{x1:ml,x2:ml+iw,y1:yy,y2:yy,stroke:C.line,"stroke-dasharray":"3 4"},s);
+      txt(s, ml-8, yy+4, r, {anchor:"end", size:10});
+      txt(s, ml+iw+8, yy+4, r, {anchor:"start", size:10});
+    });
+    txt(s, ml-8, mt-14, "RANK 2023", {anchor:"middle", size:10.5, weight:700, fill:C.navy});
+    txt(s, ml+iw+8, mt-14, "RANK 2024", {anchor:"middle", size:10.5, weight:700, fill:C.navy});
+    var x0=ml, x1=ml+iw;
+    rows.forEach(function(r){
+      var good = r[2] < r[1];
+      var col = good ? C.royal : "#9AA9C6";
+      E("path",{d:"M"+x0+","+y(r[1])+"C"+((x0+x1)/2)+","+y(r[1])+" "+((x0+x1)/2)+","+y(r[2])+" "+x1+","+y(r[2]),
+        fill:"none", stroke:col, "stroke-width":2.6, opacity:.95}, s);
+      var c0=E("circle",{cx:x0, cy:y(r[1]), r:5.4, fill:C.white, stroke:col, "stroke-width":2.4}, s);
+      var c1=E("circle",{cx:x1, cy:y(r[2]), r:5.4, fill:col, stroke:col, "stroke-width":2.4}, s);
+      bindTip(c0, "<b>"+r[0]+"</b><br>2023 rank: "+r[1]+" of 114");
+      bindTip(c1, "<b>"+r[0]+"</b><br>2024 rank: "+r[2]+" of 116");
+      txt(s, x0-12, y(r[1])+4, String(r[1]), {anchor:"end", size:11, weight:700, fill:C.navy});
+      txt(s, x1+12, y(r[2])+4, String(r[2]), {anchor:"start", size:11, weight:700, fill:good?C.royal:C.muted});
+      txt(s, x1+40, y(r[2])+4, r[0].replace("Government Efficiency","Gov. Efficiency").replace("Economic Dynamism","Econ. Dynamism"),
+        {anchor:"start", size:10, fill:C.muted});
+    });
+    txt(s, w/2, h-6, "Rank 1 = most competitive · lines rising = improvement", {size:10, fill:C.muted});
+  }
+
+  function stack(){
+    var cats=["2023","2024"];
+    var series=[
+      {name:"Economic Dynamism", color:C.royal,   vals:[3.0420,4.1246]},
+      {name:"Government Efficiency", color:C.royal2, vals:[8.5903,9.2785]},
+      {name:"Infrastructure", color:C.royal3,     vals:[5.2385,5.3384]},
+      {name:"Resiliency", color:C.royal4,         vals:[10.6267,11.3178]},
+      {name:"Innovation", color:C.royal5,         vals:[8.0427,8.6247]}
+    ];
+    var w=430,h=260, ml=54, mr=80, mt=26, mb=34, iw=w-ml-mr, ih=h-mt-mb, max=42;
+    var s=svg("c-stack",w,h); if(!s) return;
+    [0,10,20,30,40].forEach(function(v){
+      var y=mt+ih-(v/max)*ih;
+      E("line",{x1:ml,x2:ml+iw,y1:y,y2:y,stroke:C.line},s);
+      txt(s, ml-8, y+4, v, {anchor:"end", size:10.5});
+    });
+    var bw=Math.min(70, iw/3.4);
+    cats.forEach(function(c,ci){
+      var x = ml + iw*0.5 + (ci===0? -bw*0.95 : bw*0.95) - bw/2;
+      var acc=0;
+      series.forEach(function(se){
+        var v=se.vals[ci], bh=(v/max)*ih, y=mt+ih-((acc+v)/max)*ih;
+        var rect=E("rect",{x:x,y:y,width:bw,height:bh,fill:se.color}, s);
+        bindTip(rect, "<b>"+se.name+" · "+c+"</b><br>"+v.toFixed(4)+" points");
+        acc += v;
+      });
+      txt(s, x+bw/2, mt+ih+18, c, {size:12, weight:800, fill:C.navy});
+      txt(s, x+bw/2, mt+ih-(acc/max)*ih-8, acc.toFixed(2), {size:12.5, weight:800, fill:C.navy});
+    });
+    txt(s, w/2, h-6, "Overall score = sum of the five pillar scores (computed from DTI data)", {size:10, fill:C.muted});
+  }
+
+  function band(){
+    var bands=[
+      {label:"5th class · under ₱500 M", x:0, w:20, color:"#EEF3FE"},
+      {label:"4th class · ₱500 M – ₱800 M", x:20, w:20, color:"#DCE6FA"},
+      {label:"3rd class · ₱800 M – ₱1.0 B", x:40, w:12, color:"#C2D4F6"},
+      {label:"2nd class · ₱1.0 B – ₱1.3 B", x:52, w:22, color:C.royal},
+      {label:"1st class · ₱1.3 B and above", x:74, w:26, color:"#DCE6FA"}
+    ];
+    var w=760,h=210, ml=14, mr=14, mt=64, iw=w-ml-mr, bh=54;
+    var s=svg("c-band",w,h); if(!s) return;
+    bands.forEach(function(b){
+      var x=ml+(b.x/100)*iw, bw=(b.w/100)*iw, active=(b.color===C.royal);
+      E("rect",{x:x,y:mt,width:bw,height:bh,rx:6,fill:b.color,stroke:"#fff","stroke-width":2}, s);
+      if(active){
+        E("rect",{x:x,y:mt,width:bw,height:bh,rx:6,fill:"none",stroke:C.navy,"stroke-width":2.5}, s);
+        txt(s, x+bw/2, mt+bh/2+5, "2ND CLASS", {size:13, weight:800, fill:"#fff"});
+        E("path",{d:"M"+(x+bw/2-8)+","+(mt-12)+"h16l-8,10z", fill:C.navy}, s);
+        txt(s, x+bw/2, mt-18, "ROXAS CITY", {size:12.5, weight:800, fill:C.navy});
+      }
+      var lx = x+bw/2;
+      var parts = b.label.split("·");
+      txt(s, lx, mt+bh+18, parts[0].trim(), {size:10.5, weight:700, fill:active?C.navy:C.muted});
+      if(parts[1]) txt(s, lx, mt+bh+32, parts[1].trim(), {size:10, fill:C.muted});
+    });
+    txt(s, w/2, h-8, "City income classes under RA 11964 — based on average annual regular income of three fiscal years",
+      {size:10.5, fill:C.muted});
+  }
+
+  function regIncome(){
+    var data=[[2009,368.72],[2010,400.95],[2011,449.19],[2012,425.34],[2013,450.04],[2014,504.85],[2015,571.47],[2016,624.66]];
+    var w=440,h=250,ml=54,mr=12,mt=24,mb=40, iw=w-ml-mr, ih=h-mt-mb, ymax=700;
+    var s=svg("c-inc",w,h); if(!s) return;
+    [0,200,400,600].forEach(function(v){
+      var y=mt+ih-(v/ymax)*ih;
+      E("line",{x1:ml,x2:ml+iw,y1:y,y2:y,stroke:C.line},s);
+      txt(s, ml-8, y+4, v?("₱"+v+"M"):"0", {anchor:"end", size:10});
+    });
+    var bw=iw/data.length, pad=Math.min(12,bw*0.28);
+    data.forEach(function(d,i){
+      var bh=(d[1]/ymax)*ih, x=ml+i*bw+pad/2, y=mt+ih-bh;
+      var rect=E("rect",{x:x,y:y,width:bw-pad,height:bh,rx:3.5,
+        fill:i===data.length-1?C.navy:C.royal3}, s);
+      bindTip(rect, "<b>FY "+d[0]+"</b><br>"+money(d[1])+" annual regular income");
+      txt(s, x+(bw-pad)/2, y-6, Math.round(d[1]), {size:9.5, weight:700, fill:C.navy});
+      txt(s, x+(bw-pad)/2, h-4, "FY 20"+String(d[0]).slice(2), {size:9.5, fill:C.muted});
+    });
+    txt(s, ml-8, mt-8, "₱ millions", {anchor:"start", size:10});
+  }
+
+  function pov(){
+    var pts=[[2000,25.88],[2003,19.37],[2006,17.30],[2009,12.06],[2012,12.55],[2018,7.32],[2021,9.52],[2023,6.54]];
+    var w=470,h=280,ml=46,mr=20,mt=24,mb=48, iw=w-ml-mr, ih=h-mt-mb, ymax=28;
+    var s=svg("c-pov",w,h); if(!s) return;
+    [0,10,20].forEach(function(v){
+      var y=mt+ih-(v/ymax)*ih;
+      E("line",{x1:ml,x2:ml+iw,y1:y,y2:y,stroke:C.line},s);
+      txt(s, ml-8, y+4, v+"%", {anchor:"end", size:10.5});
+    });
+    var x=function(i){ return ml+(i/(pts.length-1))*iw; };
+    var y=function(v){ return mt+ih-(v/ymax)*ih; };
+    var line = pts.map(function(p,i){ return (i?"L":"M")+x(i)+","+y(p[1]); }).join(" ");
+    var area = line + " L"+x(pts.length-1)+","+(mt+ih)+" L"+x(0)+","+(mt+ih)+" Z";
+    E("path",{d:area, fill:C.royal, "fill-opacity":0.10}, s);
+    E("path",{d:line, fill:"none", stroke:C.royal, "stroke-width":2.8}, s);
+    pts.forEach(function(p,i){
+      var c=E("circle",{cx:x(i), cy:y(p[1]), r:5, fill:C.white, stroke:C.royal, "stroke-width":2.5}, s);
+      bindTip(c, "<b>"+p[0]+"</b><br>poverty incidence "+p[1]+"%");
+      txt(s, x(i), mt+ih+18, String(p[0]), {size:10, rot:-40, anchor:"end"});
+      txt(s, x(i), y(p[1])-11, p[1]+"%", {size:10.5, weight:700, fill:C.navy});
+    });
+    txt(s, x(7)-4, y(6.54)+20, "lowest on record", {size:10, weight:700, fill:C.navy, anchor:"end"});
+  }
+
+  /* ---- render ---- */
+  censusBars(); apgrLine();
+  donut("c-share",[
+    {label:"Roxas City", value:185236, color:C.royal, tip:"185,236 residents (2024 POPCEN)"},
+    {label:"Rest of Capiz", value:835098-185236, color:C.royal5, tip:"649,862 residents across 16 municipalities"}
+  ],{center:"Share of Capiz population", center2:"22.18%", sub:"Capiz total: 835,098 (PSA, 2024)", h:262});
+  ageBars(); hhBars(); brgyBars();
+  radar(); slope(); stack();
+  donut("c-budget",[
+    {label:"National tax allotment", value:1016.1, color:C.royal, tip:"≈₱1.02 B (derived: ₱1.43 B budget − ₱413.9 M local)"},
+    {label:"Local taxes & other revenues", value:413.9, color:C.royal4, tip:"₱413.9 M from local taxes and other revenues"}
+  ],{center:"FY 2025 budget: ₱1.43 billion", center2:"71% / 29%", sub:"₱60.5 M is allotted to Local Economic Enterprises", h:262});
+  band(); regIncome(); pov();
+})();
+</script>
+</body>
+</html>

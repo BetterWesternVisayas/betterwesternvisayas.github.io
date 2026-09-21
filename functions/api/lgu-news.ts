@@ -116,10 +116,10 @@ async function fetchAndParse(): Promise<LGUNewsResponse> {
 
       // Prepend base URL to relative paths
       if (url.startsWith('/')) {
-        url = 'https://losbanos.gov.ph' + url;
+        url = 'https://roxascity.gov.ph' + url;
       }
       if (imageUrl.startsWith('/')) {
-        imageUrl = 'https://losbanos.gov.ph' + imageUrl;
+        imageUrl = 'https://roxascity.gov.ph' + imageUrl;
       }
 
       posts.push({
@@ -133,7 +133,7 @@ async function fetchAndParse(): Promise<LGUNewsResponse> {
 
     return {
       posts,
-      source: 'losbanos.gov.ph',
+      source: 'roxascity.gov.ph',
       cached: false,
     };
   } catch (error) {
@@ -144,7 +144,7 @@ async function fetchAndParse(): Promise<LGUNewsResponse> {
 
 /**
  * GET /api/lgu-news
- * Returns the 3 most recent news posts from losbanos.gov.ph
+ * Returns the 3 most recent news posts from roxascity.gov.ph
  */
 export async function onRequestGet(context: {
   request: Request;
