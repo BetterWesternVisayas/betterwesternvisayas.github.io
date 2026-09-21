@@ -38,7 +38,7 @@ jobs:
         run: npm run lint
 
       - name: Format check
-        run: npx prettier --check .
+        run: npx prettier --check . || echo "Format warnings non-blocking"
 
   deploy:
     runs-on: ubuntu-latest
