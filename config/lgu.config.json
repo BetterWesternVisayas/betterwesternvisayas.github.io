@@ -51,9 +51,9 @@
     }
   },
   "dataPaths": {
-    "departments": "src/data/lgu/roxascity/directory/departments.json",
-    "barangays": "src/data/lgu/roxascity/directory/barangays.json",
-    "services": "src/data/lgu/roxascity/services/categories"
+    "departments": "src/data/directory/departments.json",
+    "barangays": "src/data/directory/barangays.json",
+    "services": "src/data/services"
   },
   "features": {
     "openLGU": true,
