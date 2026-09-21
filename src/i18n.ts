@@ -9,9 +9,16 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'en',
+    // Only 'en' and 'fil' bundles exist under public/locales. Without this,
+    // the language detector requests region variants (e.g. 'en-US') and every
+    // lookup 404s.
+    supportedLngs: ['en', 'fil'],
+    load: 'languageOnly',
+    nonExplicitSupportedLngs: true,
     debug: false,
     defaultNS: 'common',
-    ns: ['common', 'visa', 'about', 'about-philippines'],
+    // Must match the files actually shipped in public/locales/<lng>/.
+    ns: ['common', 'about'],
 
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
